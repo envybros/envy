@@ -1,6 +1,0 @@
-Target dependency graph (3 targets)
-gen_opencv_objc_source_osx in OpenCV, no dependencies
-gen_opencv_objc_source_ios in OpenCV, no dependencies
-gen_opencv_objc_source in OpenCV, depends on:
-gen_opencv_objc_source_osx in OpenCV (explicit)
-gen_opencv_objc_source_ios in OpenCV (explicit)

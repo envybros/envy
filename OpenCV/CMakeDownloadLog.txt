@@ -1,3 +1,0 @@
-#use_cache "/Users/BrightLand/Envy/_opencv/.cache"
-#match_hash_in_cmake_cache "OCV_DOWNLOAD_IPPICV_HASH_3rdparty_ippicv_ippicv_2020_mac_intel64_20191018_general_tgz"
-#match_hash_in_cmake_cache "OCV_DOWNLOAD_ADE_HASH_3rdparty_ade_v0_1_1f_zip"
