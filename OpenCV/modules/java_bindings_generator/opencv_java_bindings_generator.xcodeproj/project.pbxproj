@@ -1,0 +1,843 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		2D8AAA4D87674D90A4237891 /* gen_opencv_java_source */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B1B6B536C40C46088B16E60A /* Build configuration list for PBXAggregateTarget "gen_opencv_java_source" */;
+			buildPhases = (
+				342CAB0ADDE62D07AD393B5E /* Generate ../../CMakeFiles/dephelper/gen_opencv_java_source */,
+				B876650F0498B60833831EBD /* Generate CMakeFiles/gen_opencv_java_source */,
+			);
+			dependencies = (
+				95A6BF74C59145BC9E487BD1 /* PBXTargetDependency */,
+			);
+			name = gen_opencv_java_source;
+			productName = gen_opencv_java_source;
+		};
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = A3F1C530ECF9403D8D4C551D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 61CE3246A2F049B08A5AF4FD /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				40C605009C494CE992B83EAD /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = FFE9F3BBA823471B956535F0 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				17E2D85FD5DE49EE8D1AD3AB /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9C58DDAF58CC46D2B5EA7D2E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				308260EF49CD6FA11D2CCADE /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				8E39BBBF78494BD799E0BC25 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 70E45655549844858891FB4F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				458C664A6C7A814BC43F9A8C /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildStyle section */
+		13DF95673EB24FB0A15B8535 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		31D5FBD681CC4C059C0BBFA6 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		4DCF4E9142DC43BA95F17120 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62176346A5434EE28EF29393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		6364C7249B144DDF9FDF1F77 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62176346A5434EE28EF29393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		E4C529902004412A9343D9F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62176346A5434EE28EF29393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		FFF5C0B75AAD44FF9C9B794F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 62176346A5434EE28EF29393 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		51FDF6D740584CC7A088808F /* /Users/BrightLand/Envy/_opencv/modules/java/generator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		7F24C5250B484EF585F922F5 /* /Users/BrightLand/Envy/_opencv/modules/java/generator/gen_java.py */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = gen_java.py; path = gen_java.py; sourceTree = SOURCE_ROOT; };
+		BD059046C1B346EDBD773412 /* /Users/BrightLand/Envy/_opencv/modules/java/generator/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		E4473307C822452A8FC53E38 /* /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/gen_java.json */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = gen_java.json; path = ../../../../OpenCV/modules/java_bindings_generator/gen_java.json; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		3F1A211538C649E4B860F76C /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		50B165F0668D433E844D6051 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		621E1711C1D24E4E8D1F3486 /* gen_opencv_java_source */ = {
+			isa = PBXGroup;
+			children = (
+				3F1A211538C649E4B860F76C /* CMake Rules */,
+				7F24C5250B484EF585F922F5 /* /Users/BrightLand/Envy/_opencv/modules/java/generator/gen_java.py */,
+				E4473307C822452A8FC53E38 /* /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/gen_java.json */,
+				51FDF6D740584CC7A088808F /* /Users/BrightLand/Envy/_opencv/modules/java/generator/CMakeLists.txt */,
+			);
+			name = gen_opencv_java_source;
+			sourceTree = "<group>";
+		};
+		7D7EF65037644504A25AA8FC /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				AC2C652B4A9D42E6A20B0DF7 /* CMake Rules */,
+				BD059046C1B346EDBD773412 /* /Users/BrightLand/Envy/_opencv/modules/java/generator/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9601C5DB8E3541C7B3652DD3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		98100CB1F046460BB09CD93C = {
+			isa = PBXGroup;
+			children = (
+				621E1711C1D24E4E8D1F3486 /* gen_opencv_java_source */,
+				7D7EF65037644504A25AA8FC /* ALL_BUILD */,
+				50B165F0668D433E844D6051 /* Products */,
+				9601C5DB8E3541C7B3652DD3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		AC2C652B4A9D42E6A20B0DF7 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXProject section */
+		62176346A5434EE28EF29393 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 5BF1260478EF43168FDFFC00 /* Build configuration list for PBXProject "opencv_java_bindings_generator" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				13DF95673EB24FB0A15B8535 /* Debug */,
+				31D5FBD681CC4C059C0BBFA6 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 98100CB1F046460BB09CD93C;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/modules/java/generator;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				2D8AAA4D87674D90A4237891 /* gen_opencv_java_source */,
+				C08094B7A78641F983B39091 /* install */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		308260EF49CD6FA11D2CCADE /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		342CAB0ADDE62D07AD393B5E /* Generate ../../CMakeFiles/dephelper/gen_opencv_java_source */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+"/Users/BrightLand/Envy/OpenCV/configured/modules/core/misc/java/src/java/core+Core.jcode",/Users/BrightLand/Envy/OpenCV/configured/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java,/Users/BrightLand/Envy/OpenCV/configured/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java,/Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d.hpp,/Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp,/Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h,/Users/BrightLand/Envy/_opencv/modules/calib3d/misc/java/gen_dict.json,/Users/BrightLand/Envy/_opencv/modules/calib3d/misc/java/test/Calib3dTest.java,/Users/BrightLand/Envy/_opencv/modules/calib3d/misc/java/test/StereoBMTest.java,/Users/BrightLand/Envy/_opencv/modules/calib3d/misc/java/test/StereoSGBMTest.java,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/affine.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/async.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/base.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/bindings_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/bufferpool.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/check.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/core.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/core_c.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/block.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/border_interpolate.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/color.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/common.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/datamov_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/color_detail.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/reduce.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/reduce_key_val.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/transform_detail.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/type_traits_detail.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/detail/vec_distance_detail.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/dynamic_smem.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/emulation.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/filters.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/funcattrib.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/functional.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/limits.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/reduce.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/saturate_cast.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/scan.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/simd_functions.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/transform.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/type_traits.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/utility.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/vec_distance.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/vec_math.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/vec_traits.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/warp.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/warp_reduce.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda/warp_shuffle.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda_stream_accessor.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cuda_types.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cv_cpu_dispatch.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cv_cpu_helper.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cvdef.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cvstd.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cvstd.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/cvstd_wrapper.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/detail/async_promise.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/detail/dispatch_helper.impl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/detail/exception_ptr.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/directx.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/dualquaternion.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/dualquaternion.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/eigen.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/fast_math.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/hal.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/interface.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_avx.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_avx512.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_cpp.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_forward.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_msa.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_neon.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_rvv.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_rvv071.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_sse.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_sse_em.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_vsx.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/intrin_wasm.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/msa_macros.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/hal/simd_utils.impl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/mat.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/mat.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/matx.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/neon_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/ocl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/ocl_genbase.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/ocl_defs.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/opencl_info.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/opencl_svm.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clblas.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_clfft.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_core_wrappers.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/autogenerated/opencl_gl_wrappers.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_clblas.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_clfft.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_core.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_core_wrappers.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_gl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_gl_wrappers.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_20.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_definitions.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opencl/runtime/opencl_svm_hsa_extension.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/opengl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/operations.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/optim.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/ovx.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/parallel/backend/parallel_for.openmp.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/parallel/backend/parallel_for.tbb.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/parallel/parallel_backend.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/persistence.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/private.cuda.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/quaternion.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/quaternion.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/saturate.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/simd_intrinsics.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/softfloat.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/sse_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/traits.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/types.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/types_c.h,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utility.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/allocator_stats.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/allocator_stats.impl.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/buffer_area.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/configuration.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/filesystem.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/filesystem.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/fp_control.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/fp_control_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/instrumentation.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/lock.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/logger.defines.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/logger.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/logtag.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/plugin_loader.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/tls.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/trace.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/utils/trace.private.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/va_intel.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/version.hpp,/Users/BrightLand/Envy/_opencv/modules/core/include/opencv2/core/vsx_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/filelist,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/gen_dict.json,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/cpp/core_manual.cpp,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/cpp/core_manual.hpp,"/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Core.jcode.in","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+CvException.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+CvType.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+DMatch.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+KeyPoint.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Mat.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatAt.kt","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatMatMul.kt","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfByte.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfDMatch.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfDouble.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfFloat.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfFloat4.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfFloat6.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfInt.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfInt4.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfKeyPoint.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfPoint.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfPoint2f.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfPoint3.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfPoint3f.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfRect.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfRect2d.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+MatOfRotatedRect.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Point.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Point3.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Range.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Rect.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Rect2d.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+RotatedRect.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Scalar.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+Size.java","/Users/BrightLand/Envy/_opencv/modules/core/misc/java/src/java/core+TermCriteria.java",/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/CoreTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/CvTypeTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/DMatchTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/KeyPointTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/MatOfByteTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/MatTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/Point3Test.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/PointTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/RangeTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/RectTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/RotatedRectTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/ScalarTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/SizeTest.java,/Users/BrightLand/Envy/_opencv/modules/core/misc/java/test/TermCriteriaTest.java,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/all_layers.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/dict.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/dnn.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/dnn.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/layer.details.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/layer.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/layer_reg.private.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/shape_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/utils/debug_utils.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/utils/inference_engine.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/include/opencv2/dnn/version.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/filelist_common,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/gen_dict.json,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/src/cpp/dnn_converters.cpp,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/src/cpp/dnn_converters.hpp,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/test/DnnListRegressionTest.java,/Users/BrightLand/Envy/_opencv/modules/dnn/misc/java/test/DnnTensorFlowTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/include/opencv2/features2d.hpp,/Users/BrightLand/Envy/_opencv/modules/features2d/include/opencv2/features2d/features2d.hpp,/Users/BrightLand/Envy/_opencv/modules/features2d/include/opencv2/features2d/hal/interface.h,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/filelist,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/filelist_common,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/gen_dict.json,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/src/cpp/features2d_converters.cpp,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/src/cpp/features2d_converters.hpp,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BRIEFDescriptorExtractorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BruteForceDescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BruteForceHammingDescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BruteForceHammingLUTDescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BruteForceL1DescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/BruteForceSL2DescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/DENSEFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/FASTFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/Features2dTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/FlannBasedDescriptorMatcherTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/GFTTFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/HARRISFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/MSERFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/ORBDescriptorExtractorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/ORBFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/SIFTDescriptorExtractorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/SIFTFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/SIMPLEBLOBFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/STARFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/SURFDescriptorExtractorTest.java,/Users/BrightLand/Envy/_opencv/modules/features2d/misc/java/test/SURFFeatureDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/highgui/include/opencv2/highgui.hpp,/Users/BrightLand/Envy/_opencv/modules/highgui/include/opencv2/highgui/highgui.hpp,/Users/BrightLand/Envy/_opencv/modules/highgui/include/opencv2/highgui/highgui_c.h,/Users/BrightLand/Envy/_opencv/modules/highgui/misc/java/filelist,"/Users/BrightLand/Envy/_opencv/modules/highgui/misc/java/src/java/highgui+HighGui.java","/Users/BrightLand/Envy/_opencv/modules/highgui/misc/java/src/java/highgui+ImageWindow.java",/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs.hpp,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs.hpp,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs/imgcodecs_c.h,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs/ios.h,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs/legacy/constants_c.h,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include/opencv2/imgcodecs/macosx.h,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/misc/java/test/ImgcodecsTest.java,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/bindings.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/detail/gcgraph.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/hal/hal.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/hal/interface.h,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/imgproc.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/imgproc_c.h,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/segmentation.hpp,/Users/BrightLand/Envy/_opencv/modules/imgproc/include/opencv2/imgproc/types_c.h,/Users/BrightLand/Envy/_opencv/modules/imgproc/misc/java/gen_dict.json,"/Users/BrightLand/Envy/_opencv/modules/imgproc/misc/java/src/java/imgproc+Moments.java",/Users/BrightLand/Envy/_opencv/modules/imgproc/misc/java/test/ImgprocTest.java,/Users/BrightLand/Envy/_opencv/modules/imgproc/misc/java/test/MomentsTest.java,/Users/BrightLand/Envy/_opencv/modules/imgproc/misc/java/test/Subdiv2DTest.java,"/Users/BrightLand/Envy/_opencv/modules/java/generator/android-21/java/org/opencv/android/Camera2Renderer.java","/Users/BrightLand/Envy/_opencv/modules/java/generator/android-21/java/org/opencv/android/CameraGLRendererBase.java","/Users/BrightLand/Envy/_opencv/modules/java/generator/android-21/java/org/opencv/android/CameraGLSurfaceView.java","/Users/BrightLand/Envy/_opencv/modules/java/generator/android-21/java/org/opencv/android/CameraRenderer.java","/Users/BrightLand/Envy/_opencv/modules/java/generator/android-21/java/org/opencv/android/JavaCamera2View.java",/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/AsyncServiceHelper.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/BaseLoaderCallback.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/CameraActivity.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/CameraBridgeViewBase.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/FpsMeter.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/InstallCallbackInterface.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/JavaCameraView.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/LoaderCallbackInterface.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/OpenCVLoader.java.in,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/StaticHelper.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/android/Utils.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/android/java/org/opencv/engine/OpenCVEngineInterface.aidl,/Users/BrightLand/Envy/_opencv/modules/java/generator/gen_java.py,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/Mat.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/common.h,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/converters.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/converters.h,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/jni_part.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/listconverters.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/listconverters.hpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/opencv_java.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/opencv_java.hpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/cpp/utils.cpp,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/java/org/opencv/osgi/OpenCVInterface.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/java/org/opencv/osgi/OpenCVNativeLoader.java.in,/Users/BrightLand/Envy/_opencv/modules/java/generator/src/java/org/opencv/utils/Converters.java,/Users/BrightLand/Envy/_opencv/modules/java/generator/templates/cpp_module.template,/Users/BrightLand/Envy/_opencv/modules/java/generator/templates/java_class.prolog,/Users/BrightLand/Envy/_opencv/modules/java/generator/templates/java_class_inherited.prolog,/Users/BrightLand/Envy/_opencv/modules/java/generator/templates/java_module.prolog,/Users/BrightLand/Envy/_opencv/modules/ml/include/opencv2/ml.hpp,/Users/BrightLand/Envy/_opencv/modules/ml/include/opencv2/ml/ml.hpp,/Users/BrightLand/Envy/_opencv/modules/ml/include/opencv2/ml/ml.inl.hpp,/Users/BrightLand/Envy/_opencv/modules/ml/misc/java/test/MLTest.java,/Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect.hpp,/Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp,/Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/face.hpp,/Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp,/Users/BrightLand/Envy/_opencv/modules/objdetect/misc/java/test/CascadeClassifierTest.java,/Users/BrightLand/Envy/_opencv/modules/objdetect/misc/java/test/HOGDescriptorTest.java,/Users/BrightLand/Envy/_opencv/modules/objdetect/misc/java/test/ObjdetectTest.java,/Users/BrightLand/Envy/_opencv/modules/objdetect/misc/java/test/QRCodeDetectorTest.java,/Users/BrightLand/Envy/_opencv/modules/photo/include/opencv2/photo.hpp,/Users/BrightLand/Envy/_opencv/modules/photo/include/opencv2/photo/cuda.hpp,/Users/BrightLand/Envy/_opencv/modules/photo/include/opencv2/photo/legacy/constants_c.h,/Users/BrightLand/Envy/_opencv/modules/photo/include/opencv2/photo/photo.hpp,/Users/BrightLand/Envy/_opencv/modules/photo/misc/java/test/PhotoTest.java,/Users/BrightLand/Envy/_opencv/modules/python/src2/gen2.py,/Users/BrightLand/Envy/_opencv/modules/python/src2/hdr_parser.py,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video.hpp,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video/background_segm.hpp,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video/detail/tracking.detail.hpp,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video/legacy/constants_c.h,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video/tracking.hpp,/Users/BrightLand/Envy/_opencv/modules/video/include/opencv2/video/video.hpp,/Users/BrightLand/Envy/_opencv/modules/video/misc/java/gen_dict.json,/Users/BrightLand/Envy/_opencv/modules/video/misc/java/test/BackgroundSubtractorMOGTest.java,/Users/BrightLand/Envy/_opencv/modules/video/misc/java/test/KalmanFilterTest.java,/Users/BrightLand/Envy/_opencv/modules/video/misc/java/test/TrackerCreateTest.java,/Users/BrightLand/Envy/_opencv/modules/video/misc/java/test/VideoTest.java,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio.hpp,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/cap_ios.h,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/container_avi.private.hpp,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/legacy/constants_c.h,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/registry.hpp,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/videoio.hpp,/Users/BrightLand/Envy/_opencv/modules/videoio/include/opencv2/videoio/videoio_c.h,/Users/BrightLand/Envy/_opencv/modules/videoio/misc/java/test/VideoCaptureTest.java,/Users/BrightLand/Envy/_opencv/modules/videoio/src/precomp.hpp			);
+			name = "Generate ../../CMakeFiles/dephelper/gen_opencv_java_source";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/CMakeFiles/dephelper/gen_opencv_java_source			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /usr/bin/python3 /Users/BrightLand/Envy/_opencv/modules/java/generator/../generator/gen_java.py -p /Users/BrightLand/Envy/_opencv/modules/java/generator/../../python/src2/gen2.py -c /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/gen_java.json
+  /Applications/CMake.app/Contents/bin/cmake -E touch /Users/BrightLand/Envy/OpenCV/CMakeFiles/dephelper/gen_opencv_java_source
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /usr/bin/python3 /Users/BrightLand/Envy/_opencv/modules/java/generator/../generator/gen_java.py -p /Users/BrightLand/Envy/_opencv/modules/java/generator/../../python/src2/gen2.py -c /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/gen_java.json
+  /Applications/CMake.app/Contents/bin/cmake -E touch /Users/BrightLand/Envy/OpenCV/CMakeFiles/dephelper/gen_opencv_java_source
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		458C664A6C7A814BC43F9A8C /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  make -f /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  make -f /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		B876650F0498B60833831EBD /* Generate CMakeFiles/gen_opencv_java_source */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/BrightLand/Envy/OpenCV/CMakeFiles/dephelper/gen_opencv_java_source			);
+			name = "Generate CMakeFiles/gen_opencv_java_source";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/CMakeFiles/gen_opencv_java_source			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		CFD910C74DD23D80FA0A09DE = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		17E2D85FD5DE49EE8D1AD3AB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 4DCF4E9142DC43BA95F17120 /* PBXContainerItemProxy */;
+		};
+		40C605009C494CE992B83EAD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 6364C7249B144DDF9FDF1F77 /* PBXContainerItemProxy */;
+		};
+		8E39BBBF78494BD799E0BC25 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = E4C529902004412A9343D9F0 /* PBXContainerItemProxy */;
+		};
+		95A6BF74C59145BC9E487BD1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = FFF5C0B75AAD44FF9C9B794F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		168BE9C527094E7D96EB85F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		53C04ACDFE244F1F8B74C16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/build;
+			};
+			name = Debug;
+		};
+		58F5152AB7C247DCB9D63012 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		65B9D2ABA1FC4BD6BB385AFB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		85E5CA71D24F400E80785347 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8D24ACE545A04CFFACA5D3EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		92E1C3C43073418680A72B81 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B4B94808E9804FBBB24DBA91 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DC577EC010B646C9AEC35817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gen_opencv_java_source;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DC6F14A6A0BD4945AA86BA88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E161BF6F8DD24299B9E8A174 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator/build;
+			};
+			name = Release;
+		};
+		E495D485FD004E07BDA47278 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F562AC9265D54144937B062E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FF94A12834394963AE53FC28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = gen_opencv_java_source;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/java_bindings_generator;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5BF1260478EF43168FDFFC00 /* Build configuration list for PBXProject "opencv_java_bindings_generator" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				53C04ACDFE244F1F8B74C16E /* Debug */,
+				E161BF6F8DD24299B9E8A174 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		61CE3246A2F049B08A5AF4FD /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				85E5CA71D24F400E80785347 /* Debug */,
+				58F5152AB7C247DCB9D63012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		70E45655549844858891FB4F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC6F14A6A0BD4945AA86BA88 /* Debug */,
+				F562AC9265D54144937B062E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9C58DDAF58CC46D2B5EA7D2E /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8D24ACE545A04CFFACA5D3EC /* Debug */,
+				168BE9C527094E7D96EB85F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A3F1C530ECF9403D8D4C551D /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E495D485FD004E07BDA47278 /* Debug */,
+				B4B94808E9804FBBB24DBA91 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B1B6B536C40C46088B16E60A /* Build configuration list for PBXAggregateTarget "gen_opencv_java_source" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF94A12834394963AE53FC28 /* Debug */,
+				DC577EC010B646C9AEC35817 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		FFE9F3BBA823471B956535F0 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65B9D2ABA1FC4BD6BB385AFB /* Debug */,
+				92E1C3C43073418680A72B81 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 62176346A5434EE28EF29393 /* Project object */;
+}

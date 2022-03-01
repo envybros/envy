@@ -1,0 +1,994 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9B2EC41ACA7B441F8A4A06BB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5F956F61298648529DEF7F59 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				F6A0A17E54AE40AF872F5C93 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 01353477958641E49AAD86F4 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				51424B8636874408A1B4E281 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 0F5EFB556A9846EDB4830039 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				01F3015A1100110B2D605759 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				AF5CC61ADD59442688600D38 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5926A6103E034ABF8E13B895 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				5FC42E91842FCC17B95E9DB5 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		0364CE25D2234A318189A0C2 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/strutil.cc */ = {isa = PBXBuildFile; fileRef = 42436E2AF8974AD48D195107 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/strutil.cc */; };
+		0BBBD8E04AF84326921383CD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_ptr_field.cc */ = {isa = PBXBuildFile; fileRef = C23E8F5D1D254636846CD827 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_ptr_field.cc */; };
+		12CE7BDB822C44479686FFEC /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/implicit_weak_message.cc */ = {isa = PBXBuildFile; fileRef = 8AA1684A27924E29AF38619B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/implicit_weak_message.cc */; };
+		1C96732ED5C54A4AAE2BA7F1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/bytestream.cc */ = {isa = PBXBuildFile; fileRef = EFC896AF8194409C8A28AB4A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/bytestream.cc */; };
+		237AA63C25EB4C388E6C04A3 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/tokenizer.cc */ = {isa = PBXBuildFile; fileRef = C2DDD0736FFB460D81188A2E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/tokenizer.cc */; };
+		23BD33A855AA41C28FD497A0 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set.cc */ = {isa = PBXBuildFile; fileRef = 9742C20182784BC6ABD4B536 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set.cc */; };
+		2C8C00AD389C49A6A4BFA1AE /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.cc */ = {isa = PBXBuildFile; fileRef = FBB903CD74134221ADE99419 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.cc */; };
+		2D7DE20F7FC24B66AA437E40 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.pb.cc */ = {isa = PBXBuildFile; fileRef = 0A1D7AC7F9DC4180BCADF8C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.pb.cc */; };
+		34A8975FA7A5447DAD6990C4 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/common.cc */ = {isa = PBXBuildFile; fileRef = FB8BFD0873DC4A549B836499 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/common.cc */; };
+		3AE9B16BE30348449BF73D81 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map.cc */ = {isa = PBXBuildFile; fileRef = 05D269C9C5BB45078763FFF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map.cc */; };
+		3C42D5EC7A6F44429A1BBB6F /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/coded_stream.cc */ = {isa = PBXBuildFile; fileRef = 6C23EF69A2E54973B96F959D /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/coded_stream.cc */; };
+		42B6107E952E4430A70C66DF /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message_lite.cc */ = {isa = PBXBuildFile; fileRef = 25B13980D1594B9DA187DBDD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message_lite.cc */; };
+		4301844CFF3F40BFAAB5BCEA /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set_heavy.cc */ = {isa = PBXBuildFile; fileRef = 249E7FBB3E0249359A93A875 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set_heavy.cc */; };
+		435F68CBE9CD48E9A6FC9988 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringpiece.cc */ = {isa = PBXBuildFile; fileRef = 618A4FA3897F4AC08C5B96DB /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringpiece.cc */; };
+		46D115CE72D947D197846E72 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 76F9AADBCF404493ADB3EB2A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */; };
+		4BAC1BDFBEC94B5DA5411C4B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/strtod.cc */ = {isa = PBXBuildFile; fileRef = 65BC8BCBED204ED9BFAF3684 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/strtod.cc */; };
+		4BFB97B76C0945CC87A69DEE /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_util.cc */ = {isa = PBXBuildFile; fileRef = 889EBB89298648CFAEF5CFF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_util.cc */; };
+		4CAD2459C7224BA9AD7288E5 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arenastring.cc */ = {isa = PBXBuildFile; fileRef = A8007084577341958E50EAB5 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arenastring.cc */; };
+		51C3BA4C9FD1490C9EFAD164 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/dynamic_message.cc */ = {isa = PBXBuildFile; fileRef = 52F824EF48A64E17A7401A19 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/dynamic_message.cc */; };
+		531FF4FDC52F463697DB4F22 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/int128.cc */ = {isa = PBXBuildFile; fileRef = 0AE7DEC236D44A0C8FE04ED7 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/int128.cc */; };
+		541D60911D4848AB86C2412E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_reflection.cc */ = {isa = PBXBuildFile; fileRef = ECB098DFB20F4C7693465DF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_reflection.cc */; };
+		5AED301788634F7992622AB1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/io_win32.cc */ = {isa = PBXBuildFile; fileRef = 1E478C835C214EE18FCA2BC9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/io_win32.cc */; };
+		639D3551ECF944CDBFE9E133 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map_field.cc */ = {isa = PBXBuildFile; fileRef = 2278424200234B85B3B18C78 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map_field.cc */; };
+		6527C208BD6745C1B6940264 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format.cc */ = {isa = PBXBuildFile; fileRef = 3041D848FCC244F48A1BD10E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format.cc */; };
+		6CFF4744809444CF88171F24 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc */ = {isa = PBXBuildFile; fileRef = 850FE881607E41DBB4FFC9B9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc */; };
+		6F367755ACAD47F7B30C5F74 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arena.cc */ = {isa = PBXBuildFile; fileRef = FF52FC73971B45B0AEC6F337 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arena.cc */; };
+		7C4FFE9D948D4C77A24F3DBD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/structurally_valid.cc */ = {isa = PBXBuildFile; fileRef = ACEA32F13ED348EEB5B1A3C1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/structurally_valid.cc */; };
+		7F107598DAA547BD97E69E7D /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/reflection_ops.cc */ = {isa = PBXBuildFile; fileRef = 74869440AE624F90B771F511 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/reflection_ops.cc */; };
+		82142689DDA94EF39A9104F6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/text_format.cc */ = {isa = PBXBuildFile; fileRef = 1A2A22B8DB85427482677CBD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/text_format.cc */; };
+		90750D1DC5B340C496224266 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any_lite.cc */ = {isa = PBXBuildFile; fileRef = 2A492AF3157643D19D07D304 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any_lite.cc */; };
+		91BB0194A3D4450795546477 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/status.cc */ = {isa = PBXBuildFile; fileRef = 564E896B19904B599D082855 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/status.cc */; };
+		9EB64E9D13CC4BADB7F50317 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc */ = {isa = PBXBuildFile; fileRef = 609A979A1B7F4C0E92A0F498 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc */; };
+		A5D02926CC154B9B8E370A83 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringprintf.cc */ = {isa = PBXBuildFile; fileRef = FEA8D1B4860C4C37B2005717 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringprintf.cc */; };
+		ADA883C5BE8C48D691A9F145 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any.cc */ = {isa = PBXBuildFile; fileRef = 08A0490DFBC44C3C832FBE95 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any.cc */; };
+		BB0655199C3F43DFAABE3D81 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format_lite.cc */ = {isa = PBXBuildFile; fileRef = A96EABD0DD634CFA8E75322C /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format_lite.cc */; };
+		BCDD44FBC79C433596759C50 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/substitute.cc */ = {isa = PBXBuildFile; fileRef = 65B534A2FD714889BE6D01C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/substitute.cc */; };
+		C3AA1A5A04194D94B99D4E42 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/unknown_field_set.cc */ = {isa = PBXBuildFile; fileRef = 16BC709B5F0C4CBFAA4E5442 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/unknown_field_set.cc */; };
+		D429476B2A11473BA3453314 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream.cc */ = {isa = PBXBuildFile; fileRef = E1193E380E864F11890FB67B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream.cc */; };
+		D69CE425E84A4FEEB30432C8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor_database.cc */ = {isa = PBXBuildFile; fileRef = 13AB76278F714516BE41632B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor_database.cc */; };
+		E001A53776294EDF895EB644 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message.cc */ = {isa = PBXBuildFile; fileRef = A5D62983DD8346F28958C92A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message.cc */; };
+		E43F37690F4347A596C1CB4A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/parse_context.cc */ = {isa = PBXBuildFile; fileRef = 459403C583D147BEBE932843 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/parse_context.cc */; };
+		EE573C53A7AD4570B6D75B91 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_field.cc */ = {isa = PBXBuildFile; fileRef = 31EEB31AD8ED45D8A190D3F6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_field.cc */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		09A2DF1377DA4E788CF71940 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		156412EA38D948A8BE21EB50 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		080900BB06B242D38F9E08E6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D65643EE8F4948B22BB1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		A4456D53793547F5A5AB06E9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D65643EE8F4948B22BB1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		D85C12E2ECCA4934B30E3EBC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D65643EE8F4948B22BB1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		F5940F9FD20F4B80B0AFA07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 53D65643EE8F4948B22BB1B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05D269C9C5BB45078763FFF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = map.cc; path = src/google/protobuf/map.cc; sourceTree = SOURCE_ROOT; };
+		08A0490DFBC44C3C832FBE95 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = any.cc; path = src/google/protobuf/any.cc; sourceTree = SOURCE_ROOT; };
+		0A1D7AC7F9DC4180BCADF8C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.pb.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor.pb.cc; path = src/google/protobuf/descriptor.pb.cc; sourceTree = SOURCE_ROOT; };
+		0AE7DEC236D44A0C8FE04ED7 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/int128.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = int128.cc; path = src/google/protobuf/stubs/int128.cc; sourceTree = SOURCE_ROOT; };
+		13AB76278F714516BE41632B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor_database.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor_database.cc; path = src/google/protobuf/descriptor_database.cc; sourceTree = SOURCE_ROOT; };
+		16BC709B5F0C4CBFAA4E5442 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/unknown_field_set.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = unknown_field_set.cc; path = src/google/protobuf/unknown_field_set.cc; sourceTree = SOURCE_ROOT; };
+		1A2A22B8DB85427482677CBD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/text_format.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = text_format.cc; path = src/google/protobuf/text_format.cc; sourceTree = SOURCE_ROOT; };
+		1E478C835C214EE18FCA2BC9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/io_win32.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = io_win32.cc; path = src/google/protobuf/io/io_win32.cc; sourceTree = SOURCE_ROOT; };
+		2278424200234B85B3B18C78 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map_field.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = map_field.cc; path = src/google/protobuf/map_field.cc; sourceTree = SOURCE_ROOT; };
+		249E7FBB3E0249359A93A875 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set_heavy.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = extension_set_heavy.cc; path = src/google/protobuf/extension_set_heavy.cc; sourceTree = SOURCE_ROOT; };
+		25B13980D1594B9DA187DBDD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = message_lite.cc; path = src/google/protobuf/message_lite.cc; sourceTree = SOURCE_ROOT; };
+		2A492AF3157643D19D07D304 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = any_lite.cc; path = src/google/protobuf/any_lite.cc; sourceTree = SOURCE_ROOT; };
+		3041D848FCC244F48A1BD10E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wire_format.cc; path = src/google/protobuf/wire_format.cc; sourceTree = SOURCE_ROOT; };
+		31EEB31AD8ED45D8A190D3F6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_field.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = repeated_field.cc; path = src/google/protobuf/repeated_field.cc; sourceTree = SOURCE_ROOT; };
+		42436E2AF8974AD48D195107 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/strutil.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = strutil.cc; path = src/google/protobuf/stubs/strutil.cc; sourceTree = SOURCE_ROOT; };
+		459403C583D147BEBE932843 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/parse_context.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parse_context.cc; path = src/google/protobuf/parse_context.cc; sourceTree = SOURCE_ROOT; };
+		52F824EF48A64E17A7401A19 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/dynamic_message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dynamic_message.cc; path = src/google/protobuf/dynamic_message.cc; sourceTree = SOURCE_ROOT; };
+		564E896B19904B599D082855 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/status.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = status.cc; path = src/google/protobuf/stubs/status.cc; sourceTree = SOURCE_ROOT; };
+		609A979A1B7F4C0E92A0F498 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream_impl.cc; path = src/google/protobuf/io/zero_copy_stream_impl.cc; sourceTree = SOURCE_ROOT; };
+		618A4FA3897F4AC08C5B96DB /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringpiece.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stringpiece.cc; path = src/google/protobuf/stubs/stringpiece.cc; sourceTree = SOURCE_ROOT; };
+		65B534A2FD714889BE6D01C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/substitute.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = substitute.cc; path = src/google/protobuf/stubs/substitute.cc; sourceTree = SOURCE_ROOT; };
+		65BC8BCBED204ED9BFAF3684 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/strtod.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = strtod.cc; path = src/google/protobuf/io/strtod.cc; sourceTree = SOURCE_ROOT; };
+		6C23EF69A2E54973B96F959D /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/coded_stream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = coded_stream.cc; path = src/google/protobuf/io/coded_stream.cc; sourceTree = SOURCE_ROOT; };
+		74869440AE624F90B771F511 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/reflection_ops.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = reflection_ops.cc; path = src/google/protobuf/reflection_ops.cc; sourceTree = SOURCE_ROOT; };
+		76F9AADBCF404493ADB3EB2A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		850FE881607E41DBB4FFC9B9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream_impl_lite.cc; path = src/google/protobuf/io/zero_copy_stream_impl_lite.cc; sourceTree = SOURCE_ROOT; };
+		889EBB89298648CFAEF5CFF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_util.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_util.cc; path = src/google/protobuf/generated_message_util.cc; sourceTree = SOURCE_ROOT; };
+		8AA1684A27924E29AF38619B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/implicit_weak_message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = implicit_weak_message.cc; path = src/google/protobuf/implicit_weak_message.cc; sourceTree = SOURCE_ROOT; };
+		9742C20182784BC6ABD4B536 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = extension_set.cc; path = src/google/protobuf/extension_set.cc; sourceTree = SOURCE_ROOT; };
+		A5D62983DD8346F28958C92A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = message.cc; path = src/google/protobuf/message.cc; sourceTree = SOURCE_ROOT; };
+		A8007084577341958E50EAB5 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arenastring.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arenastring.cc; path = src/google/protobuf/arenastring.cc; sourceTree = SOURCE_ROOT; };
+		A96EABD0DD634CFA8E75322C /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format_lite.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = wire_format_lite.cc; path = src/google/protobuf/wire_format_lite.cc; sourceTree = SOURCE_ROOT; };
+		ACEA32F13ED348EEB5B1A3C1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/structurally_valid.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = structurally_valid.cc; path = src/google/protobuf/stubs/structurally_valid.cc; sourceTree = SOURCE_ROOT; };
+		C23E8F5D1D254636846CD827 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_ptr_field.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = repeated_ptr_field.cc; path = src/google/protobuf/repeated_ptr_field.cc; sourceTree = SOURCE_ROOT; };
+		C2DDD0736FFB460D81188A2E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/tokenizer.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tokenizer.cc; path = src/google/protobuf/io/tokenizer.cc; sourceTree = SOURCE_ROOT; };
+		DB63851325D04EAFBC21744E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DB95A86049AE47F3A4B75A9E /* libprotobuf */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibprotobuf.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1193E380E864F11890FB67B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = zero_copy_stream.cc; path = src/google/protobuf/io/zero_copy_stream.cc; sourceTree = SOURCE_ROOT; };
+		ECB098DFB20F4C7693465DF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_reflection.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = generated_message_reflection.cc; path = src/google/protobuf/generated_message_reflection.cc; sourceTree = SOURCE_ROOT; };
+		EFC896AF8194409C8A28AB4A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/bytestream.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = bytestream.cc; path = src/google/protobuf/stubs/bytestream.cc; sourceTree = SOURCE_ROOT; };
+		FB8BFD0873DC4A549B836499 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/common.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = common.cc; path = src/google/protobuf/stubs/common.cc; sourceTree = SOURCE_ROOT; };
+		FBB903CD74134221ADE99419 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = descriptor.cc; path = src/google/protobuf/descriptor.cc; sourceTree = SOURCE_ROOT; };
+		FEA8D1B4860C4C37B2005717 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringprintf.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stringprintf.cc; path = src/google/protobuf/stubs/stringprintf.cc; sourceTree = SOURCE_ROOT; };
+		FF52FC73971B45B0AEC6F337 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arena.cc */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = arena.cc; path = src/google/protobuf/arena.cc; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37EA2F3B3984163BFB93066 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		05C73777811C4930A181FA6B /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				67D66D265852435CAF72FB45 /* libprotobuf */,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+		349967A6D04E401E95B18830 = {
+			isa = PBXGroup;
+			children = (
+				05C73777811C4930A181FA6B /* 3rdparty */,
+				467233C3F53C4317ADCA5756 /* ALL_BUILD */,
+				D6374C4F38994063A876D8FE /* Products */,
+				CD899247BCEF4721B96CAE04 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		467233C3F53C4317ADCA5756 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				8801A6A0911B481CA60ED848 /* CMake Rules */,
+				DB63851325D04EAFBC21744E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		67D66D265852435CAF72FB45 /* libprotobuf */ = {
+			isa = PBXGroup;
+			children = (
+				BD4EC92CA5F64813A6E69E50 /* Source Files */,
+				76F9AADBCF404493ADB3EB2A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/CMakeLists.txt */,
+			);
+			name = libprotobuf;
+			sourceTree = "<group>";
+		};
+		8801A6A0911B481CA60ED848 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		BD4EC92CA5F64813A6E69E50 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				08A0490DFBC44C3C832FBE95 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any.cc */,
+				2A492AF3157643D19D07D304 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any_lite.cc */,
+				FF52FC73971B45B0AEC6F337 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arena.cc */,
+				A8007084577341958E50EAB5 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arenastring.cc */,
+				FBB903CD74134221ADE99419 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.cc */,
+				0A1D7AC7F9DC4180BCADF8C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.pb.cc */,
+				13AB76278F714516BE41632B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor_database.cc */,
+				52F824EF48A64E17A7401A19 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/dynamic_message.cc */,
+				9742C20182784BC6ABD4B536 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set.cc */,
+				249E7FBB3E0249359A93A875 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set_heavy.cc */,
+				ECB098DFB20F4C7693465DF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_reflection.cc */,
+				889EBB89298648CFAEF5CFF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_util.cc */,
+				8AA1684A27924E29AF38619B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/implicit_weak_message.cc */,
+				6C23EF69A2E54973B96F959D /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/coded_stream.cc */,
+				1E478C835C214EE18FCA2BC9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/io_win32.cc */,
+				65BC8BCBED204ED9BFAF3684 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/strtod.cc */,
+				C2DDD0736FFB460D81188A2E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/tokenizer.cc */,
+				E1193E380E864F11890FB67B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream.cc */,
+				609A979A1B7F4C0E92A0F498 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc */,
+				850FE881607E41DBB4FFC9B9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc */,
+				05D269C9C5BB45078763FFF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map.cc */,
+				2278424200234B85B3B18C78 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map_field.cc */,
+				A5D62983DD8346F28958C92A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message.cc */,
+				25B13980D1594B9DA187DBDD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message_lite.cc */,
+				459403C583D147BEBE932843 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/parse_context.cc */,
+				74869440AE624F90B771F511 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/reflection_ops.cc */,
+				31EEB31AD8ED45D8A190D3F6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_field.cc */,
+				C23E8F5D1D254636846CD827 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_ptr_field.cc */,
+				EFC896AF8194409C8A28AB4A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/bytestream.cc */,
+				FB8BFD0873DC4A549B836499 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/common.cc */,
+				0AE7DEC236D44A0C8FE04ED7 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/int128.cc */,
+				564E896B19904B599D082855 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/status.cc */,
+				618A4FA3897F4AC08C5B96DB /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringpiece.cc */,
+				FEA8D1B4860C4C37B2005717 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringprintf.cc */,
+				ACEA32F13ED348EEB5B1A3C1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/structurally_valid.cc */,
+				42436E2AF8974AD48D195107 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/strutil.cc */,
+				65B534A2FD714889BE6D01C9 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/substitute.cc */,
+				1A2A22B8DB85427482677CBD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/text_format.cc */,
+				16BC709B5F0C4CBFAA4E5442 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/unknown_field_set.cc */,
+				3041D848FCC244F48A1BD10E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format.cc */,
+				A96EABD0DD634CFA8E75322C /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format_lite.cc */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		CD899247BCEF4721B96CAE04 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6374C4F38994063A876D8FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DB95A86049AE47F3A4B75A9E /* libprotobuf */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0CC66BA660B84D0E874C2C2B /* libprotobuf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 001B8A809EC2424B8795B425 /* Build configuration list for PBXNativeTarget "libprotobuf" */;
+			buildPhases = (
+				69DE6D6274E144988E9C872A /* Sources */,
+				B37EA2F3B3984163BFB93066 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2D24C118812B42AB92143BF4 /* PBXTargetDependency */,
+			);
+			name = libprotobuf;
+			productName = libprotobuf;
+			productReference = DB95A86049AE47F3A4B75A9E /* libprotobuf */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		53D65643EE8F4948B22BB1B0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = E1AAA6EF0FED409C9FFA9B53 /* Build configuration list for PBXProject "libprotobuf" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				09A2DF1377DA4E788CF71940 /* Debug */,
+				156412EA38D948A8BE21EB50 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 349967A6D04E401E95B18830;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/3rdparty/protobuf;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				0CC66BA660B84D0E874C2C2B /* libprotobuf */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		01F3015A1100110B2D605759 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		5FC42E91842FCC17B95E9DB5 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69DE6D6274E144988E9C872A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADA883C5BE8C48D691A9F145 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any.cc */,
+				90750D1DC5B340C496224266 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/any_lite.cc */,
+				6F367755ACAD47F7B30C5F74 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arena.cc */,
+				4CAD2459C7224BA9AD7288E5 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/arenastring.cc */,
+				2C8C00AD389C49A6A4BFA1AE /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.cc */,
+				2D7DE20F7FC24B66AA437E40 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor.pb.cc */,
+				D69CE425E84A4FEEB30432C8 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/descriptor_database.cc */,
+				51C3BA4C9FD1490C9EFAD164 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/dynamic_message.cc */,
+				23BD33A855AA41C28FD497A0 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set.cc */,
+				4301844CFF3F40BFAAB5BCEA /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/extension_set_heavy.cc */,
+				541D60911D4848AB86C2412E /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_reflection.cc */,
+				4BFB97B76C0945CC87A69DEE /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/generated_message_util.cc */,
+				12CE7BDB822C44479686FFEC /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/implicit_weak_message.cc */,
+				3C42D5EC7A6F44429A1BBB6F /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/coded_stream.cc */,
+				5AED301788634F7992622AB1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/io_win32.cc */,
+				4BAC1BDFBEC94B5DA5411C4B /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/strtod.cc */,
+				237AA63C25EB4C388E6C04A3 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/tokenizer.cc */,
+				D429476B2A11473BA3453314 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream.cc */,
+				9EB64E9D13CC4BADB7F50317 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl.cc */,
+				6CFF4744809444CF88171F24 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/io/zero_copy_stream_impl_lite.cc */,
+				3AE9B16BE30348449BF73D81 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map.cc */,
+				639D3551ECF944CDBFE9E133 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/map_field.cc */,
+				E001A53776294EDF895EB644 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message.cc */,
+				42B6107E952E4430A70C66DF /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/message_lite.cc */,
+				E43F37690F4347A596C1CB4A /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/parse_context.cc */,
+				7F107598DAA547BD97E69E7D /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/reflection_ops.cc */,
+				EE573C53A7AD4570B6D75B91 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_field.cc */,
+				0BBBD8E04AF84326921383CD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/repeated_ptr_field.cc */,
+				1C96732ED5C54A4AAE2BA7F1 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/bytestream.cc */,
+				34A8975FA7A5447DAD6990C4 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/common.cc */,
+				531FF4FDC52F463697DB4F22 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/int128.cc */,
+				91BB0194A3D4450795546477 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/status.cc */,
+				435F68CBE9CD48E9A6FC9988 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringpiece.cc */,
+				A5D02926CC154B9B8E370A83 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/stringprintf.cc */,
+				7C4FFE9D948D4C77A24F3DBD /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/structurally_valid.cc */,
+				0364CE25D2234A318189A0C2 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/strutil.cc */,
+				BCDD44FBC79C433596759C50 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/stubs/substitute.cc */,
+				82142689DDA94EF39A9104F6 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/text_format.cc */,
+				C3AA1A5A04194D94B99D4E42 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/unknown_field_set.cc */,
+				6527C208BD6745C1B6940264 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format.cc */,
+				BB0655199C3F43DFAABE3D81 /* /Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src/google/protobuf/wire_format_lite.cc */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		2D24C118812B42AB92143BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = A4456D53793547F5A5AB06E9 /* PBXContainerItemProxy */;
+		};
+		51424B8636874408A1B4E281 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = D85C12E2ECCA4934B30E3EBC /* PBXContainerItemProxy */;
+		};
+		AF5CC61ADD59442688600D38 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 080900BB06B242D38F9E08E6 /* PBXContainerItemProxy */;
+		};
+		F6A0A17E54AE40AF872F5C93 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = F5940F9FD20F4B80B0AFA07F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06FD092DA7F740A4B507B974 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		173314E6A733424DA69E84E9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		27F5187E1FB14ED69CE55AC9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		47B5DAAE4F214B35AD34BDB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'HAVE_PTHREAD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-prototypes -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-tautological-undefined-compare -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-shorten-64-to-32 -Wno-invalid-offsetof -Wno-enum-compare-switch -Wno-suggest-override -Wno-inconsistent-missing-override -Wno-implicit-fallthrough -Wno-array-bounds     -DNDEBUG  -DNDEBUG -fPIC '-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libprotobuf;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src,/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6AC5B8CD462B45E3AAD9FCDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		773F2CC3E6124FF5B0E2335C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8DD93F7B605848B2AD083E6F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8EACA191A37841479C9DAAFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/build;
+			};
+			name = Release;
+		};
+		9162FAFBCFAD45D49E593A77 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'HAVE_PTHREAD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-deprecated -Wno-missing-prototypes -Wno-missing-declarations -Wno-shadow -Wno-unused-parameter -Wno-unused-local-typedefs -Wno-sign-compare -Wno-sign-promo -Wno-undef -Wno-tautological-undefined-compare -Wno-ignored-qualifiers -Wno-extra -Wno-unused-function -Wno-unused-const-variable -Wno-shorten-64-to-32 -Wno-invalid-offsetof -Wno-enum-compare-switch -Wno-suggest-override -Wno-inconsistent-missing-override -Wno-implicit-fallthrough -Wno-array-bounds         -DDEBUG -D_DEBUG -fPIC '-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libprotobuf;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/protobuf/src,/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A19E67FF09C74CF39057921E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A99F6BC1549D464B8E452700 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B5ECD3B42CF94C7BA2B07635 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf/build;
+			};
+			name = Debug;
+		};
+		BDAFC59C025641E6855A4FB9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F56A32C392A14B1FBCBCD6F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/protobuf;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		001B8A809EC2424B8795B425 /* Build configuration list for PBXNativeTarget "libprotobuf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9162FAFBCFAD45D49E593A77 /* Debug */,
+				47B5DAAE4F214B35AD34BDB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		01353477958641E49AAD86F4 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6AC5B8CD462B45E3AAD9FCDD /* Debug */,
+				773F2CC3E6124FF5B0E2335C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		0F5EFB556A9846EDB4830039 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A99F6BC1549D464B8E452700 /* Debug */,
+				8DD93F7B605848B2AD083E6F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5926A6103E034ABF8E13B895 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F56A32C392A14B1FBCBCD6F0 /* Debug */,
+				27F5187E1FB14ED69CE55AC9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5F956F61298648529DEF7F59 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BDAFC59C025641E6855A4FB9 /* Debug */,
+				A19E67FF09C74CF39057921E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9B2EC41ACA7B441F8A4A06BB /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06FD092DA7F740A4B507B974 /* Debug */,
+				173314E6A733424DA69E84E9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E1AAA6EF0FED409C9FFA9B53 /* Build configuration list for PBXProject "libprotobuf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B5ECD3B42CF94C7BA2B07635 /* Debug */,
+				8EACA191A37841479C9DAAFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 53D65643EE8F4948B22BB1B0 /* Project object */;
+}

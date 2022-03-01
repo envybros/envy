@@ -1,0 +1,1441 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F3BE81BEBD124B1ABBFF0E79 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1486D62511BB451ABD01B7D8 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				9B60EF93A1C04CAC91DF7ECF /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 59F4A145D5434CEB8D6888BB /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				23A7D24F6EAB4618B2C5A28F /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 3F5E0A64D0EC4725B81088DA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				49BE78DC241CB98F3575EDE6 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				6D49D2B5780A431CA1545872 /* PBXTargetDependency */,
+				43120F1104414F7EB1282395 /* PBXTargetDependency */,
+				56CE6CA991774E24955EC9EC /* PBXTargetDependency */,
+				4C0ADE39BD2D4AB78EB21ADA /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 68ACCAF49CCE407ABF45D053 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1A75AFC452CBB8E91C61D0D0 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		05BEFFC9013643F09B0B25DC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.hpp */ = {isa = PBXBuildFile; fileRef = A78C03CAD0E54BBBA50FA427 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.hpp */; };
+		0ABDCB62D27140C3BEF0749F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_cascades.cpp */ = {isa = PBXBuildFile; fileRef = 14FC928B3C804B6CAF1C3CBE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_cascades.cpp */; };
+		0C810AA361F44B8E9E03F2C0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode_encode.cpp */ = {isa = PBXBuildFile; fileRef = 6CC4C813A40B406F9C4F968A /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode_encode.cpp */; };
+		11473AF89F0A45F5B3CAE0CB /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_recognize.cpp */ = {isa = PBXBuildFile; fileRef = 5134A8BD51C84E14AC7C557C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_recognize.cpp */; };
+		12A15FE227D540639220E95B /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_main.cpp */ = {isa = PBXBuildFile; fileRef = 5B44A992436B4AF3B6B01B3E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_main.cpp */; };
+		150A14C6620B479CAC861F33 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_precomp.hpp */ = {isa = PBXBuildFile; fileRef = 79F709D081854E759FF43CA5 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_precomp.hpp */; };
+		15AEE213BFFD4B12868EF08E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder_table.inl.hpp */ = {isa = PBXBuildFile; fileRef = 490FB02B1AA34B3A919A11A2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder_table.inl.hpp */; };
+		1D41218507FB45D9BB0E7BC1 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect_convert.cpp */ = {isa = PBXBuildFile; fileRef = 4CF8797C686E4796BDB3007E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect_convert.cpp */; };
+		4148CC49AC044140897FF532 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/hog.cpp */ = {isa = PBXBuildFile; fileRef = 45DAE7BFC1FD4BD8ADB6EC12 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/hog.cpp */; };
+		43D2710FB2FB4FE1ADA5B6AC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder.cpp */ = {isa = PBXBuildFile; fileRef = 5D0B00B4E7FD4C9C8F92C61F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder.cpp */; };
+		4578D869D699476B8B9BB5C0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode.cpp */ = {isa = PBXBuildFile; fileRef = 5DECEB040B40410DAEE0D51C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode.cpp */; };
+		502DE587AE1A45BE999DF05F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/main.cpp */ = {isa = PBXBuildFile; fileRef = A52DA1DAD3E74776BC203B97 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/main.cpp */; };
+		57F1CFF39AD84E87BA46F172 /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 1E290F77448743AE84A8BB6C /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */; };
+		607769EFF06845AB895917C7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp */ = {isa = PBXBuildFile; fileRef = F2A7A88C5AFE41CA850E19E7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp */; };
+		6D793DB60C3949C6A78C7A06 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_main.cpp */ = {isa = PBXBuildFile; fileRef = 5294889F808A42F19ECDB5B3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_main.cpp */; };
+		6FA6065D05F743B0B8F021FA /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B1292B20FAFD48378EF6C0B0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */; };
+		72F4E46C488641F0BE2E4B2C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_qrcode_pipeline.cpp */ = {isa = PBXBuildFile; fileRef = C4D77D1FFFC445C58B4DCBD9 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_qrcode_pipeline.cpp */; };
+		7341D8EE7489427787D30C55 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/objdetect_hog.cl */ = {isa = PBXBuildFile; fileRef = 5FFF66652FD8496CBA39FF54 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/objdetect_hog.cl */; };
+		77963A04692F4D51BEF6B1BA /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp */ = {isa = PBXBuildFile; fileRef = 3F11646A02604CAF9936B666 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp */; };
+		7E62A58D63AE4611870B4382 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 8A276495460841C2A95D3B71 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */; };
+		9A89547F038B4179BBB37E3E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/detection_based_tracker.cpp */ = {isa = PBXBuildFile; fileRef = E24AD4DB13FF48098FFFFDDC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/detection_based_tracker.cpp */; };
+		9AD591B633E94E129C9EB022 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_detect.cpp */ = {isa = PBXBuildFile; fileRef = 4616FF853C01458C9A4B659C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_detect.cpp */; };
+		B6CBBC3EE96E4B9C8FBED36A /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/face.hpp */ = {isa = PBXBuildFile; fileRef = 1C27645608964AFE9A9D4982 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/face.hpp */; };
+		B80C4509A855416C888A65D2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp */ = {isa = PBXBuildFile; fileRef = F2BE751426E646CE9F605DAA /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp */; };
+		BC0DEA70FDFC4D1492E5125D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/cascadedetect.cl */ = {isa = PBXBuildFile; fileRef = 822C89F8B0A1419095213ADE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/cascadedetect.cl */; };
+		BCC18ABF024A4E679F1FB28D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/opencl/test_hogdetector.cpp */ = {isa = PBXBuildFile; fileRef = 247409247C7B4E7B8562ADE4 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/opencl/test_hogdetector.cpp */; };
+		BE5794675D8D436582ABA3EC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect.hpp */ = {isa = PBXBuildFile; fileRef = 6AB5C937A2C04241911569C8 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect.hpp */; };
+		C587CF385D224650B313C093 /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.hpp */ = {isa = PBXBuildFile; fileRef = 9B00F96B95E740608160217C /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.hpp */; };
+		C5C28CC2426E4EAFB5865B23 /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp.rule */ = {isa = PBXBuildFile; fileRef = 1C20C1B75DA6424C9D0D6C15 /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp.rule */; };
+		C6D28A2FCFA24F148E25B24F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.cpp */ = {isa = PBXBuildFile; fileRef = B7FC4CC83DCF4789A0656C3B /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.cpp */; };
+		C8E39B0DA91E4B59A0CCF2EF /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp */ = {isa = PBXBuildFile; fileRef = 21CFC7942DE04161B55C975D /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp */; };
+		CCB1B0742916432D968D8103 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 41482D8327724EE78478E95D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */; };
+		CDA486A0F70541B8A8AA5FA7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_cascadeandhog.cpp */ = {isa = PBXBuildFile; fileRef = 21BC83B0EF084D878EDA8C79 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_cascadeandhog.cpp */; };
+		DF89BD76868140F8BA189336 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = 74E93D47CEE34773AC817E3F /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */; };
+		E4DFA8266BB242E99B81676C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_precomp.hpp */ = {isa = PBXBuildFile; fileRef = EB7E018BD5DB4041ABDF39F2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_precomp.hpp */; };
+		E8C8B03D1C224445B2EFB90F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 2B46672309F44024B9F16A72 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/precomp.hpp */; };
+		F2326AD48A214114A0EF3D98 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode.cpp */ = {isa = PBXBuildFile; fileRef = B13C9B87563445ED81865E35 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode.cpp */; };
+		F61B76743BCE4AD287790EC9 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_face.cpp */ = {isa = PBXBuildFile; fileRef = B4957DAC06404769841C7AF3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_face.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		4C16691A14024DB4A36249E4 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		BB603E8733E84C94AE9A94C7 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		5DE5583DE7D5446EAACAC07F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		83655B49AAF9445DA968BCFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8FFBE6AF91E4A1796D933C9;
+			remoteInfo = opencv_objdetect;
+		};
+		8872703DBC374B17A47515B2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		91EB0B08AC974264B769EC97 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8FFBE6AF91E4A1796D933C9;
+			remoteInfo = opencv_objdetect;
+		};
+		9588478861AD486AB3DBDE5A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8FFBE6AF91E4A1796D933C9;
+			remoteInfo = opencv_objdetect;
+		};
+		98C9E5C3D6B8469993AD94DE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		9B94D783FD2941328F64B5E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 60B869C804DE48A9A9EAA0A6;
+			remoteInfo = opencv_perf_objdetect;
+		};
+		AF78520C0EE348B6AEEDF877 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CFA419E0C45142ADA3A4EFCE;
+			remoteInfo = opencv_test_objdetect;
+		};
+		B2E68ECA34D14A6DA3A5173B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		C56D716AD0064777A05A01F2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		D7C72C660F8248E69E0AA362 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 2E40F6116E9342BEA11A11E2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		14FC928B3C804B6CAF1C3CBE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_cascades.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_cascades.cpp; path = perf/opencl/perf_cascades.cpp; sourceTree = SOURCE_ROOT; };
+		1A52793E8A9146A8937D3DDF /* opencv_perf_objdetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_perf_objdetect; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C20C1B75DA6424C9D0D6C15 /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = opencl_kernels_objdetect.cpp.rule; path = ../../../OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp.rule; sourceTree = SOURCE_ROOT; };
+		1C27645608964AFE9A9D4982 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/face.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = face.hpp; path = include/opencv2/objdetect/face.hpp; sourceTree = SOURCE_ROOT; };
+		1E290F77448743AE84A8BB6C /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cvconfig.h; path = ../../../OpenCV/cvconfig.h; sourceTree = SOURCE_ROOT; };
+		21BC83B0EF084D878EDA8C79 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_cascadeandhog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cascadeandhog.cpp; path = test/test_cascadeandhog.cpp; sourceTree = SOURCE_ROOT; };
+		21CFC7942DE04161B55C975D /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_kernels_objdetect.cpp; path = ../../../OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp; sourceTree = SOURCE_ROOT; };
+		22DC6AE640AB497DBD47B4B6 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		247409247C7B4E7B8562ADE4 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/opencl/test_hogdetector.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_hogdetector.cpp; path = test/opencl/test_hogdetector.cpp; sourceTree = SOURCE_ROOT; };
+		2B46672309F44024B9F16A72 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = src/precomp.hpp; sourceTree = SOURCE_ROOT; };
+		3D0048D6813840F0AD14F884 /* opencv_objdetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libopencv_objdetect.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3F11646A02604CAF9936B666 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = detection_based_tracker.hpp; path = include/opencv2/objdetect/detection_based_tracker.hpp; sourceTree = SOURCE_ROOT; };
+		41482D8327724EE78478E95D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		45DAE7BFC1FD4BD8ADB6EC12 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/hog.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = hog.cpp; path = src/hog.cpp; sourceTree = SOURCE_ROOT; };
+		4616FF853C01458C9A4B659C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_detect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = face_detect.cpp; path = src/face_detect.cpp; sourceTree = SOURCE_ROOT; };
+		490FB02B1AA34B3A919A11A2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder_table.inl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = qrcode_encoder_table.inl.hpp; path = src/qrcode_encoder_table.inl.hpp; sourceTree = SOURCE_ROOT; };
+		4CF8797C686E4796BDB3007E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect_convert.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cascadedetect_convert.cpp; path = src/cascadedetect_convert.cpp; sourceTree = SOURCE_ROOT; };
+		5134A8BD51C84E14AC7C557C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_recognize.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = face_recognize.cpp; path = src/face_recognize.cpp; sourceTree = SOURCE_ROOT; };
+		5294889F808A42F19ECDB5B3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_main.cpp; path = perf/perf_main.cpp; sourceTree = SOURCE_ROOT; };
+		5B44A992436B4AF3B6B01B3E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = test/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		5D0B00B4E7FD4C9C8F92C61F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrcode_encoder.cpp; path = src/qrcode_encoder.cpp; sourceTree = SOURCE_ROOT; };
+		5DECEB040B40410DAEE0D51C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = qrcode.cpp; path = src/qrcode.cpp; sourceTree = SOURCE_ROOT; };
+		5FFF66652FD8496CBA39FF54 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/objdetect_hog.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = objdetect_hog.cl; path = src/opencl/objdetect_hog.cl; sourceTree = SOURCE_ROOT; };
+		6AB5C937A2C04241911569C8 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = objdetect.hpp; path = include/opencv2/objdetect.hpp; sourceTree = SOURCE_ROOT; };
+		6CC4C813A40B406F9C4F968A /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode_encode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_qrcode_encode.cpp; path = test/test_qrcode_encode.cpp; sourceTree = SOURCE_ROOT; };
+		74E93D47CEE34773AC817E3F /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencv_modules.hpp; path = ../../../OpenCV/opencv2/opencv_modules.hpp; sourceTree = SOURCE_ROOT; };
+		79F709D081854E759FF43CA5 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = test_precomp.hpp; path = test/test_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		822C89F8B0A1419095213ADE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/cascadedetect.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = cascadedetect.cl; path = src/opencl/cascadedetect.cl; sourceTree = SOURCE_ROOT; };
+		8A276495460841C2A95D3B71 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9B00F96B95E740608160217C /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencl_kernels_objdetect.hpp; path = ../../../OpenCV/modules/objdetect/opencl_kernels_objdetect.hpp; sourceTree = SOURCE_ROOT; };
+		A52DA1DAD3E74776BC203B97 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		A78C03CAD0E54BBBA50FA427 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = cascadedetect.hpp; path = src/cascadedetect.hpp; sourceTree = SOURCE_ROOT; };
+		B1292B20FAFD48378EF6C0B0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B13C9B87563445ED81865E35 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_qrcode.cpp; path = test/test_qrcode.cpp; sourceTree = SOURCE_ROOT; };
+		B4957DAC06404769841C7AF3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_face.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_face.cpp; path = test/test_face.cpp; sourceTree = SOURCE_ROOT; };
+		B7FC4CC83DCF4789A0656C3B /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = cascadedetect.cpp; path = src/cascadedetect.cpp; sourceTree = SOURCE_ROOT; };
+		BE88488D65B841588AC8FEA9 /* opencv_test_objdetect */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_test_objdetect; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4D77D1FFFC445C58B4DCBD9 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_qrcode_pipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_qrcode_pipeline.cpp; path = perf/perf_qrcode_pipeline.cpp; sourceTree = SOURCE_ROOT; };
+		E24AD4DB13FF48098FFFFDDC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/detection_based_tracker.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = detection_based_tracker.cpp; path = src/detection_based_tracker.cpp; sourceTree = SOURCE_ROOT; };
+		EB7E018BD5DB4041ABDF39F2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = perf_precomp.hpp; path = perf/perf_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		F2A7A88C5AFE41CA850E19E7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_hogdetect.cpp; path = perf/opencl/perf_hogdetect.cpp; sourceTree = SOURCE_ROOT; };
+		F2BE751426E646CE9F605DAA /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = objdetect.hpp; path = include/opencv2/objdetect/objdetect.hpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		737C13D25AF44A04B16D91BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B4AFF00B61944C70BAB54F09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B5EC3272EB1945D689F56F36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		038E62F242794BEBA6786354 /* opencv_objdetect */ = {
+			isa = PBXGroup;
+			children = (
+				40E01BD8D8154DB889E30154 /* Include */,
+				6F3EADF1AC254AFB9D76C392 /* Src */,
+				80369F333F3F4600981661E0 /* CMake Rules */,
+				B1292B20FAFD48378EF6C0B0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */,
+			);
+			name = opencv_objdetect;
+			sourceTree = "<group>";
+		};
+		052D7A7158A641168CC5631F /* tests performance */ = {
+			isa = PBXGroup;
+			children = (
+				8340EC30391147F0BDB1DC73 /* opencv_perf_objdetect */,
+			);
+			name = "tests performance";
+			sourceTree = "<group>";
+		};
+		1DBC07EEA299488AA22756B9 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				D259A3133D2E49D3B018F065 /* opencl */,
+				21BC83B0EF084D878EDA8C79 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_cascadeandhog.cpp */,
+				B4957DAC06404769841C7AF3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_face.cpp */,
+				5B44A992436B4AF3B6B01B3E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_main.cpp */,
+				B13C9B87563445ED81865E35 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode.cpp */,
+				6CC4C813A40B406F9C4F968A /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode_encode.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		1E7464322E894319833C8ED2 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3D8CBC87CD4F474C8FE52302 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				038E62F242794BEBA6786354 /* opencv_objdetect */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
+		40E01BD8D8154DB889E30154 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				4226C54346A644AC97B71BFA /* opencv2 */,
+				1E290F77448743AE84A8BB6C /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */,
+				74E93D47CEE34773AC817E3F /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		4226C54346A644AC97B71BFA /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				EB2ECA7F5B2F480F936F20F5 /* objdetect */,
+				6AB5C937A2C04241911569C8 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect.hpp */,
+			);
+			name = opencv2;
+			sourceTree = "<group>";
+		};
+		5CFF2C0BD63441CC8CB54646 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6F3EADF1AC254AFB9D76C392 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				6FB7A007C6A947788262DD6E /* opencl */,
+				B7FC4CC83DCF4789A0656C3B /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.cpp */,
+				A78C03CAD0E54BBBA50FA427 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.hpp */,
+				4CF8797C686E4796BDB3007E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect_convert.cpp */,
+				E24AD4DB13FF48098FFFFDDC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/detection_based_tracker.cpp */,
+				4616FF853C01458C9A4B659C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_detect.cpp */,
+				5134A8BD51C84E14AC7C557C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_recognize.cpp */,
+				45DAE7BFC1FD4BD8ADB6EC12 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/hog.cpp */,
+				A52DA1DAD3E74776BC203B97 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/main.cpp */,
+				2B46672309F44024B9F16A72 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/precomp.hpp */,
+				5DECEB040B40410DAEE0D51C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode.cpp */,
+				5D0B00B4E7FD4C9C8F92C61F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder.cpp */,
+				490FB02B1AA34B3A919A11A2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder_table.inl.hpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		6FB7A007C6A947788262DD6E /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				A0CF317613D4436290EE1CDC /* kernels */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		80369F333F3F4600981661E0 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				1C20C1B75DA6424C9D0D6C15 /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		8340EC30391147F0BDB1DC73 /* opencv_perf_objdetect */ = {
+			isa = PBXGroup;
+			children = (
+				A17DF2BA26634B2597EEB9E0 /* Src */,
+				A07DB56E7CD14D2C99AB2909 /* Include */,
+				8A276495460841C2A95D3B71 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */,
+			);
+			name = opencv_perf_objdetect;
+			sourceTree = "<group>";
+		};
+		9924A780BFF64FE59D8D3739 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				14FC928B3C804B6CAF1C3CBE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_cascades.cpp */,
+				F2A7A88C5AFE41CA850E19E7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		A07DB56E7CD14D2C99AB2909 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				EB7E018BD5DB4041ABDF39F2 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		A0CF317613D4436290EE1CDC /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				BD1BA80DC2034C04AF43710C /* autogenerated */,
+				822C89F8B0A1419095213ADE /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/cascadedetect.cl */,
+				5FFF66652FD8496CBA39FF54 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/objdetect_hog.cl */,
+			);
+			name = kernels;
+			sourceTree = "<group>";
+		};
+		A17DF2BA26634B2597EEB9E0 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				9924A780BFF64FE59D8D3739 /* opencl */,
+				5294889F808A42F19ECDB5B3 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_main.cpp */,
+				C4D77D1FFFC445C58B4DCBD9 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_qrcode_pipeline.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		A23E5C2C369E401B942F6302 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D0048D6813840F0AD14F884 /* opencv_objdetect */,
+				1A52793E8A9146A8937D3DDF /* opencv_perf_objdetect */,
+				BE88488D65B841588AC8FEA9 /* opencv_test_objdetect */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABB0A7941FBA42F99C7D456B /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				79F709D081854E759FF43CA5 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		BD1BA80DC2034C04AF43710C /* autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				21CFC7942DE04161B55C975D /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp */,
+				9B00F96B95E740608160217C /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.hpp */,
+			);
+			name = autogenerated;
+			sourceTree = "<group>";
+		};
+		CDA7EB329AB64D6A927781C1 = {
+			isa = PBXGroup;
+			children = (
+				3D8CBC87CD4F474C8FE52302 /* modules */,
+				F1250F2A8AF941BF8C3BCF7A /* tests accuracy */,
+				052D7A7158A641168CC5631F /* tests performance */,
+				CFD50C832D6A4480A627438E /* ALL_BUILD */,
+				A23E5C2C369E401B942F6302 /* Products */,
+				5CFF2C0BD63441CC8CB54646 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CFD50C832D6A4480A627438E /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				1E7464322E894319833C8ED2 /* CMake Rules */,
+				22DC6AE640AB497DBD47B4B6 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		D259A3133D2E49D3B018F065 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				247409247C7B4E7B8562ADE4 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/opencl/test_hogdetector.cpp */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		EB2ECA7F5B2F480F936F20F5 /* objdetect */ = {
+			isa = PBXGroup;
+			children = (
+				3F11646A02604CAF9936B666 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/detection_based_tracker.hpp */,
+				1C27645608964AFE9A9D4982 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/face.hpp */,
+				F2BE751426E646CE9F605DAA /* /Users/BrightLand/Envy/_opencv/modules/objdetect/include/opencv2/objdetect/objdetect.hpp */,
+			);
+			name = objdetect;
+			sourceTree = "<group>";
+		};
+		F1250F2A8AF941BF8C3BCF7A /* tests accuracy */ = {
+			isa = PBXGroup;
+			children = (
+				F9B24FDF4A0349F192F06B46 /* opencv_test_objdetect */,
+			);
+			name = "tests accuracy";
+			sourceTree = "<group>";
+		};
+		F9B24FDF4A0349F192F06B46 /* opencv_test_objdetect */ = {
+			isa = PBXGroup;
+			children = (
+				1DBC07EEA299488AA22756B9 /* Src */,
+				ABB0A7941FBA42F99C7D456B /* Include */,
+				41482D8327724EE78478E95D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/CMakeLists.txt */,
+			);
+			name = opencv_test_objdetect;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		60B869C804DE48A9A9EAA0A6 /* opencv_perf_objdetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63BD4535E8294DC5BBB5508C /* Build configuration list for PBXNativeTarget "opencv_perf_objdetect" */;
+			buildPhases = (
+				C95C87A1F9C74CDE8750672A /* Sources */,
+				B4AFF00B61944C70BAB54F09 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3F873879B4624C759EF010C1 /* PBXTargetDependency */,
+				CD6581E29B6A4719AF770B22 /* PBXTargetDependency */,
+			);
+			name = opencv_perf_objdetect;
+			productName = opencv_perf_objdetect;
+			productReference = 1A52793E8A9146A8937D3DDF /* opencv_perf_objdetect */;
+			productType = "com.apple.product-type.tool";
+		};
+		CFA419E0C45142ADA3A4EFCE /* opencv_test_objdetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63835FFB006D40EA8C0356F6 /* Build configuration list for PBXNativeTarget "opencv_test_objdetect" */;
+			buildPhases = (
+				957E6F22B046475DB47CB179 /* Sources */,
+				737C13D25AF44A04B16D91BC /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9403B92C4BBA419B8396B07A /* PBXTargetDependency */,
+				DC56D2F70C3C4F9C9E079A2B /* PBXTargetDependency */,
+			);
+			name = opencv_test_objdetect;
+			productName = opencv_test_objdetect;
+			productReference = BE88488D65B841588AC8FEA9 /* opencv_test_objdetect */;
+			productType = "com.apple.product-type.tool";
+		};
+		F8FFBE6AF91E4A1796D933C9 /* opencv_objdetect */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7158FE2FD4F24CE698D2AB6C /* Build configuration list for PBXNativeTarget "opencv_objdetect" */;
+			buildPhases = (
+				E2A7580B2038FB7A055300A3 /* Generate opencl_kernels_objdetect.cpp */,
+				F4E5BED8DA0F429BB20A9A35 /* Sources */,
+				B5EC3272EB1945D689F56F36 /* Frameworks */,
+				827C0D5D15048F1DC7D9F447 /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				2EDB50E4BD1243CCAF9704E5 /* PBXTargetDependency */,
+			);
+			name = opencv_objdetect;
+			productName = opencv_objdetect;
+			productReference = 3D0048D6813840F0AD14F884 /* opencv_objdetect */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2E40F6116E9342BEA11A11E2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 73260AA9FB9B408FA21CFEC1 /* Build configuration list for PBXProject "opencv_objdetect" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				4C16691A14024DB4A36249E4 /* Debug */,
+				BB603E8733E84C94AE9A94C7 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = CDA7EB329AB64D6A927781C1;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/modules/objdetect;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				F8FFBE6AF91E4A1796D933C9 /* opencv_objdetect */,
+				60B869C804DE48A9A9EAA0A6 /* opencv_perf_objdetect */,
+				CFA419E0C45142ADA3A4EFCE /* opencv_test_objdetect */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		1A75AFC452CBB8E91C61D0D0 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/objdetect/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  make -f /Users/BrightLand/Envy/OpenCV/modules/objdetect/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  make -f /Users/BrightLand/Envy/OpenCV/modules/objdetect/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		49BE78DC241CB98F3575EDE6 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/objdetect/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		827C0D5D15048F1DC7D9F447 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_objdetect.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_objdetect.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_objdetect.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_objdetect.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_objdetect.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_objdetect.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		E2A7580B2038FB7A055300A3 /* Generate opencl_kernels_objdetect.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake,/Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/cascadedetect.cl,/Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl/objdetect_hog.cl			);
+			name = "Generate opencl_kernels_objdetect.cpp";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=objdetect -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/objdetect
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=objdetect -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/objdetect/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		957E6F22B046475DB47CB179 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCC18ABF024A4E679F1FB28D /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/opencl/test_hogdetector.cpp */,
+				CDA486A0F70541B8A8AA5FA7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_cascadeandhog.cpp */,
+				F61B76743BCE4AD287790EC9 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_face.cpp */,
+				12A15FE227D540639220E95B /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_main.cpp */,
+				F2326AD48A214114A0EF3D98 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode.cpp */,
+				0C810AA361F44B8E9E03F2C0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/test/test_qrcode_encode.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C95C87A1F9C74CDE8750672A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ABDCB62D27140C3BEF0749F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_cascades.cpp */,
+				607769EFF06845AB895917C7 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/opencl/perf_hogdetect.cpp */,
+				6D793DB60C3949C6A78C7A06 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_main.cpp */,
+				72F4E46C488641F0BE2E4B2C /* /Users/BrightLand/Envy/_opencv/modules/objdetect/perf/perf_qrcode_pipeline.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F4E5BED8DA0F429BB20A9A35 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C8E39B0DA91E4B59A0CCF2EF /* /Users/BrightLand/Envy/OpenCV/modules/objdetect/opencl_kernels_objdetect.cpp */,
+				C6D28A2FCFA24F148E25B24F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect.cpp */,
+				1D41218507FB45D9BB0E7BC1 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/cascadedetect_convert.cpp */,
+				9A89547F038B4179BBB37E3E /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/detection_based_tracker.cpp */,
+				9AD591B633E94E129C9EB022 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_detect.cpp */,
+				11473AF89F0A45F5B3CAE0CB /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/face_recognize.cpp */,
+				4148CC49AC044140897FF532 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/hog.cpp */,
+				502DE587AE1A45BE999DF05F /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/main.cpp */,
+				4578D869D699476B8B9BB5C0 /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode.cpp */,
+				43D2710FB2FB4FE1ADA5B6AC /* /Users/BrightLand/Envy/_opencv/modules/objdetect/src/qrcode_encoder.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		23A7D24F6EAB4618B2C5A28F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = B2E68ECA34D14A6DA3A5173B /* PBXContainerItemProxy */;
+		};
+		2EDB50E4BD1243CCAF9704E5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 5DE5583DE7D5446EAACAC07F /* PBXContainerItemProxy */;
+		};
+		3F873879B4624C759EF010C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8FFBE6AF91E4A1796D933C9 /* opencv_objdetect */;
+			targetProxy = 83655B49AAF9445DA968BCFC /* PBXContainerItemProxy */;
+		};
+		43120F1104414F7EB1282395 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CFA419E0C45142ADA3A4EFCE /* opencv_test_objdetect */;
+			targetProxy = AF78520C0EE348B6AEEDF877 /* PBXContainerItemProxy */;
+		};
+		4C0ADE39BD2D4AB78EB21ADA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = C56D716AD0064777A05A01F2 /* PBXContainerItemProxy */;
+		};
+		56CE6CA991774E24955EC9EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 60B869C804DE48A9A9EAA0A6 /* opencv_perf_objdetect */;
+			targetProxy = 9B94D783FD2941328F64B5E3 /* PBXContainerItemProxy */;
+		};
+		6D49D2B5780A431CA1545872 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8FFBE6AF91E4A1796D933C9 /* opencv_objdetect */;
+			targetProxy = 9588478861AD486AB3DBDE5A /* PBXContainerItemProxy */;
+		};
+		9403B92C4BBA419B8396B07A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F8FFBE6AF91E4A1796D933C9 /* opencv_objdetect */;
+			targetProxy = 91EB0B08AC974264B769EC97 /* PBXContainerItemProxy */;
+		};
+		9B60EF93A1C04CAC91DF7ECF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = D7C72C660F8248E69E0AA362 /* PBXContainerItemProxy */;
+		};
+		CD6581E29B6A4719AF770B22 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 98C9E5C3D6B8469993AD94DE /* PBXContainerItemProxy */;
+		};
+		DC56D2F70C3C4F9C9E079A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 8872703DBC374B17A47515B2 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		040D041385E14442B35357F1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		1135D4BB94084EB284A2880A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/OpenCV/modules/objdetect,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_objdetect.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libquirc.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_objdetect.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		2BE4846B6494489B8C4ED08A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect/build;
+			};
+			name = Release;
+		};
+		2D50A2F016414320A00F0DB0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		31C070566D6344CC9E9135CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3E15D048F16E4DFAA1045220 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		431937749D5143D49FE383A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/OpenCV/modules/objdetect,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_objdetect.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libquirc.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_objdetect.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4FBD4408AEF147D09C2F657A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6612962DC47E43C4AA70EA3A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_objdetect.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_objdetect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		77F3E032FE3A4106BDABBEAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8830A446F77947E3AFDED7C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A0D6627E6CBE4DECBB3A85A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B0FE1F1BDBAA44B28C991CAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_objdetect.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_objdetect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C2B92F35F50247CAB6088577 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CD51EB1981B84C4FB727644B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_objdetect.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_objdetect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		DD7F15868E6240EF900BBEC7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect/build;
+			};
+			name = Debug;
+		};
+		EB9476B8863F4BE2954277E1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/_opencv/3rdparty/quirc/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/objdetect/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/dnn/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_objdetect.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_dnn.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_objdetect;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		FECC67E1F52546B594CCCEE9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/objdetect;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1486D62511BB451ABD01B7D8 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8830A446F77947E3AFDED7C6 /* Debug */,
+				FECC67E1F52546B594CCCEE9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F5E0A64D0EC4725B81088DA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31C070566D6344CC9E9135CC /* Debug */,
+				A0D6627E6CBE4DECBB3A85A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		59F4A145D5434CEB8D6888BB /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				77F3E032FE3A4106BDABBEAF /* Debug */,
+				4FBD4408AEF147D09C2F657A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63835FFB006D40EA8C0356F6 /* Build configuration list for PBXNativeTarget "opencv_test_objdetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EB9476B8863F4BE2954277E1 /* Debug */,
+				CD51EB1981B84C4FB727644B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		63BD4535E8294DC5BBB5508C /* Build configuration list for PBXNativeTarget "opencv_perf_objdetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0FE1F1BDBAA44B28C991CAB /* Debug */,
+				6612962DC47E43C4AA70EA3A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		68ACCAF49CCE407ABF45D053 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2D50A2F016414320A00F0DB0 /* Debug */,
+				3E15D048F16E4DFAA1045220 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7158FE2FD4F24CE698D2AB6C /* Build configuration list for PBXNativeTarget "opencv_objdetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1135D4BB94084EB284A2880A /* Debug */,
+				431937749D5143D49FE383A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		73260AA9FB9B408FA21CFEC1 /* Build configuration list for PBXProject "opencv_objdetect" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DD7F15868E6240EF900BBEC7 /* Debug */,
+				2BE4846B6494489B8C4ED08A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F3BE81BEBD124B1ABBFF0E79 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C2B92F35F50247CAB6088577 /* Debug */,
+				040D041385E14442B35357F1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2E40F6116E9342BEA11A11E2 /* Project object */;
+}

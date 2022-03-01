@@ -1,0 +1,1508 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C0FF3B9E17DD416CBA414418 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 2AA444C105DC4C8AA8246BEC /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4935289C27F34EB38E50E2CB /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6CD6274CBA08424E989FF991 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DCFF464609F74624A77550B5 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = AE56E0F2C12B46B1A9C139EF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				80894A3D875DE94245CCC22B /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				B1921DF6B4654FC4966A52A4 /* PBXTargetDependency */,
+				69BA3ECF06AD46CD9D6F11E3 /* PBXTargetDependency */,
+				636BD4817C7F4ECF9BF4B3E9 /* PBXTargetDependency */,
+				81AE275C5F7D41449A7AEF36 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E9F016643D114804ACD7612F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				1ECA9ABC9BFCD74EE0E935A3 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		014F7F0E41BD4743A583CA84 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_stich.cpp */ = {isa = PBXBuildFile; fileRef = 29E3D8C3D4D64291B86AED81 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_stich.cpp */; };
+		0E8A029507964830BCCADC2F /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXBuildFile; fileRef = 0B52F5C88F2641EFBC6CD065 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/motion_estimators.cpp */; };
+		1B3A931A0DE645F1A8622AD5 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXBuildFile; fileRef = 6B42FF08D3AD470A984FDE74 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */; };
+		1C63CC4A763941DAA9CB2107 /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 947354F301BA49B0AA6A3AEB /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */; };
+		2AF308D049FF471EBAB0CB6B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXBuildFile; fileRef = F4061B03AFF94D6A813539BA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */; };
+		2B2F17A6E31B4C74899135D3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_precomp.hpp */ = {isa = PBXBuildFile; fileRef = AC1FEBD380D04BB5933495A0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_precomp.hpp */; };
+		2FF85FDBE50243EC952F2525 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXBuildFile; fileRef = 2DB9A499C95A4459A906C8BB /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/multibandblend.cl */; };
+		3131F511702748CB8CDBFF5C /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cpp */ = {isa = PBXBuildFile; fileRef = 9C9EB11BC0A049129FD17E82 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cpp */; };
+		32226F3F41EC48ED91502045 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXBuildFile; fileRef = 9EA473B28C0948E4B529995B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/autocalib.cpp */; };
+		35C8FF6731AF48BFB4FAAC91 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXBuildFile; fileRef = 0644BF363653419187708EA0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */; };
+		38D1E067D80D490D98E405C8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp */ = {isa = PBXBuildFile; fileRef = 6F01F63815914DAE8B738C8E /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp */; };
+		40AD46E59E4740239FDB88F9 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_exposure_compensate.cpp */ = {isa = PBXBuildFile; fileRef = 45FCC44EA75A45B38FA7D29A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_exposure_compensate.cpp */; };
+		42558A82A8444F6B88177BDB /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cuda.cpp */ = {isa = PBXBuildFile; fileRef = 70B09D6FF5214C83AD40722C /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cuda.cpp */; };
+		5239F66803CA4C33AD4A98AF /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXBuildFile; fileRef = FE0A5D0F951A4CAAA5D24CFC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */; };
+		564CDEB1B70F40A58E76FDAE /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_warpers.cpp */ = {isa = PBXBuildFile; fileRef = 92C8825D394B429A89427A15 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_warpers.cpp */; };
+		57A97898ADA8426CA5F4D456 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXBuildFile; fileRef = 81FC543D39B9492593391850 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */; };
+		6AE71B8E4C6440749222C7F3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_precomp.hpp */ = {isa = PBXBuildFile; fileRef = C9C401E937C74BBCA00A3C1A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_precomp.hpp */; };
+		6B1AACAF020B4AD0BBE427F8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_matchers.cpp */ = {isa = PBXBuildFile; fileRef = 805987192BBE4DD2B6B872F9 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_matchers.cpp */; };
+		6E99970622764FC3A3598634 /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp */ = {isa = PBXBuildFile; fileRef = 60A43A41D0D04658B939FC5B /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp */; };
+		73713A46D13442D0A047E193 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_reprojection.cpp */ = {isa = PBXBuildFile; fileRef = 4D129424C5EC4BC9876C5A40 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_reprojection.cpp */; };
+		74250DC1FE10456C9924D98A /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_stitch.cpp */ = {isa = PBXBuildFile; fileRef = F16D0F7E0222416B8C707AE8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_stitch.cpp */; };
+		758884596929410C96CC53C1 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXBuildFile; fileRef = 3C0244E82CCF47D28F6103EC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */; };
+		7B66F86823004B2F8A75E5AE /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util_log.hpp */ = {isa = PBXBuildFile; fileRef = 5727868188E54E60B1489116 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util_log.hpp */; };
+		7CB482BEAE2B490FBFEA4040 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXBuildFile; fileRef = ECC6D6F22E4B491491CC58BF /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/exposure_compensate.cpp */; };
+		7E1B2EED96D240F09F06F429 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXBuildFile; fileRef = C78DB3FD644847E58777F799 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers.cpp */; };
+		8EDDA08A9E7F41D88F539AB3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXBuildFile; fileRef = 06104FC727674C36B442AED0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/matchers.cpp */; };
+		90F63CB7C45248558FEA8441 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXBuildFile; fileRef = F845DF94E5054AFFB35DC22B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */; };
+		96A592E759BA478AB6777CF0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXBuildFile; fileRef = D9A3434D48E34ED8AB05CF25 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */; };
+		9C20AF6D90424F3B896588F8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 75CA551BE7DB47F5ACA4CDEF /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */; };
+		9D63B63980C84FB2A9B96C2E /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.hpp */ = {isa = PBXBuildFile; fileRef = 383503C71FA541718B09568F /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.hpp */; };
+		9E4D31EA298243708EA7052C /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXBuildFile; fileRef = 5EF39F22453543AF8F92EDBA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */; };
+		A2C62DF73BE94F3BBAEFBE99 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXBuildFile; fileRef = 0010E4FEEF7A453B93C47567 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/warpers.cl */; };
+		A3825C4753FC4322B0A548EF /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXBuildFile; fileRef = 2636DCD371874971BD041213 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching.hpp */; };
+		A44D0D5DB9F446DC8D80A70D /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_matchers.cpp */ = {isa = PBXBuildFile; fileRef = 410F1B824110439A9E78BB6D /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_matchers.cpp */; };
+		B2C596FF29E94D8AAC7D9147 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXBuildFile; fileRef = 0738766117FE49AAA76504FC /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/stitcher.cpp */; };
+		B9203C462F7A46109606FC36 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 06A1D2A80CDF48A18F5B2126 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/precomp.hpp */; };
+		B96AD9D0B4A645518D18F46B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXBuildFile; fileRef = 78068CD84D084A379B145600 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/seam_finders.cpp */; };
+		B9C33E0829014D0B8439862C /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_estimators.cpp */ = {isa = PBXBuildFile; fileRef = B9F9A9929DFD49298AE0E14A /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_estimators.cpp */; };
+		BC25419FE5054AEEA29F42B3 /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 5166B2667AFC467289F88484 /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */; };
+		C239812B60EA4E98B0C9B1CE /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/ocl/test_warpers.cpp */ = {isa = PBXBuildFile; fileRef = FE8AFD36C1EF400EB28EFDF2 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/ocl/test_warpers.cpp */; };
+		C6C8F60F336341F29BD21DA8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXBuildFile; fileRef = 43EB847FCD6449BDB7F196B0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */; };
+		C9236D14C97A496A9325EF43 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_wave_correction.cpp */ = {isa = PBXBuildFile; fileRef = 3B723A72096541EDB04B27DF /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_wave_correction.cpp */; };
+		C9F7A186EDF24967B33F27BD /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/timelapsers.cpp */ = {isa = PBXBuildFile; fileRef = 88D4F17DA0754C38B141766B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/timelapsers.cpp */; };
+		CBDDF486469A4CDA8B33C660 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_main.cpp */ = {isa = PBXBuildFile; fileRef = B19652982E5444DE9823D97F /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_main.cpp */; };
+		D151AA35F3C043E4ACFE6EE5 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = DE1193A27C024B509F0041B9 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */; };
+		E24E0016425942FDA7F14B86 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/camera.cpp */ = {isa = PBXBuildFile; fileRef = 4B61BC79222D4FB9BF5A7845 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/camera.cpp */; };
+		E44F639790DC422ABA708406 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_stitcher.cpp */ = {isa = PBXBuildFile; fileRef = D8B2E520343B4BBD8C5C6449 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_stitcher.cpp */; };
+		E5F2E9F130A943A798AF76BA /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util.cpp */ = {isa = PBXBuildFile; fileRef = FDFFEBAD4AA648A6BEC63EB5 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util.cpp */; };
+		E71D9B04AA7C45E38AC8ECA3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXBuildFile; fileRef = 953E9206393941A5AEBD14E7 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/blenders.cpp */; };
+		E73994BF99C6483082B37E5F /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers_cuda.cpp */ = {isa = PBXBuildFile; fileRef = C1D5F05A91DB4D9595371CB1 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers_cuda.cpp */; };
+		F4BC1792CE7348A0BBAD70AF /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXBuildFile; fileRef = D5126D1A946F448C96B71D0B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */; };
+		F574F63D42BC425B9021AD9D /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXBuildFile; fileRef = B64906359B8C4BBB8ADEEC3D /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */; };
+		FCF8FE842C274E559AD97C4E /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp.rule */ = {isa = PBXBuildFile; fileRef = AF62BCFF4DC74709A60F6593 /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp.rule */; };
+		FED4C82C638E468DB6F758CD /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_main.cpp */ = {isa = PBXBuildFile; fileRef = E2EEA19EBB6E47CF96E4EB0C /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_main.cpp */; };
+		FF56D37FFCC1454E9089A5F8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = B0E6C9E29AD54A58ABCCD55C /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		468F1D4C5BE24D429F37BA1A /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		F66FC5FEB4934F0D9BA14CC3 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		053F8ED29794492B95D1E7D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		44767C312EBB4DB7A79A06B4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C515D32813D34237A09954BF;
+			remoteInfo = opencv_test_stitching;
+		};
+		618147CC6DB544F0870E0E4B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFA081035614255ABD473F5;
+			remoteInfo = opencv_stitching;
+		};
+		6289C9B06F834C18A50159E1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		6B9763BF8E7441EE8D412EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		6E6EDE02DBED41DBA1E20041 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3811865DE3B341DBA16720A7;
+			remoteInfo = opencv_perf_stitching;
+		};
+		8C0D3F2C72AD44F29D9652AE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFA081035614255ABD473F5;
+			remoteInfo = opencv_stitching;
+		};
+		8DDE3DF38C3140BABBC41E06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		A71A28A1F880411986AD4D86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6EFA081035614255ABD473F5;
+			remoteInfo = opencv_stitching;
+		};
+		C5AC53E21F79470CA01AD766 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		FBE04DF2FE7440058E91B2D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7007A7494BF6468A97833697 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0010E4FEEF7A453B93C47567 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/warpers.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = warpers.cl; path = src/opencl/warpers.cl; sourceTree = SOURCE_ROOT; };
+		030D5CEBD8964C04A3EB56B7 /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		06104FC727674C36B442AED0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/matchers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = matchers.cpp; path = src/matchers.cpp; sourceTree = SOURCE_ROOT; };
+		0644BF363653419187708EA0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = seam_finders.hpp; path = include/opencv2/stitching/detail/seam_finders.hpp; sourceTree = SOURCE_ROOT; };
+		06A1D2A80CDF48A18F5B2126 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = src/precomp.hpp; sourceTree = SOURCE_ROOT; };
+		0738766117FE49AAA76504FC /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/stitcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stitcher.cpp; path = src/stitcher.cpp; sourceTree = SOURCE_ROOT; };
+		0B52F5C88F2641EFBC6CD065 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/motion_estimators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = motion_estimators.cpp; path = src/motion_estimators.cpp; sourceTree = SOURCE_ROOT; };
+		175FB023A4DA4B77A5EA4DA5 /* opencv_test_stitching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_test_stitching; sourceTree = BUILT_PRODUCTS_DIR; };
+		2636DCD371874971BD041213 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = stitching.hpp; path = include/opencv2/stitching.hpp; sourceTree = SOURCE_ROOT; };
+		29E3D8C3D4D64291B86AED81 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_stich.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_stich.cpp; path = perf/perf_stich.cpp; sourceTree = SOURCE_ROOT; };
+		2DB9A499C95A4459A906C8BB /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/multibandblend.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = multibandblend.cl; path = src/opencl/multibandblend.cl; sourceTree = SOURCE_ROOT; };
+		383503C71FA541718B09568F /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencl_kernels_stitching.hpp; path = ../../../OpenCV/modules/stitching/opencl_kernels_stitching.hpp; sourceTree = SOURCE_ROOT; };
+		3B723A72096541EDB04B27DF /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_wave_correction.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_wave_correction.cpp; path = test/test_wave_correction.cpp; sourceTree = SOURCE_ROOT; };
+		3C0244E82CCF47D28F6103EC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = warpers.hpp; path = include/opencv2/stitching/detail/warpers.hpp; sourceTree = SOURCE_ROOT; };
+		410F1B824110439A9E78BB6D /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_matchers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_matchers.cpp; path = test/test_matchers.cpp; sourceTree = SOURCE_ROOT; };
+		43EB847FCD6449BDB7F196B0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = util.hpp; path = include/opencv2/stitching/detail/util.hpp; sourceTree = SOURCE_ROOT; };
+		45FCC44EA75A45B38FA7D29A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_exposure_compensate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_exposure_compensate.cpp; path = test/test_exposure_compensate.cpp; sourceTree = SOURCE_ROOT; };
+		4B61BC79222D4FB9BF5A7845 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/camera.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = camera.cpp; path = src/camera.cpp; sourceTree = SOURCE_ROOT; };
+		4D129424C5EC4BC9876C5A40 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_reprojection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_reprojection.cpp; path = test/test_reprojection.cpp; sourceTree = SOURCE_ROOT; };
+		5166B2667AFC467289F88484 /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cvconfig.h; path = ../../../OpenCV/cvconfig.h; sourceTree = SOURCE_ROOT; };
+		5727868188E54E60B1489116 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util_log.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = util_log.hpp; path = src/util_log.hpp; sourceTree = SOURCE_ROOT; };
+		5EF39F22453543AF8F92EDBA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = autocalib.hpp; path = include/opencv2/stitching/detail/autocalib.hpp; sourceTree = SOURCE_ROOT; };
+		60A43A41D0D04658B939FC5B /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_kernels_stitching.cpp; path = ../../../OpenCV/modules/stitching/opencl_kernels_stitching.cpp; sourceTree = SOURCE_ROOT; };
+		6B42FF08D3AD470A984FDE74 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = warpers_inl.hpp; path = include/opencv2/stitching/detail/warpers_inl.hpp; sourceTree = SOURCE_ROOT; };
+		6F01F63815914DAE8B738C8E /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = timelapsers.hpp; path = include/opencv2/stitching/detail/timelapsers.hpp; sourceTree = SOURCE_ROOT; };
+		70B09D6FF5214C83AD40722C /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cuda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_blenders.cuda.cpp; path = test/test_blenders.cuda.cpp; sourceTree = SOURCE_ROOT; };
+		75CA551BE7DB47F5ACA4CDEF /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		78068CD84D084A379B145600 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/seam_finders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = seam_finders.cpp; path = src/seam_finders.cpp; sourceTree = SOURCE_ROOT; };
+		805987192BBE4DD2B6B872F9 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_matchers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_matchers.cpp; path = perf/perf_matchers.cpp; sourceTree = SOURCE_ROOT; };
+		81FC543D39B9492593391850 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = exposure_compensate.hpp; path = include/opencv2/stitching/detail/exposure_compensate.hpp; sourceTree = SOURCE_ROOT; };
+		88D4F17DA0754C38B141766B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/timelapsers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = timelapsers.cpp; path = src/timelapsers.cpp; sourceTree = SOURCE_ROOT; };
+		8B1D975739B6417F8C6DADEA /* opencv_perf_stitching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_perf_stitching; sourceTree = BUILT_PRODUCTS_DIR; };
+		92C8825D394B429A89427A15 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_warpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_warpers.cpp; path = perf/opencl/perf_warpers.cpp; sourceTree = SOURCE_ROOT; };
+		947354F301BA49B0AA6A3AEB /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		953E9206393941A5AEBD14E7 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/blenders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = blenders.cpp; path = src/blenders.cpp; sourceTree = SOURCE_ROOT; };
+		9C9EB11BC0A049129FD17E82 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_blenders.cpp; path = test/test_blenders.cpp; sourceTree = SOURCE_ROOT; };
+		9EA473B28C0948E4B529995B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/autocalib.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = autocalib.cpp; path = src/autocalib.cpp; sourceTree = SOURCE_ROOT; };
+		AC1FEBD380D04BB5933495A0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = perf_precomp.hpp; path = perf/perf_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		AF62BCFF4DC74709A60F6593 /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = opencl_kernels_stitching.cpp.rule; path = ../../../OpenCV/modules/stitching/opencl_kernels_stitching.cpp.rule; sourceTree = SOURCE_ROOT; };
+		B0E6C9E29AD54A58ABCCD55C /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		B19652982E5444DE9823D97F /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = test/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		B64906359B8C4BBB8ADEEC3D /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = camera.hpp; path = include/opencv2/stitching/detail/camera.hpp; sourceTree = SOURCE_ROOT; };
+		B9F9A9929DFD49298AE0E14A /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_estimators.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_estimators.cpp; path = perf/perf_estimators.cpp; sourceTree = SOURCE_ROOT; };
+		C1D5F05A91DB4D9595371CB1 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers_cuda.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = warpers_cuda.cpp; path = src/warpers_cuda.cpp; sourceTree = SOURCE_ROOT; };
+		C78DB3FD644847E58777F799 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = warpers.cpp; path = src/warpers.cpp; sourceTree = SOURCE_ROOT; };
+		C9C401E937C74BBCA00A3C1A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = test_precomp.hpp; path = test/test_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		D5126D1A946F448C96B71D0B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = warpers.hpp; path = include/opencv2/stitching/warpers.hpp; sourceTree = SOURCE_ROOT; };
+		D8B2E520343B4BBD8C5C6449 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_stitcher.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_stitcher.cpp; path = test/test_stitcher.cpp; sourceTree = SOURCE_ROOT; };
+		D9A3434D48E34ED8AB05CF25 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = motion_estimators.hpp; path = include/opencv2/stitching/detail/motion_estimators.hpp; sourceTree = SOURCE_ROOT; };
+		DE1193A27C024B509F0041B9 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencv_modules.hpp; path = ../../../OpenCV/opencv2/opencv_modules.hpp; sourceTree = SOURCE_ROOT; };
+		E2EEA19EBB6E47CF96E4EB0C /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_main.cpp; path = perf/perf_main.cpp; sourceTree = SOURCE_ROOT; };
+		EA1367CC8BEF416090C2656F /* opencv_stitching */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libopencv_stitching.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		ECC6D6F22E4B491491CC58BF /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/exposure_compensate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = exposure_compensate.cpp; path = src/exposure_compensate.cpp; sourceTree = SOURCE_ROOT; };
+		F16D0F7E0222416B8C707AE8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_stitch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_stitch.cpp; path = perf/opencl/perf_stitch.cpp; sourceTree = SOURCE_ROOT; };
+		F4061B03AFF94D6A813539BA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = util_inl.hpp; path = include/opencv2/stitching/detail/util_inl.hpp; sourceTree = SOURCE_ROOT; };
+		F845DF94E5054AFFB35DC22B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = blenders.hpp; path = include/opencv2/stitching/detail/blenders.hpp; sourceTree = SOURCE_ROOT; };
+		FDFFEBAD4AA648A6BEC63EB5 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = util.cpp; path = src/util.cpp; sourceTree = SOURCE_ROOT; };
+		FE0A5D0F951A4CAAA5D24CFC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = matchers.hpp; path = include/opencv2/stitching/detail/matchers.hpp; sourceTree = SOURCE_ROOT; };
+		FE8AFD36C1EF400EB28EFDF2 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/ocl/test_warpers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_warpers.cpp; path = test/ocl/test_warpers.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB4C720AC82643A29F10B9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE9A08ED3CA646B08092CD21 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FCF0520F0C4C4E61997DF0FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		02C9E7857B764547B22D8AB8 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				92595C1401124DFAA0BA7601 /* kernels */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		13613349A5A241C19DA0B968 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				274F2C89B5C64874B25BCD81 /* ocl */,
+				9C9EB11BC0A049129FD17E82 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cpp */,
+				70B09D6FF5214C83AD40722C /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cuda.cpp */,
+				45FCC44EA75A45B38FA7D29A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_exposure_compensate.cpp */,
+				B19652982E5444DE9823D97F /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_main.cpp */,
+				410F1B824110439A9E78BB6D /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_matchers.cpp */,
+				4D129424C5EC4BC9876C5A40 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_reprojection.cpp */,
+				D8B2E520343B4BBD8C5C6449 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_stitcher.cpp */,
+				3B723A72096541EDB04B27DF /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_wave_correction.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		1418F9203694431EB26F3858 = {
+			isa = PBXGroup;
+			children = (
+				42DA0B1E1C2441DC87607E53 /* modules */,
+				DFC20E1F44634CDEB7880EFD /* tests accuracy */,
+				F97FA390CCDB48228EAA2D4E /* tests performance */,
+				93C65EC957B44B2697AE422D /* ALL_BUILD */,
+				3A9D5F01D9C74DE089E063FE /* Products */,
+				81959AB4F49441D0876CDDE1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		261F246F1CDC47B992642C49 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		274F2C89B5C64874B25BCD81 /* ocl */ = {
+			isa = PBXGroup;
+			children = (
+				FE8AFD36C1EF400EB28EFDF2 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/ocl/test_warpers.cpp */,
+			);
+			name = ocl;
+			sourceTree = "<group>";
+		};
+		304DB4C7D5F04B56A3829158 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				81281D49EC064E4695AFD83F /* opencl */,
+				B9F9A9929DFD49298AE0E14A /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_estimators.cpp */,
+				E2EEA19EBB6E47CF96E4EB0C /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_main.cpp */,
+				805987192BBE4DD2B6B872F9 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_matchers.cpp */,
+				29E3D8C3D4D64291B86AED81 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_stich.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		3231324E365842E7BDF9FCC3 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				AF62BCFF4DC74709A60F6593 /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		3A9D5F01D9C74DE089E063FE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8B1D975739B6417F8C6DADEA /* opencv_perf_stitching */,
+				EA1367CC8BEF416090C2656F /* opencv_stitching */,
+				175FB023A4DA4B77A5EA4DA5 /* opencv_test_stitching */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4117708A4CCE444DBFB5E41E /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				02C9E7857B764547B22D8AB8 /* opencl */,
+				9EA473B28C0948E4B529995B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/autocalib.cpp */,
+				953E9206393941A5AEBD14E7 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/blenders.cpp */,
+				4B61BC79222D4FB9BF5A7845 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/camera.cpp */,
+				ECC6D6F22E4B491491CC58BF /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/exposure_compensate.cpp */,
+				06104FC727674C36B442AED0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/matchers.cpp */,
+				0B52F5C88F2641EFBC6CD065 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/motion_estimators.cpp */,
+				06A1D2A80CDF48A18F5B2126 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/precomp.hpp */,
+				78068CD84D084A379B145600 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/seam_finders.cpp */,
+				0738766117FE49AAA76504FC /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/stitcher.cpp */,
+				88D4F17DA0754C38B141766B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/timelapsers.cpp */,
+				FDFFEBAD4AA648A6BEC63EB5 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util.cpp */,
+				5727868188E54E60B1489116 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util_log.hpp */,
+				C78DB3FD644847E58777F799 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers.cpp */,
+				C1D5F05A91DB4D9595371CB1 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers_cuda.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		426CA63A99EC47219A43176E /* detail */ = {
+			isa = PBXGroup;
+			children = (
+				5EF39F22453543AF8F92EDBA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/autocalib.hpp */,
+				F845DF94E5054AFFB35DC22B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/blenders.hpp */,
+				B64906359B8C4BBB8ADEEC3D /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/camera.hpp */,
+				81FC543D39B9492593391850 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/exposure_compensate.hpp */,
+				FE0A5D0F951A4CAAA5D24CFC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/matchers.hpp */,
+				D9A3434D48E34ED8AB05CF25 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/motion_estimators.hpp */,
+				0644BF363653419187708EA0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/seam_finders.hpp */,
+				6F01F63815914DAE8B738C8E /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/timelapsers.hpp */,
+				43EB847FCD6449BDB7F196B0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util.hpp */,
+				F4061B03AFF94D6A813539BA /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/util_inl.hpp */,
+				3C0244E82CCF47D28F6103EC /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers.hpp */,
+				6B42FF08D3AD470A984FDE74 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/detail/warpers_inl.hpp */,
+			);
+			name = detail;
+			sourceTree = "<group>";
+		};
+		42DA0B1E1C2441DC87607E53 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				E43932F3D9534E8094569588 /* opencv_stitching */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
+		635A0E78EE20415AADDB5C8E /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				9F199DBE4B774827B60E54C2 /* opencv2 */,
+				5166B2667AFC467289F88484 /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */,
+				DE1193A27C024B509F0041B9 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		6923CBA162494C6DBFA2BD14 /* stitching */ = {
+			isa = PBXGroup;
+			children = (
+				426CA63A99EC47219A43176E /* detail */,
+				D5126D1A946F448C96B71D0B /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching/warpers.hpp */,
+			);
+			name = stitching;
+			sourceTree = "<group>";
+		};
+		73B6F79815E6454B8E3ECD50 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				C9C401E937C74BBCA00A3C1A /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		7CF55FC909CE4C0A8D69C221 /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				AC1FEBD380D04BB5933495A0 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		81281D49EC064E4695AFD83F /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				F16D0F7E0222416B8C707AE8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_stitch.cpp */,
+				92C8825D394B429A89427A15 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_warpers.cpp */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		81959AB4F49441D0876CDDE1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		83928FE174D546E0B69CC8F1 /* opencv_test_stitching */ = {
+			isa = PBXGroup;
+			children = (
+				13613349A5A241C19DA0B968 /* Src */,
+				73B6F79815E6454B8E3ECD50 /* Include */,
+				947354F301BA49B0AA6A3AEB /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */,
+			);
+			name = opencv_test_stitching;
+			sourceTree = "<group>";
+		};
+		92595C1401124DFAA0BA7601 /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				CCF3A789F70E4FBCA4D8B1AB /* autogenerated */,
+				2DB9A499C95A4459A906C8BB /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/multibandblend.cl */,
+				0010E4FEEF7A453B93C47567 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/warpers.cl */,
+			);
+			name = kernels;
+			sourceTree = "<group>";
+		};
+		93C65EC957B44B2697AE422D /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				261F246F1CDC47B992642C49 /* CMake Rules */,
+				030D5CEBD8964C04A3EB56B7 /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		9F199DBE4B774827B60E54C2 /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				6923CBA162494C6DBFA2BD14 /* stitching */,
+				2636DCD371874971BD041213 /* /Users/BrightLand/Envy/_opencv/modules/stitching/include/opencv2/stitching.hpp */,
+			);
+			name = opencv2;
+			sourceTree = "<group>";
+		};
+		A29E5584A7C743948FD2CABD /* opencv_perf_stitching */ = {
+			isa = PBXGroup;
+			children = (
+				304DB4C7D5F04B56A3829158 /* Src */,
+				7CF55FC909CE4C0A8D69C221 /* Include */,
+				75CA551BE7DB47F5ACA4CDEF /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */,
+			);
+			name = opencv_perf_stitching;
+			sourceTree = "<group>";
+		};
+		CCF3A789F70E4FBCA4D8B1AB /* autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				60A43A41D0D04658B939FC5B /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp */,
+				383503C71FA541718B09568F /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.hpp */,
+			);
+			name = autogenerated;
+			sourceTree = "<group>";
+		};
+		DFC20E1F44634CDEB7880EFD /* tests accuracy */ = {
+			isa = PBXGroup;
+			children = (
+				83928FE174D546E0B69CC8F1 /* opencv_test_stitching */,
+			);
+			name = "tests accuracy";
+			sourceTree = "<group>";
+		};
+		E43932F3D9534E8094569588 /* opencv_stitching */ = {
+			isa = PBXGroup;
+			children = (
+				635A0E78EE20415AADDB5C8E /* Include */,
+				4117708A4CCE444DBFB5E41E /* Src */,
+				3231324E365842E7BDF9FCC3 /* CMake Rules */,
+				B0E6C9E29AD54A58ABCCD55C /* /Users/BrightLand/Envy/_opencv/modules/stitching/CMakeLists.txt */,
+			);
+			name = opencv_stitching;
+			sourceTree = "<group>";
+		};
+		F97FA390CCDB48228EAA2D4E /* tests performance */ = {
+			isa = PBXGroup;
+			children = (
+				A29E5584A7C743948FD2CABD /* opencv_perf_stitching */,
+			);
+			name = "tests performance";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3811865DE3B341DBA16720A7 /* opencv_perf_stitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C89E4893FDE945CE8E77CDE2 /* Build configuration list for PBXNativeTarget "opencv_perf_stitching" */;
+			buildPhases = (
+				5DC35006F26D4BE1A98EFA64 /* Sources */,
+				FCF0520F0C4C4E61997DF0FB /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A56EC4DF16EB4CA1942541FA /* PBXTargetDependency */,
+				1D9DE4464EF9469D80C67D95 /* PBXTargetDependency */,
+			);
+			name = opencv_perf_stitching;
+			productName = opencv_perf_stitching;
+			productReference = 8B1D975739B6417F8C6DADEA /* opencv_perf_stitching */;
+			productType = "com.apple.product-type.tool";
+		};
+		6EFA081035614255ABD473F5 /* opencv_stitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9772A90D06B94DB7A87F7A33 /* Build configuration list for PBXNativeTarget "opencv_stitching" */;
+			buildPhases = (
+				CF6566E6F235B7A4D6BB21CF /* Generate opencl_kernels_stitching.cpp */,
+				093FD635509F4F798E4AE211 /* Sources */,
+				AE9A08ED3CA646B08092CD21 /* Frameworks */,
+				498602C3E59A9A3C1B8B83AA /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4338118E354049CCB5D395A1 /* PBXTargetDependency */,
+			);
+			name = opencv_stitching;
+			productName = opencv_stitching;
+			productReference = EA1367CC8BEF416090C2656F /* opencv_stitching */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		C515D32813D34237A09954BF /* opencv_test_stitching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3B3FCAA8ED7C4C8797699944 /* Build configuration list for PBXNativeTarget "opencv_test_stitching" */;
+			buildPhases = (
+				34A4D9DE34FF472DBAB6CFC9 /* Sources */,
+				AB4C720AC82643A29F10B9F5 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3DB511DFF8A64122813E4708 /* PBXTargetDependency */,
+				0B014D9EDD4D491CB248018F /* PBXTargetDependency */,
+			);
+			name = opencv_test_stitching;
+			productName = opencv_test_stitching;
+			productReference = 175FB023A4DA4B77A5EA4DA5 /* opencv_test_stitching */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7007A7494BF6468A97833697 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 3F4DBE684EED426495BB45E6 /* Build configuration list for PBXProject "opencv_stitching" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				468F1D4C5BE24D429F37BA1A /* Debug */,
+				F66FC5FEB4934F0D9BA14CC3 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 1418F9203694431EB26F3858;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/modules/stitching;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				3811865DE3B341DBA16720A7 /* opencv_perf_stitching */,
+				6EFA081035614255ABD473F5 /* opencv_stitching */,
+				C515D32813D34237A09954BF /* opencv_test_stitching */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		1ECA9ABC9BFCD74EE0E935A3 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/stitching/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  make -f /Users/BrightLand/Envy/OpenCV/modules/stitching/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  make -f /Users/BrightLand/Envy/OpenCV/modules/stitching/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		498602C3E59A9A3C1B8B83AA /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_stitching.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_stitching.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_stitching.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_stitching.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_stitching.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_stitching.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		80894A3D875DE94245CCC22B /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/stitching/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CF6566E6F235B7A4D6BB21CF /* Generate opencl_kernels_stitching.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake,/Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/multibandblend.cl,/Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl/warpers.cl			);
+			name = "Generate opencl_kernels_stitching.cpp";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=stitching -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/stitching
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=stitching -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/stitching/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		093FD635509F4F798E4AE211 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6E99970622764FC3A3598634 /* /Users/BrightLand/Envy/OpenCV/modules/stitching/opencl_kernels_stitching.cpp */,
+				32226F3F41EC48ED91502045 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/autocalib.cpp */,
+				E71D9B04AA7C45E38AC8ECA3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/blenders.cpp */,
+				E24E0016425942FDA7F14B86 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/camera.cpp */,
+				7CB482BEAE2B490FBFEA4040 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/exposure_compensate.cpp */,
+				8EDDA08A9E7F41D88F539AB3 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/matchers.cpp */,
+				0E8A029507964830BCCADC2F /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/motion_estimators.cpp */,
+				B96AD9D0B4A645518D18F46B /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/seam_finders.cpp */,
+				B2C596FF29E94D8AAC7D9147 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/stitcher.cpp */,
+				C9F7A186EDF24967B33F27BD /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/timelapsers.cpp */,
+				E5F2E9F130A943A798AF76BA /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/util.cpp */,
+				7E1B2EED96D240F09F06F429 /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers.cpp */,
+				E73994BF99C6483082B37E5F /* /Users/BrightLand/Envy/_opencv/modules/stitching/src/warpers_cuda.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34A4D9DE34FF472DBAB6CFC9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C239812B60EA4E98B0C9B1CE /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/ocl/test_warpers.cpp */,
+				3131F511702748CB8CDBFF5C /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cpp */,
+				42558A82A8444F6B88177BDB /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_blenders.cuda.cpp */,
+				40AD46E59E4740239FDB88F9 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_exposure_compensate.cpp */,
+				CBDDF486469A4CDA8B33C660 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_main.cpp */,
+				A44D0D5DB9F446DC8D80A70D /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_matchers.cpp */,
+				73713A46D13442D0A047E193 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_reprojection.cpp */,
+				E44F639790DC422ABA708406 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_stitcher.cpp */,
+				C9236D14C97A496A9325EF43 /* /Users/BrightLand/Envy/_opencv/modules/stitching/test/test_wave_correction.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DC35006F26D4BE1A98EFA64 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				74250DC1FE10456C9924D98A /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_stitch.cpp */,
+				564CDEB1B70F40A58E76FDAE /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/opencl/perf_warpers.cpp */,
+				B9C33E0829014D0B8439862C /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_estimators.cpp */,
+				FED4C82C638E468DB6F758CD /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_main.cpp */,
+				6B1AACAF020B4AD0BBE427F8 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_matchers.cpp */,
+				014F7F0E41BD4743A583CA84 /* /Users/BrightLand/Envy/_opencv/modules/stitching/perf/perf_stich.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B014D9EDD4D491CB248018F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = C5AC53E21F79470CA01AD766 /* PBXContainerItemProxy */;
+		};
+		1D9DE4464EF9469D80C67D95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 053F8ED29794492B95D1E7D7 /* PBXContainerItemProxy */;
+		};
+		3DB511DFF8A64122813E4708 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFA081035614255ABD473F5 /* opencv_stitching */;
+			targetProxy = 8C0D3F2C72AD44F29D9652AE /* PBXContainerItemProxy */;
+		};
+		4338118E354049CCB5D395A1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 6B9763BF8E7441EE8D412EB7 /* PBXContainerItemProxy */;
+		};
+		4935289C27F34EB38E50E2CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 6289C9B06F834C18A50159E1 /* PBXContainerItemProxy */;
+		};
+		636BD4817C7F4ECF9BF4B3E9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3811865DE3B341DBA16720A7 /* opencv_perf_stitching */;
+			targetProxy = 6E6EDE02DBED41DBA1E20041 /* PBXContainerItemProxy */;
+		};
+		69BA3ECF06AD46CD9D6F11E3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C515D32813D34237A09954BF /* opencv_test_stitching */;
+			targetProxy = 44767C312EBB4DB7A79A06B4 /* PBXContainerItemProxy */;
+		};
+		81AE275C5F7D41449A7AEF36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = FBE04DF2FE7440058E91B2D3 /* PBXContainerItemProxy */;
+		};
+		A56EC4DF16EB4CA1942541FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFA081035614255ABD473F5 /* opencv_stitching */;
+			targetProxy = 618147CC6DB544F0870E0E4B /* PBXContainerItemProxy */;
+		};
+		B1921DF6B4654FC4966A52A4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6EFA081035614255ABD473F5 /* opencv_stitching */;
+			targetProxy = A71A28A1F880411986AD4D86 /* PBXContainerItemProxy */;
+		};
+		DCFF464609F74624A77550B5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 8DDE3DF38C3140BABBC41E06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		06B26800C6BB49FDA3BB8646 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_stitching.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_stitching;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		25160BC1E61B4392AEB71EF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		3A9A63B4FB4C41C6BAE2B97D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching/build;
+			};
+			name = Debug;
+		};
+		3B08EB4920BE4F0B94B51646 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4C25C04562E2432BA78645F3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/OpenCV/modules/stitching,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_stitching.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_stitching.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4FF9F2A61B694BF688F2C0A0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_stitching.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_stitching;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		6990356E9AB04D8F8F16E5B6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		6D4060DF7CCE436A96DA4E29 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		7F1E0262A596449881BE3A38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_stitching.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_stitching;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		99122FE8E6754CC3B652EDB8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/OpenCV/modules/stitching,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_stitching.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_stitching.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		A7BFDA0684CD4DCCA3329926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching/build;
+			};
+			name = Release;
+		};
+		AD202FFFCF944C90883A018A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AD3F9FE79CCD4D698DBDC63F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/stitching/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_stitching.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_stitching;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BE25C115AC0D4227853AB55F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		C269E945BA4A43238003FCFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D65CAEA7D6C546108A99D42B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E49457D9AD374455995CBA69 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		FB5A82299C314D70A1A3B758 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/stitching;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2AA444C105DC4C8AA8246BEC /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE25C115AC0D4227853AB55F /* Debug */,
+				AD202FFFCF944C90883A018A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3B3FCAA8ED7C4C8797699944 /* Build configuration list for PBXNativeTarget "opencv_test_stitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				06B26800C6BB49FDA3BB8646 /* Debug */,
+				4FF9F2A61B694BF688F2C0A0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		3F4DBE684EED426495BB45E6 /* Build configuration list for PBXProject "opencv_stitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3A9A63B4FB4C41C6BAE2B97D /* Debug */,
+				A7BFDA0684CD4DCCA3329926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6CD6274CBA08424E989FF991 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FB5A82299C314D70A1A3B758 /* Debug */,
+				E49457D9AD374455995CBA69 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9772A90D06B94DB7A87F7A33 /* Build configuration list for PBXNativeTarget "opencv_stitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99122FE8E6754CC3B652EDB8 /* Debug */,
+				4C25C04562E2432BA78645F3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		AE56E0F2C12B46B1A9C139EF /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				25160BC1E61B4392AEB71EF2 /* Debug */,
+				C269E945BA4A43238003FCFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C0FF3B9E17DD416CBA414418 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6990356E9AB04D8F8F16E5B6 /* Debug */,
+				6D4060DF7CCE436A96DA4E29 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C89E4893FDE945CE8E77CDE2 /* Build configuration list for PBXNativeTarget "opencv_perf_stitching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7F1E0262A596449881BE3A38 /* Debug */,
+				AD3F9FE79CCD4D698DBDC63F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E9F016643D114804ACD7612F /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D65CAEA7D6C546108A99D42B /* Debug */,
+				3B08EB4920BE4F0B94B51646 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7007A7494BF6468A97833697 /* Project object */;
+}

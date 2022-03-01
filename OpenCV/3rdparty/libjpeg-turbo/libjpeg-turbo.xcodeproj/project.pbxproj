@@ -1,0 +1,1038 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 9018143AF6E5445EAEC43B03 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 1FCA691E4CB0419F894189E5 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				92183CC360E543F98BE04876 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5A25055BEB2246CBB23AB619 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				0A4337F9864146E890B603AA /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = BFA2048C6E024559B0F6F916 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				A4F200306710C39DCA42B1A3 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				97BB8BA5462D4CF6B5E98883 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = C8E75E779BC4419495F96469 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				2DC8C1993AB2822214047323 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		01D872033F3B41438B3EDDC4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcdctmgr.c */ = {isa = PBXBuildFile; fileRef = 3908BC6A2C97469CBC1CC363 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcdctmgr.c */; };
+		16DCC87944C24B53BE621603 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jerror.c */ = {isa = PBXBuildFile; fileRef = AF284A7277AA4EC6B5685F49 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jerror.c */; };
+		17D73C7171BF4FE5A06C8248 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcsample.c */ = {isa = PBXBuildFile; fileRef = 70D911EB967B402CBB9AE708 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcsample.c */; };
+		1DEEFABA7F6645E09653EA85 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcprepct.c */ = {isa = PBXBuildFile; fileRef = 6984BF831F8641DB9651EC52 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcprepct.c */; };
+		1F1527BC03A8411EB7D026A9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdhuff.c */ = {isa = PBXBuildFile; fileRef = 680852D25E5444D0BE8BC242 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdhuff.c */; };
+		1FC8705CA9314BB09AE8EBF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdtrans.c */ = {isa = PBXBuildFile; fileRef = 200FAF79F12C4B8F8EF49D93 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdtrans.c */; };
+		21BED9C7849C461CAE2C0DF5 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapimin.c */ = {isa = PBXBuildFile; fileRef = 4E6F3A77EF8842B9AE7E9BE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapimin.c */; };
+		23CA67C431964429A64D1FE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcparam.c */ = {isa = PBXBuildFile; fileRef = B185B3116AFA48818A78D296 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcparam.c */; };
+		26AEC28A8D44407AB1BCD2B2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jctrans.c */ = {isa = PBXBuildFile; fileRef = 21918BD6203C49CEB916FB35 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jctrans.c */; };
+		28329C4652AA4B23972C6333 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdarith.c */ = {isa = PBXBuildFile; fileRef = 8035259C99364F74AD2C5523 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdarith.c */; };
+		2EF24D556DEE40398AFFAC1A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapistd.c */ = {isa = PBXBuildFile; fileRef = 001518A4619A4C909CA75A3C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapistd.c */; };
+		366F1C8B876441EC964AFC72 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctint.c */ = {isa = PBXBuildFile; fileRef = B89EE2F0A3164AACAB2847A6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctint.c */; };
+		3A4E6794A87B47FF8CD4FE62 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatasrc.c */ = {isa = PBXBuildFile; fileRef = D6A1B1EFDD84452192B3122A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatasrc.c */; };
+		3CD015FD3D81425E983278A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccolor.c */ = {isa = PBXBuildFile; fileRef = 5D7BF4BE2DEE4BE9872FAE79 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccolor.c */; };
+		402B877C2D8A46DAA6AEE683 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant1.c */ = {isa = PBXBuildFile; fileRef = FA558DF194E64ED783AB469B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant1.c */; };
+		40D425E4E2E144B29597AA85 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jddctmgr.c */ = {isa = PBXBuildFile; fileRef = 0D65989A59804E93BF698D8F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jddctmgr.c */; };
+		4B79E77F3311475DBFF1C9A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcarith.c */ = {isa = PBXBuildFile; fileRef = F6369B57F8514940A0795C38 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcarith.c */; };
+		4C74231B0F584D1680924209 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctfst.c */ = {isa = PBXBuildFile; fileRef = F7614095EAA04AF2BF7A3F0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctfst.c */; };
+		5DD1ABB5619B437C920FF71D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcicc.c */ = {isa = PBXBuildFile; fileRef = AD304EADE64D46738F83CA15 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcicc.c */; };
+		633B958D83CA4B5187C8459F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmainct.c */ = {isa = PBXBuildFile; fileRef = 1170F646E7B3472B8CDF1769 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmainct.c */; };
+		6836BBB777754135AA79A151 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctflt.c */ = {isa = PBXBuildFile; fileRef = 36BAD5D9FB9E48C4BBB08B6F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctflt.c */; };
+		6C66624028FB4EA597F40196 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant2.c */ = {isa = PBXBuildFile; fileRef = C941848AC7294AF0BE96A3F2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant2.c */; };
+		7CFB222D90774FB49E95AEE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdicc.c */ = {isa = PBXBuildFile; fileRef = 9D805BF5E55F476A87F85252 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdicc.c */; };
+		8191D462909A4880807F72EF /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctflt.c */ = {isa = PBXBuildFile; fileRef = D52C7CFB13384B7185B607C6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctflt.c */; };
+		8514B2821C314798817D3A7D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatadst.c */ = {isa = PBXBuildFile; fileRef = 476C0BE9A7D64F9493C2F1F7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatadst.c */; };
+		8D339857436240C89F23C373 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmaster.c */ = {isa = PBXBuildFile; fileRef = AC51EBDBA1214CFFB18EBE97 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmaster.c */; };
+		8F95E2BA50634B8D9B63F72B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcoefct.c */ = {isa = PBXBuildFile; fileRef = 7303A3B671C041759436F88C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcoefct.c */; };
+		94D72599DC874408BBC79B68 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcolor.c */ = {isa = PBXBuildFile; fileRef = ECEE3EED049348958ECADA01 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcolor.c */; };
+		955A27B1C6A64062A04C58E2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdpostct.c */ = {isa = PBXBuildFile; fileRef = DF03CBBE81BA46829D99F73F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdpostct.c */; };
+		9AA9FE3C9618407889BD71D9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcinit.c */ = {isa = PBXBuildFile; fileRef = 77FE0D00EB4742C981542209 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcinit.c */; };
+		9BD60B1B1310403BA3AB4657 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmarker.c */ = {isa = PBXBuildFile; fileRef = EE0B327DC38040509170A4D9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmarker.c */; };
+		9C553C5BB92741FCA7C5FAF7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemmgr.c */ = {isa = PBXBuildFile; fileRef = 8A929FE6775243738C75BC7D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemmgr.c */; };
+		9D4F396CCAA347EBA2709A59 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcomapi.c */ = {isa = PBXBuildFile; fileRef = F7C07CB20B2C4917A660F0B4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcomapi.c */; };
+		9E42F0CF43A74BBD8E787287 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctint.c */ = {isa = PBXBuildFile; fileRef = 8F6BD87FD5BD4E8F8B4F4E54 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctint.c */; };
+		A838029AEA9B4EEE9F1B0C2F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jsimd_none.c */ = {isa = PBXBuildFile; fileRef = D0E8A872E93142DFB4092342 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jsimd_none.c */; };
+		A8D916A6421E4D75AFA72AA9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctfst.c */ = {isa = PBXBuildFile; fileRef = 44667338F1704FE8829754C4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctfst.c */; };
+		A9D97C5365F6462BBAFAB310 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmainct.c */ = {isa = PBXBuildFile; fileRef = A4958E59816A4838A0068CBF /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmainct.c */; };
+		B20B8791585646C19E2CC655 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemnobs.c */ = {isa = PBXBuildFile; fileRef = 5318811865AD44319C821701 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemnobs.c */; };
+		B83000F7C73240A99339ACF5 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapistd.c */ = {isa = PBXBuildFile; fileRef = 0465315087CC4913B7455316 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapistd.c */; };
+		BE7A7B68DF87485299CD5C07 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmaster.c */ = {isa = PBXBuildFile; fileRef = 3A2CD617EBD14832BB372836 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmaster.c */; };
+		C658E14587BF4C148D702D4C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdphuff.c */ = {isa = PBXBuildFile; fileRef = 45DDDB219CCC41FAAE2E952E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdphuff.c */; };
+		CC0AEC9D56E547F2816BFF9F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdsample.c */ = {isa = PBXBuildFile; fileRef = DB8497264D8149CA9C6177AD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdsample.c */; };
+		CD268A1CBD6F49139DCAE77B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccoefct.c */ = {isa = PBXBuildFile; fileRef = A6B18F92AD3F4677A8CE3CD4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccoefct.c */; };
+		DBE26B792C9C4E2F8D5220DA /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapimin.c */ = {isa = PBXBuildFile; fileRef = F61704AA3AA0464DA8CA8E0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapimin.c */; };
+		E66744119BD246E29F773F9F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmarker.c */ = {isa = PBXBuildFile; fileRef = AB7E1EC0B82742C5ADE902EA /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmarker.c */; };
+		EB0D4A24AF1D4ED6921F222C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmerge.c */ = {isa = PBXBuildFile; fileRef = 678F85CE2A7149A8993A06FD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmerge.c */; };
+		EFC84EF9C58E452FB1884BD1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcphuff.c */ = {isa = PBXBuildFile; fileRef = FBA071193C154071AAFA83B1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcphuff.c */; };
+		F204114250D84A65A014CEBD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdinput.c */ = {isa = PBXBuildFile; fileRef = 3829F4942D5B4A3D83C42650 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdinput.c */; };
+		F21BAEAC09614B1C84DAF537 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jutils.c */ = {isa = PBXBuildFile; fileRef = B417BB3613F54B1F9CBBAD5E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jutils.c */; };
+		F29F574130F94D57B83AA12A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jchuff.c */ = {isa = PBXBuildFile; fileRef = D2FF926018774BB992504301 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jchuff.c */; };
+		F8402F3B6B6540B3A02C0EFB /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jaricom.c */ = {isa = PBXBuildFile; fileRef = 7040A823F9EC441AAF7D6D8B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jaricom.c */; };
+		FB1C91759FA64E98B15A862D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctred.c */ = {isa = PBXBuildFile; fileRef = 0474FDEB62884E99B5953E0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctred.c */; };
+		FC89ABDF22C34123A0A2691F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 5451ECB8FD69430B84608BF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		82A62D5C5A3643CA8409E804 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		CC342BD1ADA244EBAAE1D3D7 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1CAC24EFF2F14BE8B6C5ED1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92557996F964509BE4B762B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		2187417F790F483294832A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92557996F964509BE4B762B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		3232A7468760461E8A6B7E1A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92557996F964509BE4B762B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		8CF39F10693042B09A93F3AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F92557996F964509BE4B762B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		001518A4619A4C909CA75A3C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapistd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdapistd.c; path = src/jdapistd.c; sourceTree = SOURCE_ROOT; };
+		0465315087CC4913B7455316 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapistd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcapistd.c; path = src/jcapistd.c; sourceTree = SOURCE_ROOT; };
+		0474FDEB62884E99B5953E0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctred.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctred.c; path = src/jidctred.c; sourceTree = SOURCE_ROOT; };
+		0D65989A59804E93BF698D8F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jddctmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jddctmgr.c; path = src/jddctmgr.c; sourceTree = SOURCE_ROOT; };
+		1170F646E7B3472B8CDF1769 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmainct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmainct.c; path = src/jdmainct.c; sourceTree = SOURCE_ROOT; };
+		200FAF79F12C4B8F8EF49D93 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdtrans.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdtrans.c; path = src/jdtrans.c; sourceTree = SOURCE_ROOT; };
+		21918BD6203C49CEB916FB35 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jctrans.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jctrans.c; path = src/jctrans.c; sourceTree = SOURCE_ROOT; };
+		36BAD5D9FB9E48C4BBB08B6F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctflt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctflt.c; path = src/jfdctflt.c; sourceTree = SOURCE_ROOT; };
+		3829F4942D5B4A3D83C42650 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdinput.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdinput.c; path = src/jdinput.c; sourceTree = SOURCE_ROOT; };
+		3908BC6A2C97469CBC1CC363 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcdctmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcdctmgr.c; path = src/jcdctmgr.c; sourceTree = SOURCE_ROOT; };
+		3A2CD617EBD14832BB372836 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmaster.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmaster.c; path = src/jdmaster.c; sourceTree = SOURCE_ROOT; };
+		44667338F1704FE8829754C4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctfst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctfst.c; path = src/jfdctfst.c; sourceTree = SOURCE_ROOT; };
+		45DDDB219CCC41FAAE2E952E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdphuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdphuff.c; path = src/jdphuff.c; sourceTree = SOURCE_ROOT; };
+		476C0BE9A7D64F9493C2F1F7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatadst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdatadst.c; path = src/jdatadst.c; sourceTree = SOURCE_ROOT; };
+		4E6F3A77EF8842B9AE7E9BE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapimin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdapimin.c; path = src/jdapimin.c; sourceTree = SOURCE_ROOT; };
+		5318811865AD44319C821701 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemnobs.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jmemnobs.c; path = src/jmemnobs.c; sourceTree = SOURCE_ROOT; };
+		5451ECB8FD69430B84608BF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		5D7BF4BE2DEE4BE9872FAE79 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccolor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jccolor.c; path = src/jccolor.c; sourceTree = SOURCE_ROOT; };
+		678F85CE2A7149A8993A06FD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmerge.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmerge.c; path = src/jdmerge.c; sourceTree = SOURCE_ROOT; };
+		680852D25E5444D0BE8BC242 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdhuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdhuff.c; path = src/jdhuff.c; sourceTree = SOURCE_ROOT; };
+		6984BF831F8641DB9651EC52 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcprepct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcprepct.c; path = src/jcprepct.c; sourceTree = SOURCE_ROOT; };
+		7040A823F9EC441AAF7D6D8B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jaricom.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jaricom.c; path = src/jaricom.c; sourceTree = SOURCE_ROOT; };
+		70D911EB967B402CBB9AE708 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcsample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcsample.c; path = src/jcsample.c; sourceTree = SOURCE_ROOT; };
+		7303A3B671C041759436F88C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcoefct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdcoefct.c; path = src/jdcoefct.c; sourceTree = SOURCE_ROOT; };
+		77FE0D00EB4742C981542209 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcinit.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcinit.c; path = src/jcinit.c; sourceTree = SOURCE_ROOT; };
+		8035259C99364F74AD2C5523 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdarith.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdarith.c; path = src/jdarith.c; sourceTree = SOURCE_ROOT; };
+		8A929FE6775243738C75BC7D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemmgr.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jmemmgr.c; path = src/jmemmgr.c; sourceTree = SOURCE_ROOT; };
+		8F6BD87FD5BD4E8F8B4F4E54 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctint.c; path = src/jidctint.c; sourceTree = SOURCE_ROOT; };
+		921B607A7E034D64AB7E872C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9D805BF5E55F476A87F85252 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdicc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdicc.c; path = src/jdicc.c; sourceTree = SOURCE_ROOT; };
+		A4958E59816A4838A0068CBF /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmainct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmainct.c; path = src/jcmainct.c; sourceTree = SOURCE_ROOT; };
+		A6B18F92AD3F4677A8CE3CD4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccoefct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jccoefct.c; path = src/jccoefct.c; sourceTree = SOURCE_ROOT; };
+		A7EF1CEFC3064CBC8619529F /* libjpeg-turbo */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblibjpeg-turbo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7E1EC0B82742C5ADE902EA /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmarker.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmarker.c; path = src/jcmarker.c; sourceTree = SOURCE_ROOT; };
+		AC51EBDBA1214CFFB18EBE97 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmaster.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcmaster.c; path = src/jcmaster.c; sourceTree = SOURCE_ROOT; };
+		AD304EADE64D46738F83CA15 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcicc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcicc.c; path = src/jcicc.c; sourceTree = SOURCE_ROOT; };
+		AF284A7277AA4EC6B5685F49 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jerror.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jerror.c; path = src/jerror.c; sourceTree = SOURCE_ROOT; };
+		B185B3116AFA48818A78D296 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcparam.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcparam.c; path = src/jcparam.c; sourceTree = SOURCE_ROOT; };
+		B417BB3613F54B1F9CBBAD5E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jutils.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jutils.c; path = src/jutils.c; sourceTree = SOURCE_ROOT; };
+		B89EE2F0A3164AACAB2847A6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctint.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jfdctint.c; path = src/jfdctint.c; sourceTree = SOURCE_ROOT; };
+		C941848AC7294AF0BE96A3F2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant2.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jquant2.c; path = src/jquant2.c; sourceTree = SOURCE_ROOT; };
+		D0E8A872E93142DFB4092342 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jsimd_none.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jsimd_none.c; path = src/jsimd_none.c; sourceTree = SOURCE_ROOT; };
+		D2FF926018774BB992504301 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jchuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jchuff.c; path = src/jchuff.c; sourceTree = SOURCE_ROOT; };
+		D52C7CFB13384B7185B607C6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctflt.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctflt.c; path = src/jidctflt.c; sourceTree = SOURCE_ROOT; };
+		D6A1B1EFDD84452192B3122A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatasrc.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdatasrc.c; path = src/jdatasrc.c; sourceTree = SOURCE_ROOT; };
+		DB8497264D8149CA9C6177AD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdsample.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdsample.c; path = src/jdsample.c; sourceTree = SOURCE_ROOT; };
+		DF03CBBE81BA46829D99F73F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdpostct.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdpostct.c; path = src/jdpostct.c; sourceTree = SOURCE_ROOT; };
+		ECEE3EED049348958ECADA01 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcolor.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdcolor.c; path = src/jdcolor.c; sourceTree = SOURCE_ROOT; };
+		EE0B327DC38040509170A4D9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmarker.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jdmarker.c; path = src/jdmarker.c; sourceTree = SOURCE_ROOT; };
+		F61704AA3AA0464DA8CA8E0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapimin.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcapimin.c; path = src/jcapimin.c; sourceTree = SOURCE_ROOT; };
+		F6369B57F8514940A0795C38 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcarith.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcarith.c; path = src/jcarith.c; sourceTree = SOURCE_ROOT; };
+		F7614095EAA04AF2BF7A3F0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctfst.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jidctfst.c; path = src/jidctfst.c; sourceTree = SOURCE_ROOT; };
+		F7C07CB20B2C4917A660F0B4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcomapi.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcomapi.c; path = src/jcomapi.c; sourceTree = SOURCE_ROOT; };
+		FA558DF194E64ED783AB469B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant1.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jquant1.c; path = src/jquant1.c; sourceTree = SOURCE_ROOT; };
+		FBA071193C154071AAFA83B1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcphuff.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = jcphuff.c; path = src/jcphuff.c; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		06BDF2AE0D0B44719638F837 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		108A96F7432749A8BC6189F7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A7EF1CEFC3064CBC8619529F /* libjpeg-turbo */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		263D77F9C3CF47968EE1F89B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		497D1B1252194D3399D6DACD /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				7040A823F9EC441AAF7D6D8B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jaricom.c */,
+				F61704AA3AA0464DA8CA8E0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapimin.c */,
+				0465315087CC4913B7455316 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapistd.c */,
+				F6369B57F8514940A0795C38 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcarith.c */,
+				A6B18F92AD3F4677A8CE3CD4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccoefct.c */,
+				5D7BF4BE2DEE4BE9872FAE79 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccolor.c */,
+				3908BC6A2C97469CBC1CC363 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcdctmgr.c */,
+				D2FF926018774BB992504301 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jchuff.c */,
+				AD304EADE64D46738F83CA15 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcicc.c */,
+				77FE0D00EB4742C981542209 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcinit.c */,
+				A4958E59816A4838A0068CBF /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmainct.c */,
+				AB7E1EC0B82742C5ADE902EA /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmarker.c */,
+				AC51EBDBA1214CFFB18EBE97 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmaster.c */,
+				F7C07CB20B2C4917A660F0B4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcomapi.c */,
+				B185B3116AFA48818A78D296 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcparam.c */,
+				FBA071193C154071AAFA83B1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcphuff.c */,
+				6984BF831F8641DB9651EC52 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcprepct.c */,
+				70D911EB967B402CBB9AE708 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcsample.c */,
+				21918BD6203C49CEB916FB35 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jctrans.c */,
+				4E6F3A77EF8842B9AE7E9BE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapimin.c */,
+				001518A4619A4C909CA75A3C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapistd.c */,
+				8035259C99364F74AD2C5523 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdarith.c */,
+				476C0BE9A7D64F9493C2F1F7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatadst.c */,
+				D6A1B1EFDD84452192B3122A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatasrc.c */,
+				7303A3B671C041759436F88C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcoefct.c */,
+				ECEE3EED049348958ECADA01 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcolor.c */,
+				0D65989A59804E93BF698D8F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jddctmgr.c */,
+				680852D25E5444D0BE8BC242 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdhuff.c */,
+				9D805BF5E55F476A87F85252 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdicc.c */,
+				3829F4942D5B4A3D83C42650 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdinput.c */,
+				1170F646E7B3472B8CDF1769 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmainct.c */,
+				EE0B327DC38040509170A4D9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmarker.c */,
+				3A2CD617EBD14832BB372836 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmaster.c */,
+				678F85CE2A7149A8993A06FD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmerge.c */,
+				45DDDB219CCC41FAAE2E952E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdphuff.c */,
+				DF03CBBE81BA46829D99F73F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdpostct.c */,
+				DB8497264D8149CA9C6177AD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdsample.c */,
+				200FAF79F12C4B8F8EF49D93 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdtrans.c */,
+				AF284A7277AA4EC6B5685F49 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jerror.c */,
+				36BAD5D9FB9E48C4BBB08B6F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctflt.c */,
+				44667338F1704FE8829754C4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctfst.c */,
+				B89EE2F0A3164AACAB2847A6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctint.c */,
+				D52C7CFB13384B7185B607C6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctflt.c */,
+				F7614095EAA04AF2BF7A3F0C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctfst.c */,
+				8F6BD87FD5BD4E8F8B4F4E54 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctint.c */,
+				0474FDEB62884E99B5953E0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctred.c */,
+				8A929FE6775243738C75BC7D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemmgr.c */,
+				5318811865AD44319C821701 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemnobs.c */,
+				FA558DF194E64ED783AB469B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant1.c */,
+				C941848AC7294AF0BE96A3F2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant2.c */,
+				D0E8A872E93142DFB4092342 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jsimd_none.c */,
+				B417BB3613F54B1F9CBBAD5E /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jutils.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		59D46E24B45E48C0A68A2BCA = {
+			isa = PBXGroup;
+			children = (
+				ADEC5ED9B5464B5680E061AE /* 3rdparty */,
+				AC59177E4D6F4C899035289B /* ALL_BUILD */,
+				108A96F7432749A8BC6189F7 /* Products */,
+				C87A8D1B94334D46889163CF /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		88BA916366054CE08A4DB26D /* libjpeg-turbo */ = {
+			isa = PBXGroup;
+			children = (
+				497D1B1252194D3399D6DACD /* Source Files */,
+				5451ECB8FD69430B84608BF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */,
+			);
+			name = "libjpeg-turbo";
+			sourceTree = "<group>";
+		};
+		AC59177E4D6F4C899035289B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				263D77F9C3CF47968EE1F89B /* CMake Rules */,
+				921B607A7E034D64AB7E872C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		ADEC5ED9B5464B5680E061AE /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				88BA916366054CE08A4DB26D /* libjpeg-turbo */,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+		C87A8D1B94334D46889163CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0F5ABC1BAF4E4FEDB18195FD /* libjpeg-turbo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7297BAF8647B49B8B6B56D15 /* Build configuration list for PBXNativeTarget "libjpeg-turbo" */;
+			buildPhases = (
+				208F7D42829C416298A6DB81 /* Sources */,
+				06BDF2AE0D0B44719638F837 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E39DD5B89C6F404AB5A957DF /* PBXTargetDependency */,
+			);
+			name = "libjpeg-turbo";
+			productName = "libjpeg-turbo";
+			productReference = A7EF1CEFC3064CBC8619529F /* libjpeg-turbo */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F92557996F964509BE4B762B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 5D8C6A48FC234587A8CFC7B6 /* Build configuration list for PBXProject "libjpeg-turbo" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				82A62D5C5A3643CA8409E804 /* Debug */,
+				CC342BD1ADA244EBAAE1D3D7 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 59D46E24B45E48C0A68A2BCA;
+			projectDirPath = "/Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo";
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				0F5ABC1BAF4E4FEDB18195FD /* libjpeg-turbo */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		2DC8C1993AB2822214047323 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		A4F200306710C39DCA42B1A3 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		208F7D42829C416298A6DB81 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F8402F3B6B6540B3A02C0EFB /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jaricom.c */,
+				DBE26B792C9C4E2F8D5220DA /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapimin.c */,
+				B83000F7C73240A99339ACF5 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcapistd.c */,
+				4B79E77F3311475DBFF1C9A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcarith.c */,
+				CD268A1CBD6F49139DCAE77B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccoefct.c */,
+				3CD015FD3D81425E983278A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jccolor.c */,
+				01D872033F3B41438B3EDDC4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcdctmgr.c */,
+				F29F574130F94D57B83AA12A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jchuff.c */,
+				5DD1ABB5619B437C920FF71D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcicc.c */,
+				9AA9FE3C9618407889BD71D9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcinit.c */,
+				A9D97C5365F6462BBAFAB310 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmainct.c */,
+				E66744119BD246E29F773F9F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmarker.c */,
+				8D339857436240C89F23C373 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcmaster.c */,
+				9D4F396CCAA347EBA2709A59 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcomapi.c */,
+				23CA67C431964429A64D1FE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcparam.c */,
+				EFC84EF9C58E452FB1884BD1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcphuff.c */,
+				1DEEFABA7F6645E09653EA85 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcprepct.c */,
+				17D73C7171BF4FE5A06C8248 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jcsample.c */,
+				26AEC28A8D44407AB1BCD2B2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jctrans.c */,
+				21BED9C7849C461CAE2C0DF5 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapimin.c */,
+				2EF24D556DEE40398AFFAC1A /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdapistd.c */,
+				28329C4652AA4B23972C6333 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdarith.c */,
+				8514B2821C314798817D3A7D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatadst.c */,
+				3A4E6794A87B47FF8CD4FE62 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdatasrc.c */,
+				8F95E2BA50634B8D9B63F72B /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcoefct.c */,
+				94D72599DC874408BBC79B68 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdcolor.c */,
+				40D425E4E2E144B29597AA85 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jddctmgr.c */,
+				1F1527BC03A8411EB7D026A9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdhuff.c */,
+				7CFB222D90774FB49E95AEE4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdicc.c */,
+				F204114250D84A65A014CEBD /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdinput.c */,
+				633B958D83CA4B5187C8459F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmainct.c */,
+				9BD60B1B1310403BA3AB4657 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmarker.c */,
+				BE7A7B68DF87485299CD5C07 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmaster.c */,
+				EB0D4A24AF1D4ED6921F222C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdmerge.c */,
+				C658E14587BF4C148D702D4C /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdphuff.c */,
+				955A27B1C6A64062A04C58E2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdpostct.c */,
+				CC0AEC9D56E547F2816BFF9F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdsample.c */,
+				1FC8705CA9314BB09AE8EBF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jdtrans.c */,
+				16DCC87944C24B53BE621603 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jerror.c */,
+				6836BBB777754135AA79A151 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctflt.c */,
+				A8D916A6421E4D75AFA72AA9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctfst.c */,
+				366F1C8B876441EC964AFC72 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jfdctint.c */,
+				8191D462909A4880807F72EF /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctflt.c */,
+				4C74231B0F584D1680924209 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctfst.c */,
+				9E42F0CF43A74BBD8E787287 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctint.c */,
+				FB1C91759FA64E98B15A862D /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jidctred.c */,
+				9C553C5BB92741FCA7C5FAF7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemmgr.c */,
+				B20B8791585646C19E2CC655 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jmemnobs.c */,
+				402B877C2D8A46DAA6AEE683 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant1.c */,
+				6C66624028FB4EA597F40196 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jquant2.c */,
+				A838029AEA9B4EEE9F1B0C2F /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jsimd_none.c */,
+				F21BAEAC09614B1C84DAF537 /* /Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src/jutils.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A4337F9864146E890B603AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 2187417F790F483294832A36 /* PBXContainerItemProxy */;
+		};
+		92183CC360E543F98BE04876 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 3232A7468760461E8A6B7E1A /* PBXContainerItemProxy */;
+		};
+		97BB8BA5462D4CF6B5E98883 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 8CF39F10693042B09A93F3AA /* PBXContainerItemProxy */;
+		};
+		E39DD5B89C6F404AB5A957DF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 1CAC24EFF2F14BE8B6C5ED1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		15665F45028D4D7A93F8A97E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		304516818C4D43F3841D4EAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/build";
+			};
+			name = Release;
+		};
+		45649A5475B449019ADECFF7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo","/Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-parameter -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-implicit-fallthrough         -DDEBUG -D_DEBUG -fPIC ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libjpeg-turbo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7036B9F7D23246F58387A7DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		7C7767E3CB3E43CFAD8AE2F6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		87335EDA2FD54EEC9157F788 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		91A379ECF8054C6FB381205B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		9911F531108641628A7E61FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9DA8A2DACBE345BAA5170997 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D17893B893D8439BBEC1AE28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = ("/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo","/Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-unused-parameter -Wno-sign-compare -Wno-shorten-64-to-32 -Wno-implicit-fallthrough     -DNDEBUG  -DNDEBUG -fPIC ","$(inherited)");
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "libjpeg-turbo";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		D80E82626AB14BFBB75E0F24 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E1EF92E351D0466F8915C596 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo/build";
+			};
+			name = Debug;
+		};
+		E2DF88B874CE4CFE8C0D3815 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E74FB9661B00435D8E9803BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FCA691E4CB0419F894189E5 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9911F531108641628A7E61FA /* Debug */,
+				D80E82626AB14BFBB75E0F24 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5A25055BEB2246CBB23AB619 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E74FB9661B00435D8E9803BC /* Debug */,
+				9DA8A2DACBE345BAA5170997 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5D8C6A48FC234587A8CFC7B6 /* Build configuration list for PBXProject "libjpeg-turbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E1EF92E351D0466F8915C596 /* Debug */,
+				304516818C4D43F3841D4EAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7297BAF8647B49B8B6B56D15 /* Build configuration list for PBXNativeTarget "libjpeg-turbo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				45649A5475B449019ADECFF7 /* Debug */,
+				D17893B893D8439BBEC1AE28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		9018143AF6E5445EAEC43B03 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2DF88B874CE4CFE8C0D3815 /* Debug */,
+				87335EDA2FD54EEC9157F788 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BFA2048C6E024559B0F6F916 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				15665F45028D4D7A93F8A97E /* Debug */,
+				91A379ECF8054C6FB381205B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C8E75E779BC4419495F96469 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7036B9F7D23246F58387A7DA /* Debug */,
+				7C7767E3CB3E43CFAD8AE2F6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F92557996F964509BE4B762B /* Project object */;
+}

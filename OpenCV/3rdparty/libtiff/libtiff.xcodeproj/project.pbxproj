@@ -1,0 +1,1044 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 58EFB827C04243DE9057E0FD /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 43708DD940934E86916CD9EF /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				67420EEE558846859BE50A6F /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 75CEA20822C54C8095C4FCEA /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				5B967B05F7E3457EA0B60BF4 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B79848F6F1C64E9384275640 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				FA45687EB3CF5C870A7E08F4 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				25ECEC57155C4F37818C3578 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E78B15366DA64DC2AC650186 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				667AC4C37D74BAAE825708F8 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		090F8F53B8844C01BBFD8366 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.h */ = {isa = PBXBuildFile; fileRef = 499C8D51CA42439CBBCDFF23 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.h */; };
+		09D9734C80CD4C918D5B0149 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.h */ = {isa = PBXBuildFile; fileRef = 8751D6984B734132B1EFD913 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.h */; };
+		0C56D17E1F6646F9B016EB6A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffiop.h */ = {isa = PBXBuildFile; fileRef = 8D03F491AC4B42B6A9AC36CE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffiop.h */; };
+		0D268BD302844EAF82F0BC2B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.c */ = {isa = PBXBuildFile; fileRef = ADB4F54BA527491DA9A5E724 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.c */; };
+		0DEC9131C12B4151A17E86F9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_tile.c */ = {isa = PBXBuildFile; fileRef = 3EC549DC6C9040DF9A097D7C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_tile.c */; };
+		0E2E762955FB4D9F9563E164 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_next.c */ = {isa = PBXBuildFile; fileRef = 6CF72F87B3AC472E85431A63 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_next.c */; };
+		10F0E8ECCF654145A5FDC279 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiff.h */ = {isa = PBXBuildFile; fileRef = 3084CB5E587740068B27DEF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiff.h */; };
+		11072DDF11A940CEA928926D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_close.c */ = {isa = PBXBuildFile; fileRef = ED7EDB8C972D432CB1B04253 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_close.c */; };
+		1286A5E7B2B8472CA2BA3AEE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.c */ = {isa = PBXBuildFile; fileRef = A0900A280445433CA3ED98EF /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.c */; };
+		1A7DD8E4CE97403F842CAC76 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg.c */ = {isa = PBXBuildFile; fileRef = 8D11A2C76CB54088B840EBE7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg.c */; };
+		1DBD7BB6E7934EC7A3ECA7DD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zip.c */ = {isa = PBXBuildFile; fileRef = 8827D35304E14CA1B62512BD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zip.c */; };
+		1EC8438D73694B1BA4163E2C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_version.c */ = {isa = PBXBuildFile; fileRef = 2045AACB165A469C8A021CF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_version.c */; };
+		2739952F576E4FDE982105F9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.h */ = {isa = PBXBuildFile; fileRef = 759A293425754566A4A87F3A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.h */; };
+		2B5E5CF4E8864DC08C49DA04 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_packbits.c */ = {isa = PBXBuildFile; fileRef = 687D640856BD4D5C909982AE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_packbits.c */; };
+		3284AB73A35142E5886D119C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzma.c */ = {isa = PBXBuildFile; fileRef = 85923A7099AF427F96CD7B0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzma.c */; };
+		342832B08CEB4FD7AB374E06 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zstd.c */ = {isa = PBXBuildFile; fileRef = 4F126B9558F84C278C38FA36 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zstd.c */; };
+		3A49B163E91E4837B88D3719 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_unix.c */ = {isa = PBXBuildFile; fileRef = 976BB47C8E2545C0A5620AF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_unix.c */; };
+		3FFE2FAEC583455F9E4D633B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirwrite.c */ = {isa = PBXBuildFile; fileRef = C8F5882294644C7281FFA67D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirwrite.c */; };
+		546526C2E03A4F2182A1A231 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_ojpeg.c */ = {isa = PBXBuildFile; fileRef = 2B24FDF8E44A49208F7065A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_ojpeg.c */; };
+		57208D6E27FB4F4B8A03FD87 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_swab.c */ = {isa = PBXBuildFile; fileRef = E37090E1FE6E4128800B9871 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_swab.c */; };
+		60C62FF55DF44B559ECA470F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.c */ = {isa = PBXBuildFile; fileRef = 44216ABF9BC04CD0A25EADF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.c */; };
+		67D5A571A0744DFA9BE982A6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_webp.c */ = {isa = PBXBuildFile; fileRef = D6C07844C92A41228CD27391 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_webp.c */; };
+		68E58EA650FE4CD48740610A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jbig.c */ = {isa = PBXBuildFile; fileRef = 25A904B1153E4A1180053F8A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jbig.c */; };
+		6A9980F80C5F4ABCAAABD3FC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_warning.c */ = {isa = PBXBuildFile; fileRef = E4DFF71E2374456E91D7BEFD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_warning.c */; };
+		6EDA1C64D5CD4F75A70F6AE0 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dumpmode.c */ = {isa = PBXBuildFile; fileRef = 0168B9F0F5C8429281A3A645 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dumpmode.c */; };
+		7C14C091B914464A9306B5C3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzw.c */ = {isa = PBXBuildFile; fileRef = 5C12C90D65F548C0BA5E45A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzw.c */; };
+		8128AC4DD0A1439B96A0BC64 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 724FDB5541C44D1297E233CB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */; };
+		829D7987687A456C94B9D33F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_compress.c */ = {isa = PBXBuildFile; fileRef = 03B89A44F3B94D9CB3AF1F65 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_compress.c */; };
+		845A845A07E84FE1A16E5989 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.h */ = {isa = PBXBuildFile; fileRef = 91A9E8B6FB634DDA82E6EBFC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.h */; };
+		848AB584D7B84C4DA2FEEE20 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/t4.h */ = {isa = PBXBuildFile; fileRef = DB3A58C2EA96401B90FB6EF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/t4.h */; };
+		850F85F7633E40E9840843B0 /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tif_config.h */ = {isa = PBXBuildFile; fileRef = 24A088CE49834394A754AE14 /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tif_config.h */; };
+		8E4BF95B8D56404FB7B696B2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_stream.cxx */ = {isa = PBXBuildFile; fileRef = EA6B8792C87F4EC394730991 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_stream.cxx */; };
+		974B8A819777437A8B636962 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_codec.c */ = {isa = PBXBuildFile; fileRef = 92F3730EF03249CE81682A6E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_codec.c */; };
+		996CC9BDF5FC40B5B05367A1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_pixarlog.c */ = {isa = PBXBuildFile; fileRef = E2042A1E17394336B3C7E8AB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_pixarlog.c */; };
+		A005C7DAC5394D39A2A911BF /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3sm.c */ = {isa = PBXBuildFile; fileRef = 20C731621C6A4463906356A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3sm.c */; };
+		A3AFACDD21C949C5963C1E61 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirread.c */ = {isa = PBXBuildFile; fileRef = EBF781424DFC4CB88E5CB4B8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirread.c */; };
+		A77D0C57BB3E4888BEF87FD5 /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tiffconf.h */ = {isa = PBXBuildFile; fileRef = E4A40723080F4EC290ED3BFA /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tiffconf.h */; };
+		A78F5BA9942E4B999E49947E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/uvcode.h */ = {isa = PBXBuildFile; fileRef = CD6211B0E5604D82BEF0908A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/uvcode.h */; };
+		AF3C6D73ABD3420B9C990AFE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_luv.c */ = {isa = PBXBuildFile; fileRef = AE591D376F364C6D97D18254 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_luv.c */; };
+		B07B97AE715D455AB7DDD99F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_error.c */ = {isa = PBXBuildFile; fileRef = 825E7AA1318B449CBECAF34B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_error.c */; };
+		B38167B4F59140028D04EC93 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirinfo.c */ = {isa = PBXBuildFile; fileRef = D5C1498407B84B9CBB630D8C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirinfo.c */; };
+		B64E7CA3277D4B699D76FDFA /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffvers.h */ = {isa = PBXBuildFile; fileRef = F42AF3DD38684EA4A87A7601 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffvers.h */; };
+		BF103B9A6BA3469FA78BCF14 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_getimage.c */ = {isa = PBXBuildFile; fileRef = 97E9D5B0E37A45618BD24668 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_getimage.c */; };
+		C50B9571705E400A94A4C12B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_open.c */ = {isa = PBXBuildFile; fileRef = E051367A237D45F8B55F4DFE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_open.c */; };
+		C9A7A8958CC140B39C4709A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_flush.c */ = {isa = PBXBuildFile; fileRef = 1BE687260622414681C5533E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_flush.c */; };
+		CC70581661694C08B828A2DA /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_color.c */ = {isa = PBXBuildFile; fileRef = BCC4B9512E094EB2AFC97B2C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_color.c */; };
+		D487B506B5AE4D25B6B382E3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg_12.c */ = {isa = PBXBuildFile; fileRef = E1BA4BB6C72F45B787708977 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg_12.c */; };
+		D50E5E718CFD4703AFA4485D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.hxx */ = {isa = PBXBuildFile; fileRef = 403234FDD25647EC90009E07 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.hxx */; };
+		D957FD2A71F347C9A4D66F26 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_strip.c */ = {isa = PBXBuildFile; fileRef = 61047FDE21B34F5192B5A3E4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_strip.c */; };
+		E164CA67E7BA4B8AAED911E6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_extension.c */ = {isa = PBXBuildFile; fileRef = 1549E5B4467940548746BAEC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_extension.c */; };
+		EB5357EE7AD44624BB232A5E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_write.c */ = {isa = PBXBuildFile; fileRef = 8467A1E4ABE34D3CBFA97049 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_write.c */; };
+		EE048C6B3ED84AD3B91A3569 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_thunder.c */ = {isa = PBXBuildFile; fileRef = 2B1670C8C3D74668BC29E36C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_thunder.c */; };
+		F0A8FC70B1F047949C1FA203 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_aux.c */ = {isa = PBXBuildFile; fileRef = 9A624E772D1C4E13818825C8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_aux.c */; };
+		F5E2B785A2834C80B27E160B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_read.c */ = {isa = PBXBuildFile; fileRef = BCAB23DDD117477D87D88446 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_read.c */; };
+		F8915E2E12B945F584574495 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_print.c */ = {isa = PBXBuildFile; fileRef = B72CE59ABEE945BE810EE143 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_print.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		336DF89DB69D4FC89DD34F40 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		96A93CF056604892A1F15019 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		1B8975CC8DDE4619B48E2C49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82972B23F11844809DC0CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		2715376A54654578A681E67A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82972B23F11844809DC0CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		32CD03E0D1CC4026B18E6B02 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82972B23F11844809DC0CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		3D81B87DCAD34E8BA0F8D865 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 82972B23F11844809DC0CF7E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0168B9F0F5C8429281A3A645 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dumpmode.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dumpmode.c; path = tif_dumpmode.c; sourceTree = SOURCE_ROOT; };
+		03B89A44F3B94D9CB3AF1F65 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_compress.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_compress.c; path = tif_compress.c; sourceTree = SOURCE_ROOT; };
+		1549E5B4467940548746BAEC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_extension.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_extension.c; path = tif_extension.c; sourceTree = SOURCE_ROOT; };
+		1BE687260622414681C5533E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_flush.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_flush.c; path = tif_flush.c; sourceTree = SOURCE_ROOT; };
+		2045AACB165A469C8A021CF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_version.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_version.c; path = tif_version.c; sourceTree = SOURCE_ROOT; };
+		20C731621C6A4463906356A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3sm.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_fax3sm.c; path = tif_fax3sm.c; sourceTree = SOURCE_ROOT; };
+		24A088CE49834394A754AE14 /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tif_config.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_config.h; path = ../../../OpenCV/3rdparty/libtiff/tif_config.h; sourceTree = SOURCE_ROOT; };
+		25A904B1153E4A1180053F8A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jbig.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_jbig.c; path = tif_jbig.c; sourceTree = SOURCE_ROOT; };
+		2B1670C8C3D74668BC29E36C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_thunder.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_thunder.c; path = tif_thunder.c; sourceTree = SOURCE_ROOT; };
+		2B24FDF8E44A49208F7065A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_ojpeg.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_ojpeg.c; path = tif_ojpeg.c; sourceTree = SOURCE_ROOT; };
+		3084CB5E587740068B27DEF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiff.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiff.h; path = tiff.h; sourceTree = SOURCE_ROOT; };
+		3EC549DC6C9040DF9A097D7C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_tile.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_tile.c; path = tif_tile.c; sourceTree = SOURCE_ROOT; };
+		403234FDD25647EC90009E07 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.hxx */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = tiffio.hxx; path = tiffio.hxx; sourceTree = SOURCE_ROOT; };
+		44216ABF9BC04CD0A25EADF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_predict.c; path = tif_predict.c; sourceTree = SOURCE_ROOT; };
+		499C8D51CA42439CBBCDFF23 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_predict.h; path = tif_predict.h; sourceTree = SOURCE_ROOT; };
+		4F126B9558F84C278C38FA36 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zstd.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_zstd.c; path = tif_zstd.c; sourceTree = SOURCE_ROOT; };
+		5C12C90D65F548C0BA5E45A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzw.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_lzw.c; path = tif_lzw.c; sourceTree = SOURCE_ROOT; };
+		61047FDE21B34F5192B5A3E4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_strip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_strip.c; path = tif_strip.c; sourceTree = SOURCE_ROOT; };
+		687D640856BD4D5C909982AE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_packbits.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_packbits.c; path = tif_packbits.c; sourceTree = SOURCE_ROOT; };
+		6CF72F87B3AC472E85431A63 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_next.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_next.c; path = tif_next.c; sourceTree = SOURCE_ROOT; };
+		724FDB5541C44D1297E233CB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		759A293425754566A4A87F3A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_dir.h; path = tif_dir.h; sourceTree = SOURCE_ROOT; };
+		825E7AA1318B449CBECAF34B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_error.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_error.c; path = tif_error.c; sourceTree = SOURCE_ROOT; };
+		8467A1E4ABE34D3CBFA97049 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_write.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_write.c; path = tif_write.c; sourceTree = SOURCE_ROOT; };
+		85923A7099AF427F96CD7B0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzma.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_lzma.c; path = tif_lzma.c; sourceTree = SOURCE_ROOT; };
+		8751D6984B734132B1EFD913 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tif_fax3.h; path = tif_fax3.h; sourceTree = SOURCE_ROOT; };
+		8827D35304E14CA1B62512BD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zip.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_zip.c; path = tif_zip.c; sourceTree = SOURCE_ROOT; };
+		8D03F491AC4B42B6A9AC36CE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffiop.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffiop.h; path = tiffiop.h; sourceTree = SOURCE_ROOT; };
+		8D11A2C76CB54088B840EBE7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_jpeg.c; path = tif_jpeg.c; sourceTree = SOURCE_ROOT; };
+		91A9E8B6FB634DDA82E6EBFC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffio.h; path = tiffio.h; sourceTree = SOURCE_ROOT; };
+		92F3730EF03249CE81682A6E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_codec.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_codec.c; path = tif_codec.c; sourceTree = SOURCE_ROOT; };
+		976BB47C8E2545C0A5620AF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_unix.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_unix.c; path = tif_unix.c; sourceTree = SOURCE_ROOT; };
+		97E9D5B0E37A45618BD24668 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_getimage.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_getimage.c; path = tif_getimage.c; sourceTree = SOURCE_ROOT; };
+		9A624E772D1C4E13818825C8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_aux.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_aux.c; path = tif_aux.c; sourceTree = SOURCE_ROOT; };
+		A0900A280445433CA3ED98EF /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_fax3.c; path = tif_fax3.c; sourceTree = SOURCE_ROOT; };
+		ADB4F54BA527491DA9A5E724 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dir.c; path = tif_dir.c; sourceTree = SOURCE_ROOT; };
+		AE591D376F364C6D97D18254 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_luv.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_luv.c; path = tif_luv.c; sourceTree = SOURCE_ROOT; };
+		B72CE59ABEE945BE810EE143 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_print.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_print.c; path = tif_print.c; sourceTree = SOURCE_ROOT; };
+		BCAB23DDD117477D87D88446 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_read.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_read.c; path = tif_read.c; sourceTree = SOURCE_ROOT; };
+		BCC4B9512E094EB2AFC97B2C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_color.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_color.c; path = tif_color.c; sourceTree = SOURCE_ROOT; };
+		C8F5882294644C7281FFA67D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirwrite.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dirwrite.c; path = tif_dirwrite.c; sourceTree = SOURCE_ROOT; };
+		CCAE632B29AB40659E66BAE5 /* libtiff */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = liblibtiff.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD6211B0E5604D82BEF0908A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/uvcode.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = uvcode.h; path = uvcode.h; sourceTree = SOURCE_ROOT; };
+		D5C1498407B84B9CBB630D8C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirinfo.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dirinfo.c; path = tif_dirinfo.c; sourceTree = SOURCE_ROOT; };
+		D6C07844C92A41228CD27391 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_webp.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_webp.c; path = tif_webp.c; sourceTree = SOURCE_ROOT; };
+		DB3A58C2EA96401B90FB6EF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/t4.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = t4.h; path = t4.h; sourceTree = SOURCE_ROOT; };
+		E051367A237D45F8B55F4DFE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_open.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_open.c; path = tif_open.c; sourceTree = SOURCE_ROOT; };
+		E1BA4BB6C72F45B787708977 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg_12.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_jpeg_12.c; path = tif_jpeg_12.c; sourceTree = SOURCE_ROOT; };
+		E2042A1E17394336B3C7E8AB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_pixarlog.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_pixarlog.c; path = tif_pixarlog.c; sourceTree = SOURCE_ROOT; };
+		E37090E1FE6E4128800B9871 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_swab.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_swab.c; path = tif_swab.c; sourceTree = SOURCE_ROOT; };
+		E4A40723080F4EC290ED3BFA /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tiffconf.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffconf.h; path = ../../../OpenCV/3rdparty/libtiff/tiffconf.h; sourceTree = SOURCE_ROOT; };
+		E4DFF71E2374456E91D7BEFD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_warning.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_warning.c; path = tif_warning.c; sourceTree = SOURCE_ROOT; };
+		EA6B8792C87F4EC394730991 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_stream.cxx */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = tif_stream.cxx; path = tif_stream.cxx; sourceTree = SOURCE_ROOT; };
+		EAA260D433604312B752C4EC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		EBF781424DFC4CB88E5CB4B8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirread.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_dirread.c; path = tif_dirread.c; sourceTree = SOURCE_ROOT; };
+		ED7EDB8C972D432CB1B04253 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_close.c */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.c; fileEncoding = 4; name = tif_close.c; path = tif_close.c; sourceTree = SOURCE_ROOT; };
+		F42AF3DD38684EA4A87A7601 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffvers.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = tiffvers.h; path = tiffvers.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB1076A15444710AD02D418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08BB12F74AAF4FAAA641153C /* Header Files */ = {
+			isa = PBXGroup;
+			children = (
+				24A088CE49834394A754AE14 /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tif_config.h */,
+				E4A40723080F4EC290ED3BFA /* /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/tiffconf.h */,
+				DB3A58C2EA96401B90FB6EF6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/t4.h */,
+				759A293425754566A4A87F3A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.h */,
+				8751D6984B734132B1EFD913 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.h */,
+				499C8D51CA42439CBBCDFF23 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.h */,
+				3084CB5E587740068B27DEF8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiff.h */,
+				91A9E8B6FB634DDA82E6EBFC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.h */,
+				403234FDD25647EC90009E07 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffio.hxx */,
+				8D03F491AC4B42B6A9AC36CE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffiop.h */,
+				F42AF3DD38684EA4A87A7601 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tiffvers.h */,
+				CD6211B0E5604D82BEF0908A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/uvcode.h */,
+			);
+			name = "Header Files";
+			sourceTree = "<group>";
+		};
+		1962C783E3EC4C51B3D9F94D /* 3rdparty */ = {
+			isa = PBXGroup;
+			children = (
+				B0C4193A6C764489A4EA0D17 /* libtiff */,
+			);
+			name = 3rdparty;
+			sourceTree = "<group>";
+		};
+		2E4F67D07D29476992D3AB14 = {
+			isa = PBXGroup;
+			children = (
+				1962C783E3EC4C51B3D9F94D /* 3rdparty */,
+				69276DEBA75649E7B117D93B /* ALL_BUILD */,
+				F441D90AE7B54CB5A27A6B5E /* Products */,
+				AA1CEE8CD9874663A750CA52 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69276DEBA75649E7B117D93B /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				EB1F063A495A4F7C966EFACD /* CMake Rules */,
+				EAA260D433604312B752C4EC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		AA1CEE8CD9874663A750CA52 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B0C4193A6C764489A4EA0D17 /* libtiff */ = {
+			isa = PBXGroup;
+			children = (
+				F8DD7C95E41C46B2943AB8AA /* Source Files */,
+				08BB12F74AAF4FAAA641153C /* Header Files */,
+				724FDB5541C44D1297E233CB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/CMakeLists.txt */,
+			);
+			name = libtiff;
+			sourceTree = "<group>";
+		};
+		EB1F063A495A4F7C966EFACD /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		F441D90AE7B54CB5A27A6B5E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCAE632B29AB40659E66BAE5 /* libtiff */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F8DD7C95E41C46B2943AB8AA /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				9A624E772D1C4E13818825C8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_aux.c */,
+				ED7EDB8C972D432CB1B04253 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_close.c */,
+				92F3730EF03249CE81682A6E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_codec.c */,
+				BCC4B9512E094EB2AFC97B2C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_color.c */,
+				03B89A44F3B94D9CB3AF1F65 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_compress.c */,
+				ADB4F54BA527491DA9A5E724 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.c */,
+				D5C1498407B84B9CBB630D8C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirinfo.c */,
+				EBF781424DFC4CB88E5CB4B8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirread.c */,
+				C8F5882294644C7281FFA67D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirwrite.c */,
+				0168B9F0F5C8429281A3A645 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dumpmode.c */,
+				825E7AA1318B449CBECAF34B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_error.c */,
+				1549E5B4467940548746BAEC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_extension.c */,
+				A0900A280445433CA3ED98EF /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.c */,
+				20C731621C6A4463906356A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3sm.c */,
+				1BE687260622414681C5533E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_flush.c */,
+				97E9D5B0E37A45618BD24668 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_getimage.c */,
+				25A904B1153E4A1180053F8A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jbig.c */,
+				8D11A2C76CB54088B840EBE7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg.c */,
+				E1BA4BB6C72F45B787708977 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg_12.c */,
+				AE591D376F364C6D97D18254 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_luv.c */,
+				85923A7099AF427F96CD7B0E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzma.c */,
+				5C12C90D65F548C0BA5E45A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzw.c */,
+				6CF72F87B3AC472E85431A63 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_next.c */,
+				2B24FDF8E44A49208F7065A8 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_ojpeg.c */,
+				E051367A237D45F8B55F4DFE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_open.c */,
+				687D640856BD4D5C909982AE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_packbits.c */,
+				E2042A1E17394336B3C7E8AB /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_pixarlog.c */,
+				44216ABF9BC04CD0A25EADF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.c */,
+				B72CE59ABEE945BE810EE143 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_print.c */,
+				BCAB23DDD117477D87D88446 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_read.c */,
+				EA6B8792C87F4EC394730991 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_stream.cxx */,
+				61047FDE21B34F5192B5A3E4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_strip.c */,
+				E37090E1FE6E4128800B9871 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_swab.c */,
+				2B1670C8C3D74668BC29E36C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_thunder.c */,
+				3EC549DC6C9040DF9A097D7C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_tile.c */,
+				976BB47C8E2545C0A5620AF4 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_unix.c */,
+				2045AACB165A469C8A021CF3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_version.c */,
+				E4DFF71E2374456E91D7BEFD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_warning.c */,
+				D6C07844C92A41228CD27391 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_webp.c */,
+				8467A1E4ABE34D3CBFA97049 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_write.c */,
+				8827D35304E14CA1B62512BD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zip.c */,
+				4F126B9558F84C278C38FA36 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zstd.c */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B44302A5F9A94262B5AB2B6D /* libtiff */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4040CCB9C8EE425BA50322DB /* Build configuration list for PBXNativeTarget "libtiff" */;
+			buildPhases = (
+				34AA74E0C0574412A8FC3F7B /* Sources */,
+				FAB1076A15444710AD02D418 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				653D2EC75B604357B7D7FE6A /* PBXTargetDependency */,
+			);
+			name = libtiff;
+			productName = libtiff;
+			productReference = CCAE632B29AB40659E66BAE5 /* libtiff */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		82972B23F11844809DC0CF7E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 90D9AEC606A24A588F1F805D /* Build configuration list for PBXProject "libtiff" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				336DF89DB69D4FC89DD34F40 /* Debug */,
+				96A93CF056604892A1F15019 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 2E4F67D07D29476992D3AB14;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/3rdparty/libtiff;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				B44302A5F9A94262B5AB2B6D /* libtiff */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		667AC4C37D74BAAE825708F8 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  make -f /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		FA45687EB3CF5C870A7E08F4 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		34AA74E0C0574412A8FC3F7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F0A8FC70B1F047949C1FA203 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_aux.c */,
+				11072DDF11A940CEA928926D /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_close.c */,
+				974B8A819777437A8B636962 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_codec.c */,
+				CC70581661694C08B828A2DA /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_color.c */,
+				829D7987687A456C94B9D33F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_compress.c */,
+				0D268BD302844EAF82F0BC2B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dir.c */,
+				B38167B4F59140028D04EC93 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirinfo.c */,
+				A3AFACDD21C949C5963C1E61 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirread.c */,
+				3FFE2FAEC583455F9E4D633B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dirwrite.c */,
+				6EDA1C64D5CD4F75A70F6AE0 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_dumpmode.c */,
+				B07B97AE715D455AB7DDD99F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_error.c */,
+				E164CA67E7BA4B8AAED911E6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_extension.c */,
+				1286A5E7B2B8472CA2BA3AEE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3.c */,
+				A005C7DAC5394D39A2A911BF /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_fax3sm.c */,
+				C9A7A8958CC140B39C4709A7 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_flush.c */,
+				BF103B9A6BA3469FA78BCF14 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_getimage.c */,
+				68E58EA650FE4CD48740610A /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jbig.c */,
+				1A7DD8E4CE97403F842CAC76 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg.c */,
+				D487B506B5AE4D25B6B382E3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_jpeg_12.c */,
+				AF3C6D73ABD3420B9C990AFE /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_luv.c */,
+				3284AB73A35142E5886D119C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzma.c */,
+				7C14C091B914464A9306B5C3 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_lzw.c */,
+				0E2E762955FB4D9F9563E164 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_next.c */,
+				546526C2E03A4F2182A1A231 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_ojpeg.c */,
+				C50B9571705E400A94A4C12B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_open.c */,
+				2B5E5CF4E8864DC08C49DA04 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_packbits.c */,
+				996CC9BDF5FC40B5B05367A1 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_pixarlog.c */,
+				60C62FF55DF44B559ECA470F /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_predict.c */,
+				F8915E2E12B945F584574495 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_print.c */,
+				F5E2B785A2834C80B27E160B /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_read.c */,
+				8E4BF95B8D56404FB7B696B2 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_stream.cxx */,
+				D957FD2A71F347C9A4D66F26 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_strip.c */,
+				57208D6E27FB4F4B8A03FD87 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_swab.c */,
+				EE048C6B3ED84AD3B91A3569 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_thunder.c */,
+				0DEC9131C12B4151A17E86F9 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_tile.c */,
+				3A49B163E91E4837B88D3719 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_unix.c */,
+				1EC8438D73694B1BA4163E2C /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_version.c */,
+				6A9980F80C5F4ABCAAABD3FC /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_warning.c */,
+				67D5A571A0744DFA9BE982A6 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_webp.c */,
+				EB5357EE7AD44624BB232A5E /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_write.c */,
+				1DBD7BB6E7934EC7A3ECA7DD /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zip.c */,
+				342832B08CEB4FD7AB374E06 /* /Users/BrightLand/Envy/_opencv/3rdparty/libtiff/tif_zstd.c */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		25ECEC57155C4F37818C3578 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 3D81B87DCAD34E8BA0F8D865 /* PBXContainerItemProxy */;
+		};
+		5B967B05F7E3457EA0B60BF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 32CD03E0D1CC4026B18E6B02 /* PBXContainerItemProxy */;
+		};
+		653D2EC75B604357B7D7FE6A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 1B8975CC8DDE4619B48E2C49 /* PBXContainerItemProxy */;
+		};
+		67420EEE558846859BE50A6F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 2715376A54654578A681E67A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		135A49F614FF45AD9C92353F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/zlib,/Users/BrightLand/Envy/_opencv/3rdparty/zlib,/Users/BrightLand/Envy/OpenCV/3rdparty/libtiff,/Users/BrightLand/Envy/_opencv/3rdparty/libtiff,"/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo","/Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-misleading-indentation -Wno-implicit-fallthrough -Wno-unused-parameter     -DNDEBUG  -DNDEBUG -fPIC ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-declarations -Wno-unused-parameter -Wno-missing-prototypes -Wno-undef     -DNDEBUG  -DNDEBUG -fPIC '-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libtiff;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		30FF773833584E2D8E481DBA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3B0C2395A4F7478FBD541E2A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		41F0354A27E94F639E2C4F04 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		617AE2F7B3474488B70037F9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		8DE0F7D7FF2A44C98BF81369 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/build;
+			};
+			name = Debug;
+		};
+		9176062D99694524BA8E79D8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		91C229B9417A44BCA3571F14 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		92D5C8B5BAB94E7E9A56D898 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff/build;
+			};
+			name = Release;
+		};
+		9F11D8BDCF5D456185AAF70E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		A9E77AA7E7C54370BE321A2B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CFD3B71CEB344ED1B39468F4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		D1FE53F45E1347FCABC147D9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .a;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'_FILE_OFFSET_BITS=64'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/zlib,/Users/BrightLand/Envy/_opencv/3rdparty/zlib,/Users/BrightLand/Envy/OpenCV/3rdparty/libtiff,/Users/BrightLand/Envy/_opencv/3rdparty/libtiff,"/Users/BrightLand/Envy/OpenCV/3rdparty/libjpeg-turbo","/Users/BrightLand/Envy/_opencv/3rdparty/libjpeg-turbo/src","$(inherited)");
+				INSTALL_PATH = "";
+				LIBRARY_STYLE = STATIC;
+				OTHER_CFLAGS = ("   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-prototypes -Wno-missing-declarations -Wno-undef -Wno-unused -Wno-sign-compare -Wno-cast-align -Wno-shadow -Wno-pointer-to-int-cast -Wno-int-to-pointer-cast -Wno-misleading-indentation -Wno-implicit-fallthrough -Wno-unused-parameter         -DDEBUG -D_DEBUG -fPIC ","$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wstrict-prototypes -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden -Wno-missing-declarations -Wno-unused-parameter -Wno-missing-prototypes -Wno-undef         -DDEBUG -D_DEBUG -fPIC '-std=c++11' ";
+				OTHER_LIBTOOLFLAGS = ("");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = libtiff;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		E9F5BD7596AF4428BA77F607 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/3rdparty/libtiff;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4040CCB9C8EE425BA50322DB /* Build configuration list for PBXNativeTarget "libtiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1FE53F45E1347FCABC147D9 /* Debug */,
+				135A49F614FF45AD9C92353F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		43708DD940934E86916CD9EF /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				41F0354A27E94F639E2C4F04 /* Debug */,
+				3B0C2395A4F7478FBD541E2A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		58EFB827C04243DE9057E0FD /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CFD3B71CEB344ED1B39468F4 /* Debug */,
+				E9F5BD7596AF4428BA77F607 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		75CEA20822C54C8095C4FCEA /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				617AE2F7B3474488B70037F9 /* Debug */,
+				9176062D99694524BA8E79D8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		90D9AEC606A24A588F1F805D /* Build configuration list for PBXProject "libtiff" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE0F7D7FF2A44C98BF81369 /* Debug */,
+				92D5C8B5BAB94E7E9A56D898 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B79848F6F1C64E9384275640 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9E77AA7E7C54370BE321A2B /* Debug */,
+				30FF773833584E2D8E481DBA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E78B15366DA64DC2AC650186 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91C229B9417A44BCA3571F14 /* Debug */,
+				9F11D8BDCF5D456185AAF70E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 82972B23F11844809DC0CF7E /* Project object */;
+}

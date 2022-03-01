@@ -1,0 +1,869 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = E29FDBE3806E4B908CE1C42E /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 406A64C2911443E9A1E7D12B /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				328781572BB54BBEB82017F9 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 958A5EAF9B9C4A2D925206E4 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				DA0B3F9FEC074BECAF708E04 /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 52489D5408974293A513A217 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				614A994348002456F1765F77 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				3C7BF05E1B9348448CE66F3A /* PBXTargetDependency */,
+				969E6DF474304422B08D4A2B /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F1E7EB2F3BBF4D37BC7C00D5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				C98D7E720FE2BC07E0FA0A16 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		1ABF5C440F3A4384AC05A20D /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibController.cpp */ = {isa = PBXBuildFile; fileRef = 2BB007A5795D49A7873D9AAA /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibController.cpp */; };
+		31FE6879ED904ABFA8327534 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/frameProcessor.cpp */ = {isa = PBXBuildFile; fileRef = D5D98E9D868547CBB5AB285D /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/frameProcessor.cpp */; };
+		72D6A5E419F840DF84BDC2D3 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/rotationConverters.cpp */ = {isa = PBXBuildFile; fileRef = 643842E0850341658855D5B0 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/rotationConverters.cpp */; };
+		7F2E48CA400C43CE9B379E33 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/main.cpp */ = {isa = PBXBuildFile; fileRef = 23B1975BDC4342A08EF88393 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/main.cpp */; };
+		81B40B8A1B9A4BA9BCB9806B /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F7355CFF10554FB09F62B7F3 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */; };
+		96CFABD0460846A080D35A3A /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/parametersController.cpp */ = {isa = PBXBuildFile; fileRef = 2C477C24F8F444EEB16C44F6 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/parametersController.cpp */; };
+		EB2D0389FADC473C9A5C2E51 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibPipeline.cpp */ = {isa = PBXBuildFile; fileRef = FB9004E3B6574B6A8F206B2C /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibPipeline.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		3E9815D6D7F8482CB95C5881 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+		7CE3B65AEA4D4DC4BF661681 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		019C7AE74B88471B8934C7B1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		2D934A6C05D9474381470B22 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		3FF498EFB9334D219F75A00C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		C8D01CB79D304B68B832102C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		F711471A3D38439C85127AB2 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 25FCEC4250BD423893B18F10;
+			remoteInfo = "opencv_interactive-calibration";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0DA24D138211408192AF6995 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		23B1975BDC4342A08EF88393 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = main.cpp; sourceTree = SOURCE_ROOT; };
+		2BB007A5795D49A7873D9AAA /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calibController.cpp; path = calibController.cpp; sourceTree = SOURCE_ROOT; };
+		2C477C24F8F444EEB16C44F6 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/parametersController.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = parametersController.cpp; path = parametersController.cpp; sourceTree = SOURCE_ROOT; };
+		643842E0850341658855D5B0 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/rotationConverters.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rotationConverters.cpp; path = rotationConverters.cpp; sourceTree = SOURCE_ROOT; };
+		6747C8AE089F4ED9BABC72ED /* opencv_interactive-calibration */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = "opencv_interactive-calibration"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D5D98E9D868547CBB5AB285D /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/frameProcessor.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = frameProcessor.cpp; path = frameProcessor.cpp; sourceTree = SOURCE_ROOT; };
+		F7355CFF10554FB09F62B7F3 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		FB9004E3B6574B6A8F206B2C /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibPipeline.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calibPipeline.cpp; path = calibPipeline.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		358717D6012B4E67B3CB6134 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		340D323B3FF64421A5A6F8D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4B28A93718954BD1B9CFE9C8 /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BB007A5795D49A7873D9AAA /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibController.cpp */,
+				FB9004E3B6574B6A8F206B2C /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibPipeline.cpp */,
+				D5D98E9D868547CBB5AB285D /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/frameProcessor.cpp */,
+				23B1975BDC4342A08EF88393 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/main.cpp */,
+				2C477C24F8F444EEB16C44F6 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/parametersController.cpp */,
+				643842E0850341658855D5B0 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/rotationConverters.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		60223F2B0C9B43FA90BCFB24 = {
+			isa = PBXGroup;
+			children = (
+				B3B9F4965A5545EFB83753D8 /* applications */,
+				87C5E08237B2413EAB1DC021 /* ALL_BUILD */,
+				62FE471905E740E799C7DA48 /* Products */,
+				340D323B3FF64421A5A6F8D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		62FE471905E740E799C7DA48 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6747C8AE089F4ED9BABC72ED /* opencv_interactive-calibration */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		87C5E08237B2413EAB1DC021 /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				CE02A011CD044E9693040845 /* CMake Rules */,
+				0DA24D138211408192AF6995 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		B3B9F4965A5545EFB83753D8 /* applications */ = {
+			isa = PBXGroup;
+			children = (
+				DFCD20643DA7431A8566BE2F /* opencv_interactive-calibration */,
+			);
+			name = applications;
+			sourceTree = "<group>";
+		};
+		CE02A011CD044E9693040845 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		DFCD20643DA7431A8566BE2F /* opencv_interactive-calibration */ = {
+			isa = PBXGroup;
+			children = (
+				4B28A93718954BD1B9CFE9C8 /* Source Files */,
+				F7355CFF10554FB09F62B7F3 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/CMakeLists.txt */,
+			);
+			name = "opencv_interactive-calibration";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		25FCEC4250BD423893B18F10 /* opencv_interactive-calibration */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBC083C8E56F43F5B7197CDC /* Build configuration list for PBXNativeTarget "opencv_interactive-calibration" */;
+			buildPhases = (
+				41359847BF1F42D6BCDB4D74 /* Sources */,
+				358717D6012B4E67B3CB6134 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DA2170123E784ADCB54D7D74 /* PBXTargetDependency */,
+			);
+			name = "opencv_interactive-calibration";
+			productName = "opencv_interactive-calibration";
+			productReference = 6747C8AE089F4ED9BABC72ED /* opencv_interactive-calibration */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0AC4CFC009A249DDBBC07CB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 8548465FBBFD46A0AEEEEAAB /* Build configuration list for PBXProject "opencv_interactive-calibration" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				3E9815D6D7F8482CB95C5881 /* Debug */,
+				7CE3B65AEA4D4DC4BF661681 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 60223F2B0C9B43FA90BCFB24;
+			projectDirPath = "/Users/BrightLand/Envy/_opencv/apps/interactive-calibration";
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				25FCEC4250BD423893B18F10 /* opencv_interactive-calibration */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		614A994348002456F1765F77 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+"/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/CMakeFiles/ALL_BUILD"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		C98D7E720FE2BC07E0FA0A16 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+"/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/CMakeFiles/ZERO_CHECK"			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  make -f /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration
+  make -f /Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		41359847BF1F42D6BCDB4D74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1ABF5C440F3A4384AC05A20D /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibController.cpp */,
+				EB2D0389FADC473C9A5C2E51 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/calibPipeline.cpp */,
+				31FE6879ED904ABFA8327534 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/frameProcessor.cpp */,
+				7F2E48CA400C43CE9B379E33 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/main.cpp */,
+				96CFABD0460846A080D35A3A /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/parametersController.cpp */,
+				72D6A5E419F840DF84BDC2D3 /* /Users/BrightLand/Envy/_opencv/apps/interactive-calibration/rotationConverters.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		328781572BB54BBEB82017F9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 2D934A6C05D9474381470B22 /* PBXContainerItemProxy */;
+		};
+		3C7BF05E1B9348448CE66F3A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 25FCEC4250BD423893B18F10 /* opencv_interactive-calibration */;
+			targetProxy = F711471A3D38439C85127AB2 /* PBXContainerItemProxy */;
+		};
+		969E6DF474304422B08D4A2B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 019C7AE74B88471B8934C7B1 /* PBXContainerItemProxy */;
+		};
+		DA0B3F9FEC074BECAF708E04 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 3FF498EFB9334D219F75A00C /* PBXContainerItemProxy */;
+		};
+		DA2170123E784ADCB54D7D74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = C8D01CB79D304B68B832102C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		10763C742F304685B8AEA3EB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		17BA69B7EA634A65B2B71F43 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		22CCDBC83249444ABCF1EFE3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3FD86A4DE6DC499999A22D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		4BD38E31DBB446FF88D03BA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/build";
+			};
+			name = Release;
+		};
+		5344642DDD984E269CBDB198 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		58D75C98A5FF4DE385827B84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		9AA0E5C0A12848F592C8E890 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration/build";
+			};
+			name = Debug;
+		};
+		A521C051449141DFB51974EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BD0CADAFA2B94E158F34C37E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_BUILD=1'","'__OPENCV_APPS=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"/Users/BrightLand/Envy/_opencv/apps/interactive-calibration/PRIVATE",/Users/BrightLand/Envy/_opencv/include/opencv,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "opencv_interactive-calibration";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		BD2D3151F9DC466FB112116D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		EA6ABDF7BCAA4353842362ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		F4712B0758694DD0AAD6CD0D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_BUILD=1'","'__OPENCV_APPS=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,"/Users/BrightLand/Envy/_opencv/apps/interactive-calibration/PRIVATE",/Users/BrightLand/Envy/_opencv/include/opencv,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = "opencv_interactive-calibration";
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F7A30AC9DB374C5BA6771CC7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = "/Users/BrightLand/Envy/OpenCV/apps/interactive-calibration";
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		406A64C2911443E9A1E7D12B /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				17BA69B7EA634A65B2B71F43 /* Debug */,
+				F7A30AC9DB374C5BA6771CC7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		52489D5408974293A513A217 /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				10763C742F304685B8AEA3EB /* Debug */,
+				3FD86A4DE6DC499999A22D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8548465FBBFD46A0AEEEEAAB /* Build configuration list for PBXProject "opencv_interactive-calibration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9AA0E5C0A12848F592C8E890 /* Debug */,
+				4BD38E31DBB446FF88D03BA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		958A5EAF9B9C4A2D925206E4 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				58D75C98A5FF4DE385827B84 /* Debug */,
+				22CCDBC83249444ABCF1EFE3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		CBC083C8E56F43F5B7197CDC /* Build configuration list for PBXNativeTarget "opencv_interactive-calibration" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4712B0758694DD0AAD6CD0D /* Debug */,
+				BD0CADAFA2B94E158F34C37E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E29FDBE3806E4B908CE1C42E /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5344642DDD984E269CBDB198 /* Debug */,
+				EA6ABDF7BCAA4353842362ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F1E7EB2F3BBF4D37BC7C00D5 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BD2D3151F9DC466FB112116D /* Debug */,
+				A521C051449141DFB51974EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0AC4CFC009A249DDBBC07CB5 /* Project object */;
+}

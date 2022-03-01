@@ -1,0 +1,1760 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		6C70328E101E405D90D04461 /* RUN_TESTS */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B22474FFFF5D46ABB3DB8A58 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */;
+			buildPhases = (
+				003C8D08B0008F35F218E126 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+			);
+			name = RUN_TESTS;
+			productName = RUN_TESTS;
+		};
+		8E1DD9A2B5724B10A912C43D /* package */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 6B91F395D80F49E2AAE87876 /* Build configuration list for PBXAggregateTarget "package" */;
+			buildPhases = (
+				571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				4A0E62FC618C4BA6819DCEA7 /* PBXTargetDependency */,
+			);
+			name = package;
+			productName = package;
+		};
+		C08094B7A78641F983B39091 /* install */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = F39D31BE002E4FCCB066A0A2 /* Build configuration list for PBXAggregateTarget "install" */;
+			buildPhases = (
+				93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */,
+			);
+			dependencies = (
+				73908E66451949E1A708751F /* PBXTargetDependency */,
+			);
+			name = install;
+			productName = install;
+		};
+		D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 5C937A7B085348D483CB63FA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */;
+			buildPhases = (
+				44C599B917BC54DEF0F22A49 /* Generate CMakeFiles/ALL_BUILD */,
+			);
+			dependencies = (
+				F9167D03D94540CA8FE2D355 /* PBXTargetDependency */,
+				B0FF9490A0AE4009A25CE68A /* PBXTargetDependency */,
+				CD02C7BA4B794940B2683504 /* PBXTargetDependency */,
+				58655C5D8C544B8D9D87D934 /* PBXTargetDependency */,
+			);
+			name = ALL_BUILD;
+			productName = ALL_BUILD;
+		};
+		D57DB21D30464006B1D1577E /* ZERO_CHECK */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 88B47055D5104695BCA82E54 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */;
+			buildPhases = (
+				F8CF100C7935FF1AADDEF7A9 /* Generate CMakeFiles/ZERO_CHECK */,
+			);
+			dependencies = (
+			);
+			name = ZERO_CHECK;
+			productName = ZERO_CHECK;
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		00B9991EB48C41D0B4578EBC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXBuildFile; fileRef = B8C58594E0D64B12BCE80FD7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereosgbm.cpp */; };
+		0226800572B54C69BBBFCAE8 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp.rule */ = {isa = PBXBuildFile; fileRef = 89F8980DB90D4897A35161E6 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp.rule */; };
+		0ABE5121662F41C083B90E2C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.h */ = {isa = PBXBuildFile; fileRef = DD0214C156F1466F8C44B0B7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.h */; };
+		0B707C83DBD44BE587E77FFD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.cpp */ = {isa = PBXBuildFile; fileRef = 72A512527E7A456DA667E888 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.cpp */; };
+		0D622F497CE94B79A24811F6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fundam.cpp */ = {isa = PBXBuildFile; fileRef = CD32EBF5B6C649DD8B5E7006 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fundam.cpp */; };
+		0E3DF7D9F3D443EB9B3D6C23 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_precomp.hpp */ = {isa = PBXBuildFile; fileRef = 4AFA74625D634566B78001AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_precomp.hpp */; };
+		0ED478A1BA7E4632A58F5D74 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/undistort.avx2.cpp */ = {isa = PBXBuildFile; fileRef = ADB831128332471EBCA92D5E /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/undistort.avx2.cpp */; settings = {COMPILER_FLAGS = " -mpopcnt -msse4.2 -mf16c -mfma -mavx -mavx2 '-DCV_CPU_DISPATCH_MODE=AVX2' '-DCV_CPU_COMPILE_POPCNT=1' '-DCV_CPU_COMPILE_SSE4_2=1' '-DCV_CPU_COMPILE_FP16=1' '-DCV_CPU_COMPILE_FMA3=1' '-DCV_CPU_COMPILE_AVX=1' '-DCV_CPU_COMPILE_AVX2=1' "; }; };
+		0FF0E1951C654C94AF18E01C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = DC631A72B09C4F5488AB97DC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */; };
+		13CEC54E3E2B43FEA89C7B64 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/main.cpp */ = {isa = PBXBuildFile; fileRef = 8DCF8080510A4969A0EB9A2F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/main.cpp */; };
+		14A34923445E4E718EDC9A9E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_precomp.hpp */ = {isa = PBXBuildFile; fileRef = 343249F4DEEB4C948121603F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_precomp.hpp */; };
+		17DD701C52D846BAB689A53A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.simd.hpp */ = {isa = PBXBuildFile; fileRef = 76378EE4BBB946EEB8B0940E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.simd.hpp */; };
+		19E8A8BB80DA492C8816E45E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/essential_solver.cpp */ = {isa = PBXBuildFile; fileRef = 15DBF509A6794FB288D354F5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/essential_solver.cpp */; };
+		19FD01D4D54A474481A133F1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_tilt.cpp */ = {isa = PBXBuildFile; fileRef = 192A7B89466C4AC0BC38C48B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_tilt.cpp */; };
+		1A05B38EE1034F8D8F240FC8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.dispatch.cpp */ = {isa = PBXBuildFile; fileRef = 57BD103A9EAD49779B270AD9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.dispatch.cpp */; };
+		20AA2E204C024332BE9956FB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_undistort.cpp */ = {isa = PBXBuildFile; fileRef = 43A00872CD8B41BDA62D67DF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_undistort.cpp */; };
+		2138862B54E94482A3D062E8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_badarg.cpp */ = {isa = PBXBuildFile; fileRef = 5C969AE5D1384253BC6B53E7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_badarg.cpp */; };
+		2243146BF7FF485E91185AEB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.h */ = {isa = PBXBuildFile; fileRef = E5BE07BF97044B08BF6CB1A3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.h */; };
+		23EE0DDAC06D4F27A5C84056 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_points.cpp */ = {isa = PBXBuildFile; fileRef = 5C8972B5960A49B399C86232 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_points.cpp */; };
+		25A9FC62363D4775B9CDDA28 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography_decomp.cpp */ = {isa = PBXBuildFile; fileRef = 62EA68CCA7EE4A29A4CACD0F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography_decomp.cpp */; };
+		261E3F6F23AA4893B6916417 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXBuildFile; fileRef = D1D31CFA8E864C21930D70E4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.hpp */; };
+		28993AC527864FABA1B2FF23 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_pnp.cpp */ = {isa = PBXBuildFile; fileRef = 31CDAB451F1143B9B3E0971D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_pnp.cpp */; };
+		2ADC4646340B4A12BAACD336 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp */ = {isa = PBXBuildFile; fileRef = 3C2AB3EE08424A68ACBEFCD0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp */; };
+		2CBF778364B64B4C98DA1BC6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.cpp */ = {isa = PBXBuildFile; fileRef = A146DC5803944858AD4B5E84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.cpp */; };
+		2F40D610034B469A97391A67 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.h */ = {isa = PBXBuildFile; fileRef = 92A4B794F281434F90454E1D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.h */; };
+		30A69971B9874A3F88D55CA5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.cpp */ = {isa = PBXBuildFile; fileRef = 309A2F0B5CD64FCDB5A9BC73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.cpp */; };
+		34020BAC124148968EB33A8E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort.cpp */ = {isa = PBXBuildFile; fileRef = 9E8B4D52F8904A1FAA9FC5B9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort.cpp */; };
+		36E065479733472088E45C32 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXBuildFile; fileRef = 5BEBCBB591C64FF5A4616D13 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration.cpp */; };
+		37EC5FDA7F9C487A9F50282F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp */ = {isa = PBXBuildFile; fileRef = 2562B8D68AB24799B28FB7F4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp */; };
+		3CF46F8070DB4E3788BA53B1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_posit.cpp */ = {isa = PBXBuildFile; fileRef = 4103B54F85F04F498D849DE6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_posit.cpp */; };
+		3ECC11B813FE41B8BC0A2938 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.cpp */ = {isa = PBXBuildFile; fileRef = F7D0A4B9F698401C95F83686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.cpp */; };
+		400B0CB190FE4BCD8F7DB531 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXBuildFile; fileRef = 4461998386B1435AB7F28956 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */; };
+		406DBE0910F149AE8B74E8A0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = C4EEDD46DE9842ABBCABCBFD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */; };
+		4081072D20DA4293B3B8A6FA /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3.cpp */ = {isa = PBXBuildFile; fileRef = A236CA2AA178423987377573 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3.cpp */; };
+		44E239AFF0C3401BBE4368D9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/fundamental_solver.cpp */ = {isa = PBXBuildFile; fileRef = E08F2776C51F43148EC2DB5B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/fundamental_solver.cpp */; };
+		4B20197ADD534E2298AF93DC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXBuildFile; fileRef = B13136DDE6C8489E8F112D50 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/five-point.cpp */; };
+		5087830FC1F849B5B23A0E3E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXBuildFile; fileRef = B908336B23604350BA721A59 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/levmarq.cpp */; };
+		50B9D966215646368050F1CB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/utils.cpp */ = {isa = PBXBuildFile; fileRef = 2F4715DA3A644457B066C74C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/utils.cpp */; };
+		51314D02EB5A4A14A36FE12D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_solvepnp_ransac.cpp */ = {isa = PBXBuildFile; fileRef = 6BD8CF1E5FFB4456BF7F8FEB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_solvepnp_ransac.cpp */; };
+		53AFC5AF20314ECE9B5EC595 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXBuildFile; fileRef = B8C2AA90C1B149AA987E5787 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl/stereobm.cl */; };
+		5669AFDD3006446AB05EBCE4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine_partial2d_estimator.cpp */ = {isa = PBXBuildFile; fileRef = 4F824000F849402B89A34822 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine_partial2d_estimator.cpp */; };
+		571C6264DEE14041BDDBC38D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/homography_solver.cpp */ = {isa = PBXBuildFile; fileRef = FD628595377C4EAFAE38FB12 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/homography_solver.cpp */; };
+		5A023B9F68D04E5486311C44 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners.cpp */ = {isa = PBXBuildFile; fileRef = B8A8FBF8D0F947EDAE71ACB7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners.cpp */; };
+		5C3200AB252340ACA6BE6C49 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXBuildFile; fileRef = 1964A7C86C0F41A0A1EFE7E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.h */; };
+		5D5F5A4A0F034409B879B782 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_stereosgbm.cpp */ = {isa = PBXBuildFile; fileRef = 2FA7D78141434E8DADEC0811 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_stereosgbm.cpp */; };
+		5D8624D0B93B4CA98AD9866A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_timing.cpp */ = {isa = PBXBuildFile; fileRef = EA55CA2357484E13BBDF3673 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_timing.cpp */; };
+		5DFE3F8C3DBA4BB59AFA054D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.cpp */ = {isa = PBXBuildFile; fileRef = 706DB4F4B44245AE850CF52C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.cpp */; };
+		5F3997D6EADB48C39B9A7FF2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cornerssubpix.cpp */ = {isa = PBXBuildFile; fileRef = BE5B44A3943B40A59976C8DE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cornerssubpix.cpp */; };
+		603963D659D6407098B93D41 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_translation3d_estimator.cpp */ = {isa = PBXBuildFile; fileRef = BBC0470DA6544564B6C9C709 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_translation3d_estimator.cpp */; };
+		642491A734A14441A762B4E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXBuildFile; fileRef = 946168F83C7340539AE5EE67 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.cpp */; };
+		645893350CA6459E87ED4F29 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_main.cpp */ = {isa = PBXBuildFile; fileRef = 0196C1A029C6437FA7E8E493 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_main.cpp */; };
+		65E68AB769944E728BEBF868 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/estimator.cpp */ = {isa = PBXBuildFile; fileRef = 31E7EAB236B5483C9FD6ED94 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/estimator.cpp */; };
+		6CF3C52BE2494B70A30C269D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.h */ = {isa = PBXBuildFile; fileRef = FA50CAC9BF0147948048AE4E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.h */; };
+		6F97CBCEAFAC44259B8D9B55 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_badarg.cpp */ = {isa = PBXBuildFile; fileRef = 0F50005D22664000977082E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_badarg.cpp */; };
+		7262C93F3DC042CBA35DD184 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_compose_rt.cpp */ = {isa = PBXBuildFile; fileRef = F24CBFC7D55542F79B87CAF2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_compose_rt.cpp */; };
+		755A4DC8D0D7467294F5D394 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography.cpp */ = {isa = PBXBuildFile; fileRef = C1EE0ACBBAFA44F6B438286E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography.cpp */; };
+		78163CC1E84F42CFAD9DAE66 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/local_optimization.cpp */ = {isa = PBXBuildFile; fileRef = 1A8604B6232B490995D7F13C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/local_optimization.cpp */; };
+		79C20C0D3C3E47DC8461626F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXBuildFile; fileRef = 3D00E954E40B457985D3D40E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/checkchessboard.cpp */; };
+		7AC2C779248E49EBA4352C9A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_reproject_image_to_3d.cpp */ = {isa = PBXBuildFile; fileRef = CEC344C375EB434BAFEB77FC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_reproject_image_to_3d.cpp */; };
+		7AFC24C7313544E8B7350A37 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_affine2d.cpp */ = {isa = PBXBuildFile; fileRef = 0A2E0953BA4C40F5BFD9BDEF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_affine2d.cpp */; };
+		7BF091EA317F4879BF086FE0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/dls_solver.cpp */ = {isa = PBXBuildFile; fileRef = DBDA04318D3E453B8B3509D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/dls_solver.cpp */; };
+		7C44B42F07374BCEB4A2959A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_decompose_projection.cpp */ = {isa = PBXBuildFile; fileRef = 7B5F56D1CDDC49F68D1FC3B6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_decompose_projection.cpp */; };
+		7D33B7388A724261A54331C1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXBuildFile; fileRef = 2D3E4413BA0B4D93BFB961EF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.cpp */; };
+		7FFA5B5C8CC3424B8F33D51F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/gamma_values.cpp */ = {isa = PBXBuildFile; fileRef = 129C0940FCDB4898A3420FC0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/gamma_values.cpp */; };
+		80FE66C6D24246128D51E03E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXBuildFile; fileRef = 998740C72E92453CAE227CCF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/solvepnp.cpp */; };
+		836B1605925F4B4C83AF5BED /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_artificial.cpp */ = {isa = PBXBuildFile; fileRef = 5E36206DD7DE45CDBAEAC96C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_artificial.cpp */; };
+		846D3257CA1149A990B55AAF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.cpp */ = {isa = PBXBuildFile; fileRef = 169A6B731C4C4732B5D1EBDC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.cpp */; };
+		86AE8133DDCA452FB9061565 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/homography_decomp.cpp */ = {isa = PBXBuildFile; fileRef = 76E2E093540C4B98997EACED /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/homography_decomp.cpp */; };
+		882CB1A03D394ADCBEED3D69 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/sampler.cpp */ = {isa = PBXBuildFile; fileRef = AA2F67DCEB2C4F6C83A40954 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/sampler.cpp */; };
+		88A76BAF952443B4B14994AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 43A32CF8D34349AA8BA8ED84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ptsetreg.cpp */; };
+		8A36314EB4DD4957ADC09734 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXBuildFile; fileRef = A5646FF78DE94402B1AFD73C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d.hpp */; };
+		8C5808B1B67F401A8CDC1772 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXBuildFile; fileRef = 9F75DE2268E34DA4BE528A77 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.cpp */; };
+		8E01A899EAF54186B60F48E3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3d_estimator.cpp */ = {isa = PBXBuildFile; fileRef = C61C93FF90544CF0BA952E47 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3d_estimator.cpp */; };
+		8E1BD57C7EA44199B47E43D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_stereomatching.cpp */ = {isa = PBXBuildFile; fileRef = DFCBA113E8FD4EE7B86856D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_stereomatching.cpp */; };
+		8EC3C2D2BA484D1992C60636 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/opencl/test_stereobm.cpp */ = {isa = PBXBuildFile; fileRef = 5FD6B1451A8B45FB83A008FF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/opencl/test_stereobm.cpp */; };
+		8F64089960EE4FECB13D3039 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.h */ = {isa = PBXBuildFile; fileRef = A77A39C9601944A59005148D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.h */; };
+		8FAC796A1CD84D49A4280463 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/distortion_model.hpp */ = {isa = PBXBuildFile; fileRef = 81C8841E9E2B4B2898F9D31B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/distortion_model.hpp */; };
+		903B94D905C347B1B38C3040 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = F69A05EF15BC4AE0BAFBD230 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */; };
+		907CD9CED48749D19D060890 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/ransac_solvers.cpp */ = {isa = PBXBuildFile; fileRef = CA6DA8D25CCC454DB7985B2A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/ransac_solvers.cpp */; };
+		9292DB511D4642CD89601CD7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/quality.cpp */ = {isa = PBXBuildFile; fileRef = A1EFD2E9AF19441D84434149 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/quality.cpp */; };
+		932B3FAAEEA64CE4ADAA8AF5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXBuildFile; fileRef = 4A58FAD24EFD4023A69E81C7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/quadsubpix.cpp */; };
+		9420BD2E248740D1833976EB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/pnp_solver.cpp */ = {isa = PBXBuildFile; fileRef = F465E41D871A49EC97FF9B0A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/pnp_solver.cpp */; };
+		98ED34A385924E0C87237835 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration.cpp */ = {isa = PBXBuildFile; fileRef = 4F03688860B443CAAF6FF4B2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration.cpp */; };
+		9A9EB62239894444A9D10B02 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_filter_homography_decomp.cpp */ = {isa = PBXBuildFile; fileRef = 7C9388EF11BF4EB4B2437729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_filter_homography_decomp.cpp */; };
+		9B4622E6B7E44594A3ABBA7D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/degeneracy.cpp */ = {isa = PBXBuildFile; fileRef = 12081CC33F554F6494C800FE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/degeneracy.cpp */; };
+		9CE98A35E5D241E680D3C09B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXBuildFile; fileRef = 00465556674C4B0DABF1188B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fundam.cpp */; };
+		9FB9CB14916443DE92A046F4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.hpp */ = {isa = PBXBuildFile; fileRef = 4D59DFB67F7B4335B912243A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.hpp */; };
+		A1B16CE9148E4A13832142B8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine2d_estimator.cpp */ = {isa = PBXBuildFile; fileRef = 97E3CA40E0014F4A9C354AEC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine2d_estimator.cpp */; };
+		A2B14A7A7908409DB3E64620 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration_handeye.cpp */ = {isa = PBXBuildFile; fileRef = C440586C14C943C08EDDD193 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration_handeye.cpp */; };
+		A6F8085C56314C729BF1927B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXBuildFile; fileRef = 2E85B55ACCDA4978BFF740E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.cpp */; };
+		AA9426A89128455B9FD812D5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_main.cpp */ = {isa = PBXBuildFile; fileRef = A70FF2050FC14A2B9BF58EB6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_main.cpp */; };
+		AD8BF960EF3F48CC96B90C20 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_badarg.cpp */ = {isa = PBXBuildFile; fileRef = B5435DB5412B41E59BF3EA38 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_badarg.cpp */; };
+		B3D938260F2D4FC294B0BE6B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_calibration_hand_eye.cpp */ = {isa = PBXBuildFile; fileRef = DD831D98A01D4A7BAD029686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_calibration_hand_eye.cpp */; };
+		B5C5A777518E44DEB8F3D06B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.cpp */ = {isa = PBXBuildFile; fileRef = 5E46F31EC080403486B18DDB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.cpp */; };
+		B7C0D169377843D8AD0C95D0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fisheye.cpp */ = {isa = PBXBuildFile; fileRef = 16382A7933C4401B828EE3E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fisheye.cpp */; };
+		B9FB3C54B9AD4B3C912A1510 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.hpp */ = {isa = PBXBuildFile; fileRef = 19C1F3739BDE4396B5573EEE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.hpp */; };
+		BCB8D6CE67A1426EB40837D6 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp */ = {isa = PBXBuildFile; fileRef = 3E90674F1B134DDCA9BBF304 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp */; };
+		C0EE1437DA53408E99CD10E8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXBuildFile; fileRef = 9AB9446048624AEFB62F5521 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */; };
+		C3EC7080EDA547F885C72DFA /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXBuildFile; fileRef = 43C5BF615F2E4AAA863F7D2D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/precomp.hpp */; };
+		C5AAEA23D71F44E08F91DA6B /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXBuildFile; fileRef = 10CE24729C584C90990BB6EA /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */; };
+		C7318031557F4E7BB8051FEF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.h */ = {isa = PBXBuildFile; fileRef = 06E9A950FC7C4712BFBAF6AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.h */; };
+		C8A60D7263F84222BED330C1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_usac.cpp */ = {isa = PBXBuildFile; fileRef = C71CE4D9B48748459970C27C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_usac.cpp */; };
+		C8F146B91AA747D78615DC13 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.hpp */ = {isa = PBXBuildFile; fileRef = 81E569A178634077A666F26C /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.hpp */; };
+		D70E882AE60A4A06AEAD51B6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.cpp */ = {isa = PBXBuildFile; fileRef = B924BD58870D4358A5282729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.cpp */; };
+		D7994C6B1E3A475ABF421C7D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXBuildFile; fileRef = 0665AF18870746D98B26CEE4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereobm.cpp */; };
+		DC0A0724DDC5482BBC5C3F42 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/termination.cpp */ = {isa = PBXBuildFile; fileRef = 624DAFB53AAC4C19AC6948B4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/termination.cpp */; };
+		DCF020BE53C742908D709AE5 /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXBuildFile; fileRef = E0C1CE98C1A04C669B3DE2EF /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */; };
+		E3FCAF868E54448E849DF060 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.cpp */ = {isa = PBXBuildFile; fileRef = FF46B591E8DA4086A8C40C27 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.cpp */; };
+		E883722C980140E7BC64BE56 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXBuildFile; fileRef = 4A189930735C4D6591AD7093 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/posit.cpp */; };
+		EE93030DC3694AFBA87CBE4C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calib3d_c_api.h */ = {isa = PBXBuildFile; fileRef = 556E522FCAF8444FA333F166 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calib3d_c_api.h */; };
+		EF68CB63AFA54A539CE779AD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXBuildFile; fileRef = 329102150A84454EA1D990DB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/compat_ptsetreg.cpp */; };
+		F0CB417A6E074063AC86E7F3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.hpp */ = {isa = PBXBuildFile; fileRef = 28BEFD110B6541F3A6F43984 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.hpp */; };
+		F128E3F8616945958AB12370 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXBuildFile; fileRef = E667B0D6D5314756A210BA25 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/triangulate.cpp */; };
+		F2F7AB7D9AEF491D92760B9B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_modelest.cpp */ = {isa = PBXBuildFile; fileRef = A7AD7B3F7D394148BBE8C634 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_modelest.cpp */; };
+		F68D1977096844CCA7A99E0D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac.hpp */ = {isa = PBXBuildFile; fileRef = CC3B1FA39A6C4A888096D123 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac.hpp */; };
+		F7AD88FBD51A4F028F9477B7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXBuildFile; fileRef = 15FB3730D04B4C569EF63ADF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibinit.cpp */; };
+		FA10A8DC725845858A3D987C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.hpp */ = {isa = PBXBuildFile; fileRef = 939FCC9E2E7B458A97A73757 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.hpp */; };
+		FFD925D213E944B8B108230E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.hpp */ = {isa = PBXBuildFile; fileRef = CC758E8B1B004361970A4C73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.hpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXBuildStyle section */
+		7216579AFFDC4C94997D6DF6 /* Release */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Release;
+		};
+		A1047BD627BF4F9F9C4510B8 /* Debug */ = {
+			isa = PBXBuildStyle;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+			};
+			name = Debug;
+		};
+/* End PBXBuildStyle section */
+
+/* Begin PBXContainerItemProxy section */
+		0F88FFF40B6E4603848DD6CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5AF3C45A1D4E4EC69A5568C1;
+			remoteInfo = opencv_perf_calib3d;
+		};
+		372C0D1CA9BB4B069C8924D9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		4B36588F127F470DBEF8E191 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		527A5CC370494DCF88F11BF9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+		570FECC12A254D3AA0888F8B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		85441C0221DF4FECA7E353DB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2AF0FA30BE6247D0A8CD9B75;
+			remoteInfo = opencv_test_calib3d;
+		};
+		AA43B422830C41CDB62A61EB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7810DB43504D039D789EE3;
+			remoteInfo = opencv_calib3d;
+		};
+		AC3D5B28471E4C1891DDB6E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7810DB43504D039D789EE3;
+			remoteInfo = opencv_calib3d;
+		};
+		B98153B4F0CE4A9AABEA9323 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D57DB21D30464006B1D1577E;
+			remoteInfo = ZERO_CHECK;
+		};
+		F43D913A894D4B398114F89D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2F7810DB43504D039D789EE3;
+			remoteInfo = opencv_calib3d;
+		};
+		F8A32DBABF4E47C4BA85CFC9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E2D18CC496114C39A93A89E6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D0076E0C6A1E4F65A05B8A1E;
+			remoteInfo = ALL_BUILD;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00465556674C4B0DABF1188B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fundam.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fundam.cpp; path = src/fundam.cpp; sourceTree = SOURCE_ROOT; };
+		0196C1A029C6437FA7E8E493 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_main.cpp; path = perf/perf_main.cpp; sourceTree = SOURCE_ROOT; };
+		0665AF18870746D98B26CEE4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stereobm.cpp; path = src/stereobm.cpp; sourceTree = SOURCE_ROOT; };
+		06E9A950FC7C4712BFBAF6AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = ap3p.h; path = src/ap3p.h; sourceTree = SOURCE_ROOT; };
+		06ECD463D097463CAACCB89C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		0A2E0953BA4C40F5BFD9BDEF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_affine2d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_affine2d.cpp; path = perf/perf_affine2d.cpp; sourceTree = SOURCE_ROOT; };
+		0F50005D22664000977082E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_badarg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cameracalibration_badarg.cpp; path = test/test_cameracalibration_badarg.cpp; sourceTree = SOURCE_ROOT; };
+		10CE24729C584C90990BB6EA /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = cvconfig.h; path = ../../../OpenCV/cvconfig.h; sourceTree = SOURCE_ROOT; };
+		12081CC33F554F6494C800FE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/degeneracy.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = degeneracy.cpp; path = src/usac/degeneracy.cpp; sourceTree = SOURCE_ROOT; };
+		129C0940FCDB4898A3420FC0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/gamma_values.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = gamma_values.cpp; path = src/usac/gamma_values.cpp; sourceTree = SOURCE_ROOT; };
+		15DBF509A6794FB288D354F5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/essential_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = essential_solver.cpp; path = src/usac/essential_solver.cpp; sourceTree = SOURCE_ROOT; };
+		15FB3730D04B4C569EF63ADF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibinit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calibinit.cpp; path = src/calibinit.cpp; sourceTree = SOURCE_ROOT; };
+		16382A7933C4401B828EE3E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fisheye.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_fisheye.cpp; path = test/test_fisheye.cpp; sourceTree = SOURCE_ROOT; };
+		169A6B731C4C4732B5D1EBDC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fisheye.cpp; path = src/fisheye.cpp; sourceTree = SOURCE_ROOT; };
+		192A7B89466C4AC0BC38C48B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_tilt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cameracalibration_tilt.cpp; path = test/test_cameracalibration_tilt.cpp; sourceTree = SOURCE_ROOT; };
+		1964A7C86C0F41A0A1EFE7E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = polynom_solver.h; path = src/polynom_solver.h; sourceTree = SOURCE_ROOT; };
+		19C1F3739BDE4396B5573EEE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = test_chessboardgenerator.hpp; path = test/test_chessboardgenerator.hpp; sourceTree = SOURCE_ROOT; };
+		1A8604B6232B490995D7F13C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/local_optimization.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = local_optimization.cpp; path = src/usac/local_optimization.cpp; sourceTree = SOURCE_ROOT; };
+		2562B8D68AB24799B28FB7F4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_stereobm.cpp; path = perf/opencl/perf_stereobm.cpp; sourceTree = SOURCE_ROOT; };
+		28BEFD110B6541F3A6F43984 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = fisheye.hpp; path = src/fisheye.hpp; sourceTree = SOURCE_ROOT; };
+		2D3E4413BA0B4D93BFB961EF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = circlesgrid.cpp; path = src/circlesgrid.cpp; sourceTree = SOURCE_ROOT; };
+		2E85B55ACCDA4978BFF740E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = polynom_solver.cpp; path = src/polynom_solver.cpp; sourceTree = SOURCE_ROOT; };
+		2F4715DA3A644457B066C74C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/utils.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = utils.cpp; path = src/usac/utils.cpp; sourceTree = SOURCE_ROOT; };
+		2FA7D78141434E8DADEC0811 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_stereosgbm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_stereosgbm.cpp; path = perf/perf_stereosgbm.cpp; sourceTree = SOURCE_ROOT; };
+		309A2F0B5CD64FCDB5A9BC73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_chessboardgenerator.cpp; path = test/test_chessboardgenerator.cpp; sourceTree = SOURCE_ROOT; };
+		31CDAB451F1143B9B3E0971D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_pnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_pnp.cpp; path = perf/perf_pnp.cpp; sourceTree = SOURCE_ROOT; };
+		31E7EAB236B5483C9FD6ED94 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/estimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = estimator.cpp; path = src/usac/estimator.cpp; sourceTree = SOURCE_ROOT; };
+		329102150A84454EA1D990DB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/compat_ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = compat_ptsetreg.cpp; path = src/compat_ptsetreg.cpp; sourceTree = SOURCE_ROOT; };
+		343249F4DEEB4C948121603F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = test_precomp.hpp; path = test/test_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		3C2AB3EE08424A68ACBEFCD0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_cicrlesGrid.cpp; path = perf/perf_cicrlesGrid.cpp; sourceTree = SOURCE_ROOT; };
+		3D00E954E40B457985D3D40E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/checkchessboard.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = checkchessboard.cpp; path = src/checkchessboard.cpp; sourceTree = SOURCE_ROOT; };
+		3E90674F1B134DDCA9BBF304 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = opencl_kernels_calib3d.cpp; path = ../../../OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp; sourceTree = SOURCE_ROOT; };
+		4103B54F85F04F498D849DE6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_posit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_posit.cpp; path = test/test_posit.cpp; sourceTree = SOURCE_ROOT; };
+		43A00872CD8B41BDA62D67DF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_undistort.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = perf_undistort.cpp; path = perf/perf_undistort.cpp; sourceTree = SOURCE_ROOT; };
+		43A32CF8D34349AA8BA8ED84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ptsetreg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ptsetreg.cpp; path = src/ptsetreg.cpp; sourceTree = SOURCE_ROOT; };
+		43C5BF615F2E4AAA863F7D2D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = precomp.hpp; path = src/precomp.hpp; sourceTree = SOURCE_ROOT; };
+		4461998386B1435AB7F28956 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = calib3d_c.h; path = include/opencv2/calib3d/calib3d_c.h; sourceTree = SOURCE_ROOT; };
+		4A189930735C4D6591AD7093 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/posit.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = posit.cpp; path = src/posit.cpp; sourceTree = SOURCE_ROOT; };
+		4A58FAD24EFD4023A69E81C7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/quadsubpix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quadsubpix.cpp; path = src/quadsubpix.cpp; sourceTree = SOURCE_ROOT; };
+		4AFA74625D634566B78001AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_precomp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = perf_precomp.hpp; path = perf/perf_precomp.hpp; sourceTree = SOURCE_ROOT; };
+		4D59DFB67F7B4335B912243A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = sqpnp.hpp; path = src/sqpnp.hpp; sourceTree = SOURCE_ROOT; };
+		4F03688860B443CAAF6FF4B2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cameracalibration.cpp; path = test/test_cameracalibration.cpp; sourceTree = SOURCE_ROOT; };
+		4F824000F849402B89A34822 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine_partial2d_estimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_affine_partial2d_estimator.cpp; path = test/test_affine_partial2d_estimator.cpp; sourceTree = SOURCE_ROOT; };
+		556E522FCAF8444FA333F166 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calib3d_c_api.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = calib3d_c_api.h; path = src/calib3d_c_api.h; sourceTree = SOURCE_ROOT; };
+		57BD103A9EAD49779B270AD9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.dispatch.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = undistort.dispatch.cpp; path = src/undistort.dispatch.cpp; sourceTree = SOURCE_ROOT; };
+		5BEBCBB591C64FF5A4616D13 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calibration.cpp; path = src/calibration.cpp; sourceTree = SOURCE_ROOT; };
+		5C8972B5960A49B399C86232 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_points.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_undistort_points.cpp; path = test/test_undistort_points.cpp; sourceTree = SOURCE_ROOT; };
+		5C969AE5D1384253BC6B53E7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_badarg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_undistort_badarg.cpp; path = test/test_undistort_badarg.cpp; sourceTree = SOURCE_ROOT; };
+		5E36206DD7DE45CDBAEAC96C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_artificial.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cameracalibration_artificial.cpp; path = test/test_cameracalibration_artificial.cpp; sourceTree = SOURCE_ROOT; };
+		5E46F31EC080403486B18DDB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = upnp.cpp; path = src/upnp.cpp; sourceTree = SOURCE_ROOT; };
+		5FD6B1451A8B45FB83A008FF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/opencl/test_stereobm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_stereobm.cpp; path = test/opencl/test_stereobm.cpp; sourceTree = SOURCE_ROOT; };
+		624DAFB53AAC4C19AC6948B4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/termination.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = termination.cpp; path = src/usac/termination.cpp; sourceTree = SOURCE_ROOT; };
+		62EA68CCA7EE4A29A4CACD0F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography_decomp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_homography_decomp.cpp; path = test/test_homography_decomp.cpp; sourceTree = SOURCE_ROOT; };
+		6BD8CF1E5FFB4456BF7F8FEB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_solvepnp_ransac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_solvepnp_ransac.cpp; path = test/test_solvepnp_ransac.cpp; sourceTree = SOURCE_ROOT; };
+		706DB4F4B44245AE850CF52C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sqpnp.cpp; path = src/sqpnp.cpp; sourceTree = SOURCE_ROOT; };
+		71F9B5F9FD8048D6A5C7152C /* opencv_perf_calib3d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_perf_calib3d; sourceTree = BUILT_PRODUCTS_DIR; };
+		72A512527E7A456DA667E888 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ap3p.cpp; path = src/ap3p.cpp; sourceTree = SOURCE_ROOT; };
+		76378EE4BBB946EEB8B0940E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.simd.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = undistort.simd.hpp; path = src/undistort.simd.hpp; sourceTree = SOURCE_ROOT; };
+		76E2E093540C4B98997EACED /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/homography_decomp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = homography_decomp.cpp; path = src/homography_decomp.cpp; sourceTree = SOURCE_ROOT; };
+		7B5F56D1CDDC49F68D1FC3B6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_decompose_projection.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_decompose_projection.cpp; path = test/test_decompose_projection.cpp; sourceTree = SOURCE_ROOT; };
+		7C9388EF11BF4EB4B2437729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_filter_homography_decomp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_filter_homography_decomp.cpp; path = test/test_filter_homography_decomp.cpp; sourceTree = SOURCE_ROOT; };
+		81C8841E9E2B4B2898F9D31B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/distortion_model.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = distortion_model.hpp; path = src/distortion_model.hpp; sourceTree = SOURCE_ROOT; };
+		81E569A178634077A666F26C /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencl_kernels_calib3d.hpp; path = ../../../OpenCV/modules/calib3d/opencl_kernels_calib3d.hpp; sourceTree = SOURCE_ROOT; };
+		89F8980DB90D4897A35161E6 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp.rule */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = opencl_kernels_calib3d.cpp.rule; path = ../../../OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp.rule; sourceTree = SOURCE_ROOT; };
+		8DCF8080510A4969A0EB9A2F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = main.cpp; path = src/main.cpp; sourceTree = SOURCE_ROOT; };
+		92A4B794F281434F90454E1D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = dls.h; path = src/dls.h; sourceTree = SOURCE_ROOT; };
+		939FCC9E2E7B458A97A73757 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = ippe.hpp; path = src/ippe.hpp; sourceTree = SOURCE_ROOT; };
+		946168F83C7340539AE5EE67 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = p3p.cpp; path = src/p3p.cpp; sourceTree = SOURCE_ROOT; };
+		9574E025DC9B417D910C9AA9 /* opencv_test_calib3d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; path = opencv_test_calib3d; sourceTree = BUILT_PRODUCTS_DIR; };
+		97E3CA40E0014F4A9C354AEC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine2d_estimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_affine2d_estimator.cpp; path = test/test_affine2d_estimator.cpp; sourceTree = SOURCE_ROOT; };
+		998740C72E92453CAE227CCF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/solvepnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = solvepnp.cpp; path = src/solvepnp.cpp; sourceTree = SOURCE_ROOT; };
+		9AB9446048624AEFB62F5521 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		9E8B4D52F8904A1FAA9FC5B9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_undistort.cpp; path = test/test_undistort.cpp; sourceTree = SOURCE_ROOT; };
+		9F75DE2268E34DA4BE528A77 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = epnp.cpp; path = src/epnp.cpp; sourceTree = SOURCE_ROOT; };
+		A146DC5803944858AD4B5E84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ippe.cpp; path = src/ippe.cpp; sourceTree = SOURCE_ROOT; };
+		A1EFD2E9AF19441D84434149 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/quality.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = quality.cpp; path = src/usac/quality.cpp; sourceTree = SOURCE_ROOT; };
+		A236CA2AA178423987377573 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_affine3.cpp; path = test/test_affine3.cpp; sourceTree = SOURCE_ROOT; };
+		A5646FF78DE94402B1AFD73C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = calib3d.hpp; path = include/opencv2/calib3d.hpp; sourceTree = SOURCE_ROOT; };
+		A70FF2050FC14A2B9BF58EB6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_main.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_main.cpp; path = test/test_main.cpp; sourceTree = SOURCE_ROOT; };
+		A77A39C9601944A59005148D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = epnp.h; path = src/epnp.h; sourceTree = SOURCE_ROOT; };
+		A7AD7B3F7D394148BBE8C634 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_modelest.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_modelest.cpp; path = test/test_modelest.cpp; sourceTree = SOURCE_ROOT; };
+		AA2F67DCEB2C4F6C83A40954 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/sampler.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = sampler.cpp; path = src/usac/sampler.cpp; sourceTree = SOURCE_ROOT; };
+		ADB831128332471EBCA92D5E /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/undistort.avx2.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = undistort.avx2.cpp; path = ../../../OpenCV/modules/calib3d/undistort.avx2.cpp; sourceTree = SOURCE_ROOT; };
+		B13136DDE6C8489E8F112D50 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/five-point.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = "five-point.cpp"; path = "src/five-point.cpp"; sourceTree = SOURCE_ROOT; };
+		B5435DB5412B41E59BF3EA38 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_badarg.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_chesscorners_badarg.cpp; path = test/test_chesscorners_badarg.cpp; sourceTree = SOURCE_ROOT; };
+		B8A8FBF8D0F947EDAE71ACB7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_chesscorners.cpp; path = test/test_chesscorners.cpp; sourceTree = SOURCE_ROOT; };
+		B8C2AA90C1B149AA987E5787 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl/stereobm.cl */ = {isa = PBXFileReference; explicitFileType = sourcecode; fileEncoding = 4; name = stereobm.cl; path = src/opencl/stereobm.cl; sourceTree = SOURCE_ROOT; };
+		B8C58594E0D64B12BCE80FD7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereosgbm.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = stereosgbm.cpp; path = src/stereosgbm.cpp; sourceTree = SOURCE_ROOT; };
+		B908336B23604350BA721A59 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/levmarq.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = levmarq.cpp; path = src/levmarq.cpp; sourceTree = SOURCE_ROOT; };
+		B924BD58870D4358A5282729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = chessboard.cpp; path = src/chessboard.cpp; sourceTree = SOURCE_ROOT; };
+		BBC0470DA6544564B6C9C709 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_translation3d_estimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_translation3d_estimator.cpp; path = test/test_translation3d_estimator.cpp; sourceTree = SOURCE_ROOT; };
+		BE5B44A3943B40A59976C8DE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cornerssubpix.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_cornerssubpix.cpp; path = test/test_cornerssubpix.cpp; sourceTree = SOURCE_ROOT; };
+		C1EE0ACBBAFA44F6B438286E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_homography.cpp; path = test/test_homography.cpp; sourceTree = SOURCE_ROOT; };
+		C440586C14C943C08EDDD193 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration_handeye.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = calibration_handeye.cpp; path = src/calibration_handeye.cpp; sourceTree = SOURCE_ROOT; };
+		C4EEDD46DE9842ABBCABCBFD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = calib3d.hpp; path = include/opencv2/calib3d/calib3d.hpp; sourceTree = SOURCE_ROOT; };
+		C61C93FF90544CF0BA952E47 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3d_estimator.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_affine3d_estimator.cpp; path = test/test_affine3d_estimator.cpp; sourceTree = SOURCE_ROOT; };
+		C71CE4D9B48748459970C27C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_usac.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_usac.cpp; path = test/test_usac.cpp; sourceTree = SOURCE_ROOT; };
+		CA6DA8D25CCC454DB7985B2A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/ransac_solvers.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = ransac_solvers.cpp; path = src/usac/ransac_solvers.cpp; sourceTree = SOURCE_ROOT; };
+		CC3B1FA39A6C4A888096D123 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = usac.hpp; path = src/usac.hpp; sourceTree = SOURCE_ROOT; };
+		CC758E8B1B004361970A4C73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = chessboard.hpp; path = src/chessboard.hpp; sourceTree = SOURCE_ROOT; };
+		CD32EBF5B6C649DD8B5E7006 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fundam.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_fundam.cpp; path = test/test_fundam.cpp; sourceTree = SOURCE_ROOT; };
+		CEC344C375EB434BAFEB77FC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_reproject_image_to_3d.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_reproject_image_to_3d.cpp; path = test/test_reproject_image_to_3d.cpp; sourceTree = SOURCE_ROOT; };
+		D1D31CFA8E864C21930D70E4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = circlesgrid.hpp; path = src/circlesgrid.hpp; sourceTree = SOURCE_ROOT; };
+		D6F232190B214FB898BBB0E7 /* opencv_calib3d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; path = libopencv_calib3d.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBDA04318D3E453B8B3509D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/dls_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dls_solver.cpp; path = src/usac/dls_solver.cpp; sourceTree = SOURCE_ROOT; };
+		DC631A72B09C4F5488AB97DC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		DD0214C156F1466F8C44B0B7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = rho.h; path = src/rho.h; sourceTree = SOURCE_ROOT; };
+		DD831D98A01D4A7BAD029686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_calibration_hand_eye.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_calibration_hand_eye.cpp; path = test/test_calibration_hand_eye.cpp; sourceTree = SOURCE_ROOT; };
+		DFCBA113E8FD4EE7B86856D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_stereomatching.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_stereomatching.cpp; path = test/test_stereomatching.cpp; sourceTree = SOURCE_ROOT; };
+		E08F2776C51F43148EC2DB5B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/fundamental_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = fundamental_solver.cpp; path = src/usac/fundamental_solver.cpp; sourceTree = SOURCE_ROOT; };
+		E0C1CE98C1A04C669B3DE2EF /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; name = opencv_modules.hpp; path = ../../../OpenCV/opencv2/opencv_modules.hpp; sourceTree = SOURCE_ROOT; };
+		E5BE07BF97044B08BF6CB1A3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = p3p.h; path = src/p3p.h; sourceTree = SOURCE_ROOT; };
+		E667B0D6D5314756A210BA25 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/triangulate.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = triangulate.cpp; path = src/triangulate.cpp; sourceTree = SOURCE_ROOT; };
+		EA55CA2357484E13BBDF3673 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_timing.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_chesscorners_timing.cpp; path = test/test_chesscorners_timing.cpp; sourceTree = SOURCE_ROOT; };
+		F24CBFC7D55542F79B87CAF2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_compose_rt.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = test_compose_rt.cpp; path = test/test_compose_rt.cpp; sourceTree = SOURCE_ROOT; };
+		F465E41D871A49EC97FF9B0A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/pnp_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = pnp_solver.cpp; path = src/usac/pnp_solver.cpp; sourceTree = SOURCE_ROOT; };
+		F69A05EF15BC4AE0BAFBD230 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */ = {isa = PBXFileReference; explicitFileType = sourcecode.text; fileEncoding = 4; name = CMakeLists.txt; path = CMakeLists.txt; sourceTree = SOURCE_ROOT; };
+		F7D0A4B9F698401C95F83686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = rho.cpp; path = src/rho.cpp; sourceTree = SOURCE_ROOT; };
+		FA50CAC9BF0147948048AE4E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; name = upnp.h; path = src/upnp.h; sourceTree = SOURCE_ROOT; };
+		FD628595377C4EAFAE38FB12 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/homography_solver.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = homography_solver.cpp; path = src/usac/homography_solver.cpp; sourceTree = SOURCE_ROOT; };
+		FF46B591E8DA4086A8C40C27 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.cpp */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.cpp; fileEncoding = 4; name = dls.cpp; path = src/dls.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		29F11AF5E123436AB73E9D61 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		796F8950769A4C7196D2560E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		95176E4A788C4DE880B7B8D2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FA620FEB40B474AB768137D /* Source Files */ = {
+			isa = PBXGroup;
+			children = (
+				ADB831128332471EBCA92D5E /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/undistort.avx2.cpp */,
+			);
+			name = "Source Files";
+			sourceTree = "<group>";
+		};
+		22299D7F52564ED499A88B3E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D6F232190B214FB898BBB0E7 /* opencv_calib3d */,
+				71F9B5F9FD8048D6A5C7152C /* opencv_perf_calib3d */,
+				9574E025DC9B417D910C9AA9 /* opencv_test_calib3d */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		316F39B80F1545DA944977AB /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				4AFA74625D634566B78001AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		4419704233AF46D98CC5314F /* ALL_BUILD */ = {
+			isa = PBXGroup;
+			children = (
+				86868F72CD6246AF9E21AD09 /* CMake Rules */,
+				06ECD463D097463CAACCB89C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */,
+			);
+			name = ALL_BUILD;
+			sourceTree = "<group>";
+		};
+		55340201A98F4BB2813AE167 /* usac */ = {
+			isa = PBXGroup;
+			children = (
+				12081CC33F554F6494C800FE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/degeneracy.cpp */,
+				DBDA04318D3E453B8B3509D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/dls_solver.cpp */,
+				15DBF509A6794FB288D354F5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/essential_solver.cpp */,
+				31E7EAB236B5483C9FD6ED94 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/estimator.cpp */,
+				E08F2776C51F43148EC2DB5B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/fundamental_solver.cpp */,
+				129C0940FCDB4898A3420FC0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/gamma_values.cpp */,
+				FD628595377C4EAFAE38FB12 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/homography_solver.cpp */,
+				1A8604B6232B490995D7F13C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/local_optimization.cpp */,
+				F465E41D871A49EC97FF9B0A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/pnp_solver.cpp */,
+				A1EFD2E9AF19441D84434149 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/quality.cpp */,
+				CA6DA8D25CCC454DB7985B2A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/ransac_solvers.cpp */,
+				AA2F67DCEB2C4F6C83A40954 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/sampler.cpp */,
+				624DAFB53AAC4C19AC6948B4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/termination.cpp */,
+				2F4715DA3A644457B066C74C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/utils.cpp */,
+			);
+			name = usac;
+			sourceTree = "<group>";
+		};
+		62538CD33B7140DD88B0AB8D /* calib3d */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEDD46DE9842ABBCABCBFD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d.hpp */,
+				4461998386B1435AB7F28956 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d/calib3d_c.h */,
+			);
+			name = calib3d;
+			sourceTree = "<group>";
+		};
+		6A6EF198648240FCA8A826A7 /* autogenerated */ = {
+			isa = PBXGroup;
+			children = (
+				3E90674F1B134DDCA9BBF304 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp */,
+				81E569A178634077A666F26C /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.hpp */,
+			);
+			name = autogenerated;
+			sourceTree = "<group>";
+		};
+		7313DBB6606D4BE891CE9E48 /* opencv_test_calib3d */ = {
+			isa = PBXGroup;
+			children = (
+				C1DD679493FC43C595788172 /* Src */,
+				FB7C2DB20874486398E9B66F /* Include */,
+				DC631A72B09C4F5488AB97DC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */,
+			);
+			name = opencv_test_calib3d;
+			sourceTree = "<group>";
+		};
+		7840528274DC44DA86697DB9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		84A24EEA124C4363B68323D2 /* kernels */ = {
+			isa = PBXGroup;
+			children = (
+				6A6EF198648240FCA8A826A7 /* autogenerated */,
+				B8C2AA90C1B149AA987E5787 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl/stereobm.cl */,
+			);
+			name = kernels;
+			sourceTree = "<group>";
+		};
+		86868F72CD6246AF9E21AD09 /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		912FE646BD304E3792690EE5 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				E2E4237D676D475DB8CC4773 /* opencv_calib3d */,
+			);
+			name = modules;
+			sourceTree = "<group>";
+		};
+		9900FFE90E1047D8AC0EE38D = {
+			isa = PBXGroup;
+			children = (
+				912FE646BD304E3792690EE5 /* modules */,
+				F7D0B3D2365B48C3834A798B /* tests accuracy */,
+				B0979397C2EC440FB3D8682C /* tests performance */,
+				4419704233AF46D98CC5314F /* ALL_BUILD */,
+				22299D7F52564ED499A88B3E /* Products */,
+				7840528274DC44DA86697DB9 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A0FEC50A91C0419C9234DBDD /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				84A24EEA124C4363B68323D2 /* kernels */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		B07A59CBBCA242698394E25C /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				C5433B2654734999BE023CD5 /* opencv2 */,
+				10CE24729C584C90990BB6EA /* /Users/BrightLand/Envy/OpenCV/cvconfig.h */,
+				E0C1CE98C1A04C669B3DE2EF /* /Users/BrightLand/Envy/OpenCV/opencv2/opencv_modules.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+		B0979397C2EC440FB3D8682C /* tests performance */ = {
+			isa = PBXGroup;
+			children = (
+				CC02259775894D1A9E6BD4F3 /* opencv_perf_calib3d */,
+			);
+			name = "tests performance";
+			sourceTree = "<group>";
+		};
+		B791D27C90B24EC18C5D4594 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				55340201A98F4BB2813AE167 /* usac */,
+				A0FEC50A91C0419C9234DBDD /* opencl */,
+				72A512527E7A456DA667E888 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.cpp */,
+				06E9A950FC7C4712BFBAF6AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.h */,
+				556E522FCAF8444FA333F166 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calib3d_c_api.h */,
+				15FB3730D04B4C569EF63ADF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibinit.cpp */,
+				5BEBCBB591C64FF5A4616D13 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration.cpp */,
+				C440586C14C943C08EDDD193 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration_handeye.cpp */,
+				3D00E954E40B457985D3D40E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/checkchessboard.cpp */,
+				B924BD58870D4358A5282729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.cpp */,
+				CC758E8B1B004361970A4C73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.hpp */,
+				2D3E4413BA0B4D93BFB961EF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.cpp */,
+				D1D31CFA8E864C21930D70E4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.hpp */,
+				329102150A84454EA1D990DB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+				81C8841E9E2B4B2898F9D31B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/distortion_model.hpp */,
+				FF46B591E8DA4086A8C40C27 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.cpp */,
+				92A4B794F281434F90454E1D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.h */,
+				9F75DE2268E34DA4BE528A77 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.cpp */,
+				A77A39C9601944A59005148D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.h */,
+				169A6B731C4C4732B5D1EBDC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.cpp */,
+				28BEFD110B6541F3A6F43984 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.hpp */,
+				B13136DDE6C8489E8F112D50 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/five-point.cpp */,
+				00465556674C4B0DABF1188B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fundam.cpp */,
+				76E2E093540C4B98997EACED /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/homography_decomp.cpp */,
+				A146DC5803944858AD4B5E84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.cpp */,
+				939FCC9E2E7B458A97A73757 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.hpp */,
+				B908336B23604350BA721A59 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/levmarq.cpp */,
+				8DCF8080510A4969A0EB9A2F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/main.cpp */,
+				946168F83C7340539AE5EE67 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.cpp */,
+				E5BE07BF97044B08BF6CB1A3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.h */,
+				2E85B55ACCDA4978BFF740E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.cpp */,
+				1964A7C86C0F41A0A1EFE7E0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.h */,
+				4A189930735C4D6591AD7093 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/posit.cpp */,
+				43C5BF615F2E4AAA863F7D2D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/precomp.hpp */,
+				43A32CF8D34349AA8BA8ED84 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ptsetreg.cpp */,
+				4A58FAD24EFD4023A69E81C7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/quadsubpix.cpp */,
+				F7D0A4B9F698401C95F83686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.cpp */,
+				DD0214C156F1466F8C44B0B7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.h */,
+				998740C72E92453CAE227CCF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/solvepnp.cpp */,
+				706DB4F4B44245AE850CF52C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.cpp */,
+				4D59DFB67F7B4335B912243A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.hpp */,
+				0665AF18870746D98B26CEE4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereobm.cpp */,
+				B8C58594E0D64B12BCE80FD7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereosgbm.cpp */,
+				E667B0D6D5314756A210BA25 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/triangulate.cpp */,
+				57BD103A9EAD49779B270AD9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.dispatch.cpp */,
+				76378EE4BBB946EEB8B0940E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.simd.hpp */,
+				5E46F31EC080403486B18DDB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.cpp */,
+				FA50CAC9BF0147948048AE4E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.h */,
+				CC3B1FA39A6C4A888096D123 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac.hpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		C1DD679493FC43C595788172 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				F4FD47344F94444D8F0A9032 /* opencl */,
+				97E3CA40E0014F4A9C354AEC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine2d_estimator.cpp */,
+				A236CA2AA178423987377573 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3.cpp */,
+				C61C93FF90544CF0BA952E47 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3d_estimator.cpp */,
+				4F824000F849402B89A34822 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine_partial2d_estimator.cpp */,
+				DD831D98A01D4A7BAD029686 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_calibration_hand_eye.cpp */,
+				4F03688860B443CAAF6FF4B2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration.cpp */,
+				5E36206DD7DE45CDBAEAC96C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_artificial.cpp */,
+				0F50005D22664000977082E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_badarg.cpp */,
+				192A7B89466C4AC0BC38C48B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_tilt.cpp */,
+				309A2F0B5CD64FCDB5A9BC73 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.cpp */,
+				B8A8FBF8D0F947EDAE71ACB7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners.cpp */,
+				B5435DB5412B41E59BF3EA38 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_badarg.cpp */,
+				EA55CA2357484E13BBDF3673 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_timing.cpp */,
+				F24CBFC7D55542F79B87CAF2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_compose_rt.cpp */,
+				BE5B44A3943B40A59976C8DE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cornerssubpix.cpp */,
+				7B5F56D1CDDC49F68D1FC3B6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_decompose_projection.cpp */,
+				7C9388EF11BF4EB4B2437729 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_filter_homography_decomp.cpp */,
+				16382A7933C4401B828EE3E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fisheye.cpp */,
+				CD32EBF5B6C649DD8B5E7006 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fundam.cpp */,
+				C1EE0ACBBAFA44F6B438286E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography.cpp */,
+				62EA68CCA7EE4A29A4CACD0F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography_decomp.cpp */,
+				A70FF2050FC14A2B9BF58EB6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_main.cpp */,
+				A7AD7B3F7D394148BBE8C634 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_modelest.cpp */,
+				4103B54F85F04F498D849DE6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_posit.cpp */,
+				CEC344C375EB434BAFEB77FC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_reproject_image_to_3d.cpp */,
+				6BD8CF1E5FFB4456BF7F8FEB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_solvepnp_ransac.cpp */,
+				DFCBA113E8FD4EE7B86856D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_stereomatching.cpp */,
+				BBC0470DA6544564B6C9C709 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_translation3d_estimator.cpp */,
+				9E8B4D52F8904A1FAA9FC5B9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort.cpp */,
+				5C969AE5D1384253BC6B53E7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_badarg.cpp */,
+				5C8972B5960A49B399C86232 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_points.cpp */,
+				C71CE4D9B48748459970C27C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_usac.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		C5433B2654734999BE023CD5 /* opencv2 */ = {
+			isa = PBXGroup;
+			children = (
+				62538CD33B7140DD88B0AB8D /* calib3d */,
+				A5646FF78DE94402B1AFD73C /* /Users/BrightLand/Envy/_opencv/modules/calib3d/include/opencv2/calib3d.hpp */,
+			);
+			name = opencv2;
+			sourceTree = "<group>";
+		};
+		CC02259775894D1A9E6BD4F3 /* opencv_perf_calib3d */ = {
+			isa = PBXGroup;
+			children = (
+				E892EA1C9B7A465DA2B2CBD3 /* Src */,
+				316F39B80F1545DA944977AB /* Include */,
+				9AB9446048624AEFB62F5521 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */,
+			);
+			name = opencv_perf_calib3d;
+			sourceTree = "<group>";
+		};
+		D1715CDB91EE4261A0EA762B /* CMake Rules */ = {
+			isa = PBXGroup;
+			children = (
+				89F8980DB90D4897A35161E6 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp.rule */,
+			);
+			name = "CMake Rules";
+			sourceTree = "<group>";
+		};
+		E2E4237D676D475DB8CC4773 /* opencv_calib3d */ = {
+			isa = PBXGroup;
+			children = (
+				B07A59CBBCA242698394E25C /* Include */,
+				B791D27C90B24EC18C5D4594 /* Src */,
+				0FA620FEB40B474AB768137D /* Source Files */,
+				D1715CDB91EE4261A0EA762B /* CMake Rules */,
+				F69A05EF15BC4AE0BAFBD230 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/CMakeLists.txt */,
+			);
+			name = opencv_calib3d;
+			sourceTree = "<group>";
+		};
+		E892EA1C9B7A465DA2B2CBD3 /* Src */ = {
+			isa = PBXGroup;
+			children = (
+				F04B6BC823CB47FD979CEE45 /* opencl */,
+				0A2E0953BA4C40F5BFD9BDEF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_affine2d.cpp */,
+				3C2AB3EE08424A68ACBEFCD0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp */,
+				0196C1A029C6437FA7E8E493 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_main.cpp */,
+				31CDAB451F1143B9B3E0971D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_pnp.cpp */,
+				2FA7D78141434E8DADEC0811 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_stereosgbm.cpp */,
+				43A00872CD8B41BDA62D67DF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_undistort.cpp */,
+			);
+			name = Src;
+			sourceTree = "<group>";
+		};
+		F04B6BC823CB47FD979CEE45 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				2562B8D68AB24799B28FB7F4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		F4FD47344F94444D8F0A9032 /* opencl */ = {
+			isa = PBXGroup;
+			children = (
+				5FD6B1451A8B45FB83A008FF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/opencl/test_stereobm.cpp */,
+			);
+			name = opencl;
+			sourceTree = "<group>";
+		};
+		F7D0B3D2365B48C3834A798B /* tests accuracy */ = {
+			isa = PBXGroup;
+			children = (
+				7313DBB6606D4BE891CE9E48 /* opencv_test_calib3d */,
+			);
+			name = "tests accuracy";
+			sourceTree = "<group>";
+		};
+		FB7C2DB20874486398E9B66F /* Include */ = {
+			isa = PBXGroup;
+			children = (
+				19C1F3739BDE4396B5573EEE /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.hpp */,
+				343249F4DEEB4C948121603F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_precomp.hpp */,
+			);
+			name = Include;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2AF0FA30BE6247D0A8CD9B75 /* opencv_test_calib3d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A80BA1B69EB4D199B0A404A /* Build configuration list for PBXNativeTarget "opencv_test_calib3d" */;
+			buildPhases = (
+				E55A5A94C1AB4E1BA1966D8D /* Sources */,
+				95176E4A788C4DE880B7B8D2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				027EF694A7A54512A730900A /* PBXTargetDependency */,
+				D0F6E8724EF1484D8305874F /* PBXTargetDependency */,
+			);
+			name = opencv_test_calib3d;
+			productName = opencv_test_calib3d;
+			productReference = 9574E025DC9B417D910C9AA9 /* opencv_test_calib3d */;
+			productType = "com.apple.product-type.tool";
+		};
+		2F7810DB43504D039D789EE3 /* opencv_calib3d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F477292F9CD443A9B0C2A23C /* Build configuration list for PBXNativeTarget "opencv_calib3d" */;
+			buildPhases = (
+				CB6994D5654CA4AA978BDF75 /* Generate opencl_kernels_calib3d.cpp */,
+				C119D0859A0846C1A6E6533B /* Sources */,
+				796F8950769A4C7196D2560E /* Frameworks */,
+				EDDB3F865701372D51223E7C /* CMake PostBuild Rules */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1148126CB06C40738FC83306 /* PBXTargetDependency */,
+			);
+			name = opencv_calib3d;
+			productName = opencv_calib3d;
+			productReference = D6F232190B214FB898BBB0E7 /* opencv_calib3d */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+		5AF3C45A1D4E4EC69A5568C1 /* opencv_perf_calib3d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E33AF5B3C9D84514B14B207A /* Build configuration list for PBXNativeTarget "opencv_perf_calib3d" */;
+			buildPhases = (
+				6EF887E900914A3FBF0189E4 /* Sources */,
+				29F11AF5E123436AB73E9D61 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9A45AD5F61B04AC2BC503749 /* PBXTargetDependency */,
+				831665DAC53F49AA88F9033F /* PBXTargetDependency */,
+			);
+			name = opencv_perf_calib3d;
+			productName = opencv_perf_calib3d;
+			productReference = 71F9B5F9FD8048D6A5C7152C /* opencv_perf_calib3d */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2D18CC496114C39A93A89E6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1320;
+			};
+			buildConfigurationList = 7517158F2F9744139437D46C /* Build configuration list for PBXProject "opencv_calib3d" */;
+			buildSettings = {
+			};
+			buildStyles = (
+				A1047BD627BF4F9F9C4510B8 /* Debug */,
+				7216579AFFDC4C94997D6DF6 /* Release */,
+			);
+			compatibilityVersion = "Xcode 3.2";
+			hasScannedForEncodings = 0;
+			mainGroup = 9900FFE90E1047D8AC0EE38D;
+			projectDirPath = /Users/BrightLand/Envy/_opencv/modules/calib3d;
+			projectRoot = "";
+			targets = (
+				D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */,
+				6C70328E101E405D90D04461 /* RUN_TESTS */,
+				D57DB21D30464006B1D1577E /* ZERO_CHECK */,
+				C08094B7A78641F983B39091 /* install */,
+				2F7810DB43504D039D789EE3 /* opencv_calib3d */,
+				5AF3C45A1D4E4EC69A5568C1 /* opencv_perf_calib3d */,
+				2AF0FA30BE6247D0A8CD9B75 /* opencv_test_calib3d */,
+				8E1DD9A2B5724B10A912C43D /* package */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		003C8D08B0008F35F218E126 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/ctest --force-new-ctest-process -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		3C0110FC8322DE7E50886E21 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		44C599B917BC54DEF0F22A49 /* Generate CMakeFiles/ALL_BUILD */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ALL_BUILD";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/calib3d/CMakeFiles/ALL_BUILD			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  echo Build\\ all\\ projects
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  echo Build\\ all\\ projects
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		571234464C2A5D0D43F1AB42 /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV
+  /Applications/CMake.app/Contents/bin/cpack -C $CONFIGURATION$EFFECTIVE_PLATFORM_NAME --config ./CPackConfig.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		661D9C604B3B91332E7543CC = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		87AF4882E018677E2624B544 = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		910A41151295C5F9742C25BD = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		93426DA6A4AC2C2AC9CE883C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -DBUILD_TYPE=$CONFIGURATION$EFFECTIVE_PLATFORM_NAME -P cmake_install.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		9B50530E35CC49C82C2FACCF = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# shell script goes here
+exit 0";
+			showEnvVarsInLog = 0;
+		};
+		CB6994D5654CA4AA978BDF75 /* Generate opencl_kernels_calib3d.cpp */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+/Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake,/Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl/stereobm.cl			);
+			name = "Generate opencl_kernels_calib3d.cpp";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=calib3d -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -DMODULE_NAME=calib3d -DCL_DIR=/Users/BrightLand/Envy/_opencv/modules/calib3d/src/opencl -DOUTPUT=/Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp -P /Users/BrightLand/Envy/_opencv/cmake/cl2cpp.cmake
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		EDDB3F865701372D51223E7C /* CMake PostBuild Rules */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			name = "CMake PostBuild Rules";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.dylib
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  /Applications/CMake.app/Contents/bin/cmake -E cmake_symlink_library /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.405.dylib /Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.dylib
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+		F8CF100C7935FF1AADDEF7A9 /* Generate CMakeFiles/ZERO_CHECK */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Generate CMakeFiles/ZERO_CHECK";
+			outputPaths = (
+/Users/BrightLand/Envy/OpenCV/modules/calib3d/CMakeFiles/ZERO_CHECK			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "set -e
+if test \"$CONFIGURATION\" = \"Debug\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  make -f /Users/BrightLand/Envy/OpenCV/modules/calib3d/CMakeScripts/ReRunCMake.make
+fi
+if test \"$CONFIGURATION\" = \"Release\"; then :
+  cd /Users/BrightLand/Envy/OpenCV/modules/calib3d
+  make -f /Users/BrightLand/Envy/OpenCV/modules/calib3d/CMakeScripts/ReRunCMake.make
+fi
+";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6EF887E900914A3FBF0189E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				37EC5FDA7F9C487A9F50282F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/opencl/perf_stereobm.cpp */,
+				7AFC24C7313544E8B7350A37 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_affine2d.cpp */,
+				2ADC4646340B4A12BAACD336 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_cicrlesGrid.cpp */,
+				645893350CA6459E87ED4F29 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_main.cpp */,
+				28993AC527864FABA1B2FF23 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_pnp.cpp */,
+				5D5F5A4A0F034409B879B782 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_stereosgbm.cpp */,
+				20AA2E204C024332BE9956FB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/perf/perf_undistort.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C119D0859A0846C1A6E6533B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BCB8D6CE67A1426EB40837D6 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/opencl_kernels_calib3d.cpp */,
+				0ED478A1BA7E4632A58F5D74 /* /Users/BrightLand/Envy/OpenCV/modules/calib3d/undistort.avx2.cpp */,
+				0B707C83DBD44BE587E77FFD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ap3p.cpp */,
+				F7AD88FBD51A4F028F9477B7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibinit.cpp */,
+				36E065479733472088E45C32 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration.cpp */,
+				A2B14A7A7908409DB3E64620 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/calibration_handeye.cpp */,
+				79C20C0D3C3E47DC8461626F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/checkchessboard.cpp */,
+				D70E882AE60A4A06AEAD51B6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/chessboard.cpp */,
+				7D33B7388A724261A54331C1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/circlesgrid.cpp */,
+				EF68CB63AFA54A539CE779AD /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/compat_ptsetreg.cpp */,
+				E3FCAF868E54448E849DF060 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/dls.cpp */,
+				8C5808B1B67F401A8CDC1772 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/epnp.cpp */,
+				846D3257CA1149A990B55AAF /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fisheye.cpp */,
+				4B20197ADD534E2298AF93DC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/five-point.cpp */,
+				9CE98A35E5D241E680D3C09B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/fundam.cpp */,
+				86AE8133DDCA452FB9061565 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/homography_decomp.cpp */,
+				2CBF778364B64B4C98DA1BC6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ippe.cpp */,
+				5087830FC1F849B5B23A0E3E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/levmarq.cpp */,
+				13CEC54E3E2B43FEA89C7B64 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/main.cpp */,
+				642491A734A14441A762B4E5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/p3p.cpp */,
+				A6F8085C56314C729BF1927B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/polynom_solver.cpp */,
+				E883722C980140E7BC64BE56 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/posit.cpp */,
+				88A76BAF952443B4B14994AC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/ptsetreg.cpp */,
+				932B3FAAEEA64CE4ADAA8AF5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/quadsubpix.cpp */,
+				3ECC11B813FE41B8BC0A2938 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/rho.cpp */,
+				80FE66C6D24246128D51E03E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/solvepnp.cpp */,
+				5DFE3F8C3DBA4BB59AFA054D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/sqpnp.cpp */,
+				D7994C6B1E3A475ABF421C7D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereobm.cpp */,
+				00B9991EB48C41D0B4578EBC /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/stereosgbm.cpp */,
+				F128E3F8616945958AB12370 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/triangulate.cpp */,
+				1A05B38EE1034F8D8F240FC8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/undistort.dispatch.cpp */,
+				B5C5A777518E44DEB8F3D06B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/upnp.cpp */,
+				9B4622E6B7E44594A3ABBA7D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/degeneracy.cpp */,
+				7BF091EA317F4879BF086FE0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/dls_solver.cpp */,
+				19E8A8BB80DA492C8816E45E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/essential_solver.cpp */,
+				65E68AB769944E728BEBF868 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/estimator.cpp */,
+				44E239AFF0C3401BBE4368D9 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/fundamental_solver.cpp */,
+				7FFA5B5C8CC3424B8F33D51F /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/gamma_values.cpp */,
+				571C6264DEE14041BDDBC38D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/homography_solver.cpp */,
+				78163CC1E84F42CFAD9DAE66 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/local_optimization.cpp */,
+				9420BD2E248740D1833976EB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/pnp_solver.cpp */,
+				9292DB511D4642CD89601CD7 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/quality.cpp */,
+				907CD9CED48749D19D060890 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/ransac_solvers.cpp */,
+				882CB1A03D394ADCBEED3D69 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/sampler.cpp */,
+				DC0A0724DDC5482BBC5C3F42 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/termination.cpp */,
+				50B9D966215646368050F1CB /* /Users/BrightLand/Envy/_opencv/modules/calib3d/src/usac/utils.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E55A5A94C1AB4E1BA1966D8D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8EC3C2D2BA484D1992C60636 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/opencl/test_stereobm.cpp */,
+				A1B16CE9148E4A13832142B8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine2d_estimator.cpp */,
+				4081072D20DA4293B3B8A6FA /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3.cpp */,
+				8E01A899EAF54186B60F48E3 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine3d_estimator.cpp */,
+				5669AFDD3006446AB05EBCE4 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_affine_partial2d_estimator.cpp */,
+				B3D938260F2D4FC294B0BE6B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_calibration_hand_eye.cpp */,
+				98ED34A385924E0C87237835 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration.cpp */,
+				836B1605925F4B4C83AF5BED /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_artificial.cpp */,
+				6F97CBCEAFAC44259B8D9B55 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_badarg.cpp */,
+				19FD01D4D54A474481A133F1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cameracalibration_tilt.cpp */,
+				30A69971B9874A3F88D55CA5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chessboardgenerator.cpp */,
+				5A023B9F68D04E5486311C44 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners.cpp */,
+				AD8BF960EF3F48CC96B90C20 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_badarg.cpp */,
+				5D8624D0B93B4CA98AD9866A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_chesscorners_timing.cpp */,
+				7262C93F3DC042CBA35DD184 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_compose_rt.cpp */,
+				5F3997D6EADB48C39B9A7FF2 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_cornerssubpix.cpp */,
+				7C44B42F07374BCEB4A2959A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_decompose_projection.cpp */,
+				9A9EB62239894444A9D10B02 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_filter_homography_decomp.cpp */,
+				B7C0D169377843D8AD0C95D0 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fisheye.cpp */,
+				0D622F497CE94B79A24811F6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_fundam.cpp */,
+				755A4DC8D0D7467294F5D394 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography.cpp */,
+				25A9FC62363D4775B9CDDA28 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_homography_decomp.cpp */,
+				AA9426A89128455B9FD812D5 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_main.cpp */,
+				F2F7AB7D9AEF491D92760B9B /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_modelest.cpp */,
+				3CF46F8070DB4E3788BA53B1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_posit.cpp */,
+				7AC2C779248E49EBA4352C9A /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_reproject_image_to_3d.cpp */,
+				51314D02EB5A4A14A36FE12D /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_solvepnp_ransac.cpp */,
+				8E1BD57C7EA44199B47E43D6 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_stereomatching.cpp */,
+				603963D659D6407098B93D41 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_translation3d_estimator.cpp */,
+				34020BAC124148968EB33A8E /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort.cpp */,
+				2138862B54E94482A3D062E8 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_badarg.cpp */,
+				23EE0DDAC06D4F27A5C84056 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_undistort_points.cpp */,
+				C8A60D7263F84222BED330C1 /* /Users/BrightLand/Envy/_opencv/modules/calib3d/test/test_usac.cpp */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		027EF694A7A54512A730900A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7810DB43504D039D789EE3 /* opencv_calib3d */;
+			targetProxy = AA43B422830C41CDB62A61EB /* PBXContainerItemProxy */;
+		};
+		1148126CB06C40738FC83306 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 570FECC12A254D3AA0888F8B /* PBXContainerItemProxy */;
+		};
+		4A0E62FC618C4BA6819DCEA7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = 527A5CC370494DCF88F11BF9 /* PBXContainerItemProxy */;
+		};
+		58655C5D8C544B8D9D87D934 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = B98153B4F0CE4A9AABEA9323 /* PBXContainerItemProxy */;
+		};
+		73908E66451949E1A708751F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D0076E0C6A1E4F65A05B8A1E /* ALL_BUILD */;
+			targetProxy = F8A32DBABF4E47C4BA85CFC9 /* PBXContainerItemProxy */;
+		};
+		831665DAC53F49AA88F9033F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 372C0D1CA9BB4B069C8924D9 /* PBXContainerItemProxy */;
+		};
+		9A45AD5F61B04AC2BC503749 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7810DB43504D039D789EE3 /* opencv_calib3d */;
+			targetProxy = AC3D5B28471E4C1891DDB6E0 /* PBXContainerItemProxy */;
+		};
+		B0FF9490A0AE4009A25CE68A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2AF0FA30BE6247D0A8CD9B75 /* opencv_test_calib3d */;
+			targetProxy = 85441C0221DF4FECA7E353DB /* PBXContainerItemProxy */;
+		};
+		CD02C7BA4B794940B2683504 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5AF3C45A1D4E4EC69A5568C1 /* opencv_perf_calib3d */;
+			targetProxy = 0F88FFF40B6E4603848DD6CF /* PBXContainerItemProxy */;
+		};
+		D0F6E8724EF1484D8305874F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D57DB21D30464006B1D1577E /* ZERO_CHECK */;
+			targetProxy = 4B36588F127F470DBEF8E191 /* PBXContainerItemProxy */;
+		};
+		F9167D03D94540CA8FE2D355 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 2F7810DB43504D039D789EE3 /* opencv_calib3d */;
+			targetProxy = F43D913A894D4B398114F89D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		05DFAD66AE194C0AA0303D9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_calib3d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		3990A0DF4B2D474BB1493658 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		5F4E0DD8772847159D299C38 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d/build;
+			};
+			name = Debug;
+		};
+		6A6E50BADE754797AA7D3848 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		71129F7ABB9A472BA84F69F9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		87DD9BA950B44492BF49D3EF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		8A8035594C0D412395141CDD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = RUN_TESTS;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AA6E093C1A5B4F3C906A8478 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","'__OPENCV_TESTS=1'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_test_calib3d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		AB52F9FD790C497BACD0D7C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		AF71A6248E7649619F154EC2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Debug;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_calib3d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		B2D48D9F681F45CB832900BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = package;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		B3E98941E9324EB5AECD01C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ZERO_CHECK;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		BBE0A2A7987449F7846823BF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Release;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/OpenCV/modules/calib3d,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_calib3d.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,"-framework Accelerate","-lm","-ldl",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_calib3d.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CC3AE1C527A541CD930B9039 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = install;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		CDFACB1DC09E4BC8A4B0F579 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				INSTALL_PATH = "";
+				OTHER_LDFLAGS = ("","$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = ALL_BUILD;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		CEC12BB7BFB34458AF536D72 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/bin/Release;
+				EXECUTABLE_PREFIX = "";
+				EXECUTABLE_SUFFIX = "";
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/ts/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/_opencv/modules/imgcodecs/include,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,/Users/BrightLand/Envy/_opencv/modules/videoio/include,/Users/BrightLand/Envy/_opencv/modules/highgui/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Release","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden     -DNDEBUG  -DNDEBUG -fPIE '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -Wl,-search_paths_first -Wl,-headerpad_max_install_names",/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_ts.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_calib3d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_highgui.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Release/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_videoio.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgcodecs.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Release/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_perf_calib3d;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Release;
+		};
+		E54F412AFF714F5DBBC28295 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				CONFIGURATION_BUILD_DIR = /Users/BrightLand/Envy/OpenCV/lib/Debug;
+				DYLIB_COMPATIBILITY_VERSION = 405.0.0;
+				DYLIB_CURRENT_VERSION = 4.5.5;
+				EXECUTABLE_PREFIX = lib;
+				EXECUTABLE_SUFFIX = .dylib;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_INLINES_ARE_PRIVATE_EXTERN = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = ("'CMAKE_INTDIR=\"$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)\"'",CVAPI_EXPORTS,_USE_MATH_DEFINES,__STDC_CONSTANT_MACROS,__STDC_LIMIT_MACROS,__STDC_FORMAT_MACROS,"'__OPENCV_BUILD=1'","$(inherited)");
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/include,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/iw/include,/Users/BrightLand/Envy/_opencv/modules/calib3d/include,/Users/BrightLand/Envy/OpenCV/modules/calib3d,/Users/BrightLand/Envy/_opencv/modules/core/include,/Users/BrightLand/Envy/_opencv/modules/flann/include,/Users/BrightLand/Envy/_opencv/modules/imgproc/include,/Users/BrightLand/Envy/_opencv/modules/features2d/include,"$(inherited)");
+				INSTALL_PATH = "";
+				LD_RUNPATH_SEARCH_PATHS = ("/usr/local/lib /Users/BrightLand/Envy/OpenCV/lib/Debug","$(inherited)");
+				LIBRARY_SEARCH_PATHS = ("/usr/local/lib/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)",/usr/local/lib,"$(inherited)");
+				LIBRARY_STYLE = DYNAMIC;
+				OTHER_CPLUSPLUSFLAGS = "   -fsigned-char -W -Wall -Wreturn-type -Wnon-virtual-dtor -Waddress -Wsequence-point -Wformat -Wformat-security -Wmissing-declarations -Wmissing-prototypes -Wstrict-prototypes -Wundef -Winit-self -Wpointer-arith -Wshadow -Wsign-promo -Wuninitialized -Wno-delete-non-virtual-dtor -Wno-unnamed-type-template-args -Wno-comment -fdiagnostics-show-option -Wno-long-long -Qunused-arguments -Wno-semicolon-before-method-body -ffunction-sections -fdata-sections  -fvisibility=hidden -fvisibility-inlines-hidden         -DDEBUG -D_DEBUG -fPIC '-std=c++11' ";
+				OTHER_LDFLAGS = ("  -Wl,-dead_strip -dynamiclib -Wl,-headerpad_max_install_names -install_name @rpath/libopencv_calib3d.405.dylib",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_features2d.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/3rdparty/lib/Debug/libippiw.a,/Users/BrightLand/Envy/OpenCV/3rdparty/ippicv/ippicv_mac/icv/lib/intel64/libippicv.a,"-framework Accelerate","-lm","-ldl",/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_flann.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_imgproc.4.5.5.dylib,/Users/BrightLand/Envy/OpenCV/lib/Debug/libopencv_core.4.5.5.dylib,"$(inherited)");
+				OTHER_REZFLAGS = "";
+				PRODUCT_NAME = opencv_calib3d.4.5.5;
+				SECTORDER_FLAGS = "";
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d;
+				SYSTEM_HEADER_SEARCH_PATHS = (/Users/BrightLand/Envy/OpenCV,"$(inherited)");
+				USE_HEADERMAP = NO;
+				WARNING_CFLAGS = ("$(inherited)");
+			};
+			name = Debug;
+		};
+		F7D1B1824365497D919F8318 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX12.1.sdk;
+				SYMROOT = /Users/BrightLand/Envy/OpenCV/modules/calib3d/build;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A80BA1B69EB4D199B0A404A /* Build configuration list for PBXNativeTarget "opencv_test_calib3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AA6E093C1A5B4F3C906A8478 /* Debug */,
+				05DFAD66AE194C0AA0303D9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		5C937A7B085348D483CB63FA /* Build configuration list for PBXAggregateTarget "ALL_BUILD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A6E50BADE754797AA7D3848 /* Debug */,
+				CDFACB1DC09E4BC8A4B0F579 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		6B91F395D80F49E2AAE87876 /* Build configuration list for PBXAggregateTarget "package" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3990A0DF4B2D474BB1493658 /* Debug */,
+				B2D48D9F681F45CB832900BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		7517158F2F9744139437D46C /* Build configuration list for PBXProject "opencv_calib3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F4E0DD8772847159D299C38 /* Debug */,
+				F7D1B1824365497D919F8318 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		88B47055D5104695BCA82E54 /* Build configuration list for PBXAggregateTarget "ZERO_CHECK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3E98941E9324EB5AECD01C6 /* Debug */,
+				87DD9BA950B44492BF49D3EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		B22474FFFF5D46ABB3DB8A58 /* Build configuration list for PBXAggregateTarget "RUN_TESTS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8A8035594C0D412395141CDD /* Debug */,
+				71129F7ABB9A472BA84F69F9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		E33AF5B3C9D84514B14B207A /* Build configuration list for PBXNativeTarget "opencv_perf_calib3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF71A6248E7649619F154EC2 /* Debug */,
+				CEC12BB7BFB34458AF536D72 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F39D31BE002E4FCCB066A0A2 /* Build configuration list for PBXAggregateTarget "install" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CC3AE1C527A541CD930B9039 /* Debug */,
+				AB52F9FD790C497BACD0D7C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F477292F9CD443A9B0C2A23C /* Build configuration list for PBXNativeTarget "opencv_calib3d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E54F412AFF714F5DBBC28295 /* Debug */,
+				BBE0A2A7987449F7846823BF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2D18CC496114C39A93A89E6 /* Project object */;
+}

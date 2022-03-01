@@ -1,0 +1,14 @@
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/opencl_kernels_photo.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/align.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/calibrate.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/contrast_preserve.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/denoise_tvl1.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/denoising.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/denoising.cuda.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/hdr_common.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/inpaint.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/merge.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/npr.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/seamless_cloning.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/seamless_cloning_impl.o
+/Users/BrightLand/Envy/OpenCV/modules/photo/OpenCV.build/Debug/opencv_photo.build/Objects-normal/x86_64/tonemap.o
