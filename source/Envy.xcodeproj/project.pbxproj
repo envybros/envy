@@ -69,6 +69,13 @@
 		33B950ED27CE4DC900AEF6F4 /* libopencv_structured_light.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B950B527CE4DC800AEF6F4 /* libopencv_structured_light.4.5.5.dylib */; };
 		33B950EE27CE4DC900AEF6F4 /* libopencv_stereo.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B950B627CE4DC800AEF6F4 /* libopencv_stereo.4.5.5.dylib */; };
 		33B950EF27CE4DC900AEF6F4 /* libopencv_datasets.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B950B727CE4DC800AEF6F4 /* libopencv_datasets.4.5.5.dylib */; };
+		33C6A52D27CF9DBB00418288 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C6A52C27CF9DBB00418288 /* main.cpp */; };
+		33C6A53127CF9DCC00418288 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; platformFilter = maccatalyst; };
+		33C6A53227CF9DE200418288 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499227CE23FB00AEF6F4 /* libGLEW.2.1.0.dylib */; };
+		33C6A53327CF9DE200418288 /* libGLEW.2.1.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 33B9499227CE23FB00AEF6F4 /* libGLEW.2.1.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		33C6A53527CF9DEA00418288 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; };
+		33C6A53627CF9DEA00418288 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		33C6A53727CF9E1B00418288 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 33B9499C27CE305F00AEF6F4 /* glad.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -89,6 +96,27 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
+		};
+		33C6A52827CF9DBB00418288 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		33C6A53427CF9DE200418288 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33C6A53627CF9DEA00418288 /* libglfw.3.3.dylib in Embed Libraries */,
+				33C6A53327CF9DE200418288 /* libGLEW.2.1.0.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -237,6 +265,9 @@
 		33B950B627CE4DC800AEF6F4 /* libopencv_stereo.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_stereo.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_stereo.4.5.5.dylib; sourceTree = "<group>"; };
 		33B950B727CE4DC800AEF6F4 /* libopencv_datasets.4.5.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libopencv_datasets.4.5.5.dylib; path = ../../../../usr/local/Cellar/opencv/4.5.5/lib/libopencv_datasets.4.5.5.dylib; sourceTree = "<group>"; };
 		33B950F027CE4DF500AEF6F4 /* opencv.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = opencv.entitlements; sourceTree = "<group>"; };
+		33C6A52A27CF9DBB00418288 /* opengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl; sourceTree = BUILT_PRODUCTS_DIR; };
+		33C6A52C27CF9DBB00418288 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		33C6A53827CF9E3400418288 /* opengl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = opengl.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -313,6 +344,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		33C6A52727CF9DBB00418288 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C6A53527CF9DEA00418288 /* libglfw.3.3.dylib in Frameworks */,
+				33C6A53227CF9DE200418288 /* libGLEW.2.1.0.dylib in Frameworks */,
+				33C6A53127CF9DCC00418288 /* OpenGL.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -377,6 +418,7 @@
 				33B950AB27CE4DC700AEF6F4 /* libopencv_xphoto.4.5.5.dylib */,
 				33B9498327CE1DC000AEF6F4 /* Envy */,
 				33B94F3827CE4A0600AEF6F4 /* opencv */,
+				33C6A52B27CF9DBB00418288 /* opengl */,
 				33B9498227CE1DC000AEF6F4 /* Products */,
 				33B9498B27CE214B00AEF6F4 /* Frameworks */,
 			);
@@ -387,6 +429,7 @@
 			children = (
 				33B9498127CE1DC000AEF6F4 /* Envy */,
 				33B94F3727CE4A0600AEF6F4 /* opencv */,
+				33C6A52A27CF9DBB00418288 /* opengl */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -498,6 +541,15 @@
 			path = opencv;
 			sourceTree = "<group>";
 		};
+		33C6A52B27CF9DBB00418288 /* opengl */ = {
+			isa = PBXGroup;
+			children = (
+				33C6A53827CF9E3400418288 /* opengl.entitlements */,
+				33C6A52C27CF9DBB00418288 /* main.cpp */,
+			);
+			path = opengl;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -535,6 +587,24 @@
 			productReference = 33B94F3727CE4A0600AEF6F4 /* opencv */;
 			productType = "com.apple.product-type.tool";
 		};
+		33C6A52927CF9DBB00418288 /* opengl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33C6A53027CF9DBB00418288 /* Build configuration list for PBXNativeTarget "opengl" */;
+			buildPhases = (
+				33C6A52627CF9DBB00418288 /* Sources */,
+				33C6A52727CF9DBB00418288 /* Frameworks */,
+				33C6A52827CF9DBB00418288 /* CopyFiles */,
+				33C6A53427CF9DE200418288 /* Embed Libraries */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = opengl;
+			productName = opengl;
+			productReference = 33C6A52A27CF9DBB00418288 /* opengl */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -548,6 +618,9 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					33B94F3627CE4A0600AEF6F4 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					33C6A52927CF9DBB00418288 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
 				};
@@ -567,6 +640,7 @@
 			targets = (
 				33B9498027CE1DC000AEF6F4 /* Envy */,
 				33B94F3627CE4A0600AEF6F4 /* opencv */,
+				33C6A52927CF9DBB00418288 /* opengl */,
 			);
 		};
 /* End PBXProject section */
@@ -586,6 +660,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				33B94F3A27CE4A0600AEF6F4 /* main.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		33C6A52627CF9DBB00418288 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33C6A53727CF9E1B00418288 /* glad.c in Sources */,
+				33C6A52D27CF9DBB00418288 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,6 +882,54 @@
 			};
 			name = Release;
 		};
+		33C6A52E27CF9DBB00418288 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPA3ZC5XF5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.6/include,
+					/usr/local/Cellar/opencv/4.5.5/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3.6/lib,
+					"$(PROJECT_DIR)/4.5.5/lib",
+					"$(PROJECT_DIR)/4.5.5/lib/opencv4/3rdparty",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/opencv/4.5.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		33C6A52F27CF9DBB00418288 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = DPA3ZC5XF5;
+				ENABLE_HARDENED_RUNTIME = YES;
+				HEADER_SEARCH_PATHS = (
+					/usr/local/include,
+					/usr/local/Cellar/glfw/3.3.6/include,
+					/usr/local/Cellar/opencv/4.5.5/include/opencv4,
+				);
+				LIBRARY_SEARCH_PATHS = (
+					/usr/local/lib,
+					/usr/local/Cellar/glfw/3.3.6/lib,
+					"$(PROJECT_DIR)/4.5.5/lib",
+					"$(PROJECT_DIR)/4.5.5/lib/opencv4/3rdparty",
+					"$(PROJECT_DIR)",
+					/usr/local/Cellar/opencv/4.5.5/lib,
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -825,6 +956,15 @@
 			buildConfigurations = (
 				33B94F3B27CE4A0600AEF6F4 /* Debug */,
 				33B94F3C27CE4A0600AEF6F4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33C6A53027CF9DBB00418288 /* Build configuration list for PBXNativeTarget "opengl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				33C6A52E27CF9DBB00418288 /* Debug */,
+				33C6A52F27CF9DBB00418288 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
