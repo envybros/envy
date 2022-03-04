@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3364F26527D23D7C005D5948 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = B832A5D54BF2B55B332A3AD0 /* shader.frag */; };
+		3364F26627D23D80005D5948 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = B832AE52C40562569A35E945 /* shader.vert */; };
+		3364F26727D23FA9005D5948 /* shader_s.h in Sources */ = {isa = PBXBuildFile; fileRef = B832A814820E3560EBA1B29D /* shader_s.h */; };
 		33B9498527CE1DC000AEF6F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33B9498427CE1DC000AEF6F4 /* main.cpp */; };
 		33B9498D27CE214B00AEF6F4 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; };
 		33B9499127CE21B000AEF6F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; };
@@ -72,9 +75,7 @@
 		33C6A52D27CF9DBB00418288 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C6A52C27CF9DBB00418288 /* main.cpp */; };
 		33C6A53127CF9DCC00418288 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; platformFilter = maccatalyst; };
 		33C6A53227CF9DE200418288 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499227CE23FB00AEF6F4 /* libGLEW.2.1.0.dylib */; };
-		33C6A53327CF9DE200418288 /* libGLEW.2.1.0.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 33B9499227CE23FB00AEF6F4 /* libGLEW.2.1.0.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		33C6A53527CF9DEA00418288 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; };
-		33C6A53627CF9DEA00418288 /* libglfw.3.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		33C6A53727CF9E1B00418288 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 33B9499C27CE305F00AEF6F4 /* glad.c */; };
 /* End PBXBuildFile section */
 
@@ -105,18 +106,6 @@
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 1;
-		};
-		33C6A53427CF9DE200418288 /* Embed Libraries */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				33C6A53627CF9DEA00418288 /* libglfw.3.3.dylib in Embed Libraries */,
-				33C6A53327CF9DE200418288 /* libGLEW.2.1.0.dylib in Embed Libraries */,
-			);
-			name = "Embed Libraries";
-			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -268,9 +257,9 @@
 		33C6A52A27CF9DBB00418288 /* opengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C6A52C27CF9DBB00418288 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		33C6A53827CF9E3400418288 /* opengl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = opengl.entitlements; sourceTree = "<group>"; };
-		B832A5D54BF2B55B332A3AD0 /* 3.3.shader.fs */ = {isa = PBXFileReference; lastKnownFileType = file.fr; path = 3.3.shader.fs; sourceTree = "<group>"; };
+		B832A5D54BF2B55B332A3AD0 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = file.fr; path = shader.frag; sourceTree = "<group>"; };
 		B832A814820E3560EBA1B29D /* shader_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
-		B832AE52C40562569A35E945 /* 3.3.shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = 3.3.shader.vs; sourceTree = "<group>"; };
+		B832AE52C40562569A35E945 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -550,8 +539,8 @@
 				33C6A53827CF9E3400418288 /* opengl.entitlements */,
 				33C6A52C27CF9DBB00418288 /* main.cpp */,
 				B832A814820E3560EBA1B29D /* shader_s.h */,
-				B832AE52C40562569A35E945 /* 3.3.shader.vs */,
-				B832A5D54BF2B55B332A3AD0 /* 3.3.shader.fs */,
+				B832AE52C40562569A35E945 /* shader.vert */,
+				B832A5D54BF2B55B332A3AD0 /* shader.frag */,
 			);
 			path = opengl;
 			sourceTree = "<group>";
@@ -600,7 +589,6 @@
 				33C6A52627CF9DBB00418288 /* Sources */,
 				33C6A52727CF9DBB00418288 /* Frameworks */,
 				33C6A52827CF9DBB00418288 /* CopyFiles */,
-				33C6A53427CF9DE200418288 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -673,8 +661,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3364F26627D23D80005D5948 /* shader.vert in Sources */,
+				3364F26527D23D7C005D5948 /* shader.frag in Sources */,
 				33C6A53727CF9E1B00418288 /* glad.c in Sources */,
 				33C6A52D27CF9DBB00418288 /* main.cpp in Sources */,
+				3364F26727D23FA9005D5948 /* shader_s.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -796,6 +787,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Envy/Envy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -820,6 +812,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = Envy/Envy.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -844,6 +837,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = opencv/opencv.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -868,6 +862,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = opencv/opencv.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -892,6 +887,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -916,6 +912,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DPA3ZC5XF5;
 				ENABLE_HARDENED_RUNTIME = YES;

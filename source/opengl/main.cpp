@@ -1,7 +1,9 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include <iostream>
+
 #include "shader_s.h"
+
+#include <iostream>
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
 void processInput(GLFWwindow *window);
@@ -45,7 +47,7 @@ int main()
 
     // build and compile our shader program
     // ------------------------------------
-    Shader ourShader("3.3.shader.vs", "3.3.shader.fs"); // you can name your shader files however you like
+    Shader ourShader("opengl/shader.vert", "opengl/shader.frag");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
     // ------------------------------------------------------------------
@@ -54,6 +56,7 @@ int main()
             0.5f, -0.5f, 0.0f,  1.0f, 0.0f, 0.0f,  // bottom right
             -0.5f, -0.5f, 0.0f,  0.0f, 1.0f, 0.0f,  // bottom left
             0.0f,  0.5f, 0.0f,  0.0f, 0.0f, 1.0f   // top
+
     };
 
     unsigned int VBO, VAO;
@@ -76,7 +79,6 @@ int main()
     // VAOs requires a call to glBindVertexArray anyways so we generally don't unbind VAOs (nor VBOs) when it's not directly necessary.
     // glBindVertexArray(0);
 
-
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))
@@ -91,7 +93,6 @@ int main()
         glClear(GL_COLOR_BUFFER_BIT);
 
         // render the triangle
-        ourShader.use();
         glBindVertexArray(VAO);
         glDrawArrays(GL_TRIANGLES, 0, 3);
 
