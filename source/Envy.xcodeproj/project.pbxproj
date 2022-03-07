@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3364F26527D23D7C005D5948 /* shader.frag in Sources */ = {isa = PBXBuildFile; fileRef = B832A5D54BF2B55B332A3AD0 /* shader.frag */; };
-		3364F26627D23D80005D5948 /* shader.vert in Sources */ = {isa = PBXBuildFile; fileRef = B832AE52C40562569A35E945 /* shader.vert */; };
-		3364F26727D23FA9005D5948 /* shader_s.h in Sources */ = {isa = PBXBuildFile; fileRef = B832A814820E3560EBA1B29D /* shader_s.h */; };
+		33007DB027D4DB400029BF02 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; };
+		33007DB127D4DE8B0029BF02 /* libglfw.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498E27CE219C00AEF6F4 /* libglfw.3.dylib */; };
+		33007DB227D4DE8B0029BF02 /* libglfw.3.dylib in Embed Libraries */ = {isa = PBXBuildFile; fileRef = 33B9498E27CE219C00AEF6F4 /* libglfw.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		33B9498527CE1DC000AEF6F4 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33B9498427CE1DC000AEF6F4 /* main.cpp */; };
 		33B9498D27CE214B00AEF6F4 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; };
 		33B9499127CE21B000AEF6F4 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; };
@@ -72,7 +72,6 @@
 		33B950EE27CE4DC900AEF6F4 /* libopencv_stereo.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B950B627CE4DC800AEF6F4 /* libopencv_stereo.4.5.5.dylib */; };
 		33B950EF27CE4DC900AEF6F4 /* libopencv_datasets.4.5.5.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B950B727CE4DC800AEF6F4 /* libopencv_datasets.4.5.5.dylib */; };
 		33C6A52D27CF9DBB00418288 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 33C6A52C27CF9DBB00418288 /* main.cpp */; };
-		33C6A53127CF9DCC00418288 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499027CE21B000AEF6F4 /* OpenGL.framework */; platformFilter = maccatalyst; };
 		33C6A53227CF9DE200418288 /* libGLEW.2.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9499227CE23FB00AEF6F4 /* libGLEW.2.1.0.dylib */; };
 		33C6A53527CF9DEA00418288 /* libglfw.3.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 33B9498C27CE214B00AEF6F4 /* libglfw.3.3.dylib */; };
 		33C6A53727CF9E1B00418288 /* glad.c in Sources */ = {isa = PBXBuildFile; fileRef = 33B9499C27CE305F00AEF6F4 /* glad.c */; };
@@ -81,6 +80,17 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		33007DB327D4DE8B0029BF02 /* Embed Libraries */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				33007DB227D4DE8B0029BF02 /* libglfw.3.dylib in Embed Libraries */,
+			);
+			name = "Embed Libraries";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		33B9497F27CE1DC000AEF6F4 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
@@ -257,10 +267,7 @@
 		33C6A52A27CF9DBB00418288 /* opengl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = opengl; sourceTree = BUILT_PRODUCTS_DIR; };
 		33C6A52C27CF9DBB00418288 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		33C6A53827CF9E3400418288 /* opengl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = opengl.entitlements; sourceTree = "<group>"; };
-		B832A5D54BF2B55B332A3AD0 /* shader.frag */ = {isa = PBXFileReference; lastKnownFileType = file.fr; path = shader.frag; sourceTree = "<group>"; };
-		B832A814820E3560EBA1B29D /* shader_s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shader_s.h; sourceTree = "<group>"; };
 		B832AD2CCC1BD65C85FE3BDC /* main4.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main4.cpp; sourceTree = "<group>"; };
-		B832AE52C40562569A35E945 /* shader.vert */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = shader.vert; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -341,9 +348,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33007DB027D4DB400029BF02 /* OpenGL.framework in Frameworks */,
+				33007DB127D4DE8B0029BF02 /* libglfw.3.dylib in Frameworks */,
 				33C6A53527CF9DEA00418288 /* libglfw.3.3.dylib in Frameworks */,
 				33C6A53227CF9DE200418288 /* libGLEW.2.1.0.dylib in Frameworks */,
-				33C6A53127CF9DCC00418288 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -539,9 +547,6 @@
 			children = (
 				33C6A53827CF9E3400418288 /* opengl.entitlements */,
 				33C6A52C27CF9DBB00418288 /* main.cpp */,
-				B832A814820E3560EBA1B29D /* shader_s.h */,
-				B832AE52C40562569A35E945 /* shader.vert */,
-				B832A5D54BF2B55B332A3AD0 /* shader.frag */,
 			);
 			path = opengl;
 			sourceTree = "<group>";
@@ -590,6 +595,7 @@
 				33C6A52627CF9DBB00418288 /* Sources */,
 				33C6A52727CF9DBB00418288 /* Frameworks */,
 				33C6A52827CF9DBB00418288 /* CopyFiles */,
+				33007DB327D4DE8B0029BF02 /* Embed Libraries */,
 			);
 			buildRules = (
 			);
@@ -663,11 +669,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3364F26627D23D80005D5948 /* shader.vert in Sources */,
-				3364F26527D23D7C005D5948 /* shader.frag in Sources */,
 				33C6A53727CF9E1B00418288 /* glad.c in Sources */,
 				33C6A52D27CF9DBB00418288 /* main.cpp in Sources */,
-				3364F26727D23FA9005D5948 /* shader_s.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -691,7 +694,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -750,7 +753,7 @@
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
@@ -888,6 +891,7 @@
 		33C6A52E27CF9DBB00418288 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -907,12 +911,14 @@
 					/usr/local/Cellar/opencv/4.5.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = "";
 			};
 			name = Debug;
 		};
 		33C6A52F27CF9DBB00418288 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CODE_SIGN_ENTITLEMENTS = opengl/opengl.entitlements;
 				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
@@ -932,6 +938,7 @@
 					/usr/local/Cellar/opencv/4.5.5/lib,
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_WORKSPACE_SKIPPED_SDK_FRAMEWORKS = "";
 			};
 			name = Release;
 		};
